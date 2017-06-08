@@ -2,296 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57250005-72e8-4a4b-9ba9-1e43c96aed4e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/a.out" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/CEPO1701279874.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/ca.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/ca.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/gsorganizationvalsha2g2r1.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/herong.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clientNikita/cert2.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clientNikita/cert2.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clientNikita/client.exe" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/servOrder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/ca.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/ca.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/server" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/postgres/postdb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/cert/CEPO1701279874.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/cert/Root-R1.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/cert/ca.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/cert/ca.pem" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/cert/gsorganizationvalsha2g2r1.crt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/cert/herong.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/audio/ring.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/fonts/SF-UI-Text-Light.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/fonts/SF-UI-Text-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/add_number.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/alarm-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/alarm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/alarmb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/audio.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/camera-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/camera-white-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/cloud.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/download.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/downloadb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/finish_call.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/finish_call_original.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/finish_call_red.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/fon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/home-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/info.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/p.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/refresh-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/refresh-white-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/refresh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/remove_number.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/roll.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/select.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/timer-icon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/upload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/uploadb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/user-grey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/user-hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/img/user.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/promotion.old" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/fonts/SF-UI-Text-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/image/cloud.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/image/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/image/select.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/image/user-hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/image/user.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js - копия/1ring_.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js - копия/ring.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js/1ring_.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js/ring.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/fonts/SF-UI-Text-Light.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/fonts/SF-UI-Text-Regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/add_number.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/alarm.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/alarmb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/audio-blue.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/audio.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/cloud.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/download.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/downloadb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/favicon.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/finish_call.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/p.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/remove_number.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/select.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/upload.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/uploadb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/user-grey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/user-hover.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/image/user.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/img/info.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/GOPATH__orders_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Go_SDK.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/orders.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/CEPO1701279874.cer" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/client.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/client_order_list.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/client_order_personal.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/clientorders.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-02-15.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-02-16.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-02-17.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-02-20.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-02-28.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-03-01.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-03-02.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-03-03.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-03-04.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-03-05.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-03-06.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-03-09.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-03-10.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-03-13.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-03-14.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-03-15.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-03-21.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-03-22.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-04-06.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/log/2017-04-12.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/logfile.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/order.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/ya.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/clientNikita/client.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/conf/conf.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/2017-06-02.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/2017-06-05.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/2017-06-06.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/2017-06-07.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/log/2017-06-08.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logsdkjfsdk.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/main.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/order.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/postgres/controller.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/postgres/postgres.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/postgres/struct_guard_transact.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/postgres/transaction.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/logfile.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/order.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/server.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/serverfunctiontable.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/structures/serverclient.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/structures/struct_function.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/structures/struct_interfaces.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/structures/struct_transaction.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/structures/struct_websocket.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/structures/structures.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/postgres/logfile.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/postgres/order.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/postgres/postdb.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/queryORDER/cashbox.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/queryORDER/functions.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/queryORDER/html.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/queryORDER/order_listSQL.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/queryORDER/order_personalSQL.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/queryORDER/order_status/for_cook_seelct_orders_items" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/queryORDER/orders.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/queryORDER/preorder.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/queryORDER/statusSQL.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/queryORDER/type_payment.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/sw/sw.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/tchan/tchan.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/trazaction/tranzaction.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/cert/CEPO1701279874.cer" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/cert/cr/CEPO1701279874.cer" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/cert/cr/yapoki.net.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/cert/ya.csr" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/cert/ya.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/cert/yapoki.net.key" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/log/2017-03-20.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/log/2017-03-21.log" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/order.conf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/unmarshaldbarray/unarr.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/websock/sock.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/cook.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/den.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/html/cassir/cassir.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/html/cook/sushimaker-list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/html/index/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/html/oper/operator.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/css/cassa.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/css/my.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/SIP.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/TEST.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/cart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/cashbox.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/cassir.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/ccc.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/cfg.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/delivery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/description_order.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/jquery.formstyler.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/jquery.maskedinput.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/myjs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/operator.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/page.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/promotion - копия.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/promotion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/promotion_new.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/test_promotion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/typeahead.jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cassir/js/ws.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/css/media.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/css/mystylecss.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js - копия/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js - копия/conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js - копия/cook_ws.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js - копия/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js - копия/jquery.formstyler.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js - копия/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js - копия/myjs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js - копия/time.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js - копия/timer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js - копия/tls_client.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js/conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js/jquery.formstyler.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js/jquery.maskedinput.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js/myjs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js/new_ws.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js/time.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/js/ws.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/old/down_site.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/old/order.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/old/select_post.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/old/up_index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/old/up_order.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/cook/old/up_pizza.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/css/media.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/css/my_oper.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/css/mystylecss.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/cart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/cart_bak.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/description_order.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/jquery.formstyler.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/jquery.maskedinput.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/jquery.maskedinput.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/jssip-3.0.7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/myjs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/new.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/new_bak.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/promotion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/time.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/typeahead.jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/wsip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js - копия/wsocket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/cart.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/cart_bak.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/conf.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/description_order.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/jquery.cookie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/jquery.formstyler.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/jquery.maskedinput.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/jquery.maskedinput.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/jssip-3.0.7.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/myjs.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/new.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/new_bak.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/oper_ws.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/promotion.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/time.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/typeahead.jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/ws.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/wsip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/public/oper/js/wsocket.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/query.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/webserver.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/webservfunctable.go" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/websockets.go" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/server/serverfunctiontable.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/webserver/webservfunctable.go" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.go" afterPath="$PROJECT_DIR$/server/server.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/structures/struct_transaction.go" afterPath="$PROJECT_DIR$/structures/struct_transaction.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/structures/struct_websocket.go" afterPath="$PROJECT_DIR$/structures/struct_websocket.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webserver/websockets.go" afterPath="$PROJECT_DIR$/webserver/websockets.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -305,24 +22,14 @@
     <splitter split-orientation="horizontal" split-proportion="0.4573913">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="struct_guard_transact.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/postgres/struct_guard_transact.go">
+          <file leaf-file-name="websockets.go" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/webserver/websockets.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+                <state relative-caret-position="1581">
+                  <caret line="150" column="39" lean-forward="true" selection-start-line="150" selection-start-column="39" selection-end-line="150" selection-end-column="39" />
                   <folding>
-                    <element signature="e#18#31#0" expanded="true" />
+                    <element signature="e#19#166#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="transaction.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/postgres/transaction.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -330,69 +37,23 @@
           <file leaf-file-name="struct_transaction.go" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/structures/struct_transaction.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-                  <folding />
+                <state relative-caret-position="-275">
+                  <caret line="572" column="61" lean-forward="false" selection-start-line="572" selection-start-column="61" selection-end-line="572" selection-end-column="61" />
+                  <folding>
+                    <element signature="e#20#188#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="structures.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/structures/structures.go">
+          <file leaf-file-name="struct_websocket.go" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/structures/struct_websocket.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="webserver.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webserver/webserver.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="webservfunctable.go" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/webserver/webservfunctable.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="187">
-                  <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="serverfunctiontable.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/server/serverfunctiontable.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="17">
-                  <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="serverclient.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/structures/serverclient.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="119">
-                  <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="client.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/client.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-                  <folding />
+                <state relative-caret-position="918">
+                  <caret line="66" column="42" lean-forward="false" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
+                  <folding>
+                    <element signature="e#20#141#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -401,7 +62,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="struct_interfaces.go" pinned="false" current-in-tab="false">
+          <file leaf-file-name="struct_interfaces.go" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/structures/struct_interfaces.go">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="119">
@@ -414,159 +75,10 @@
           <file leaf-file-name="server.go" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/server/server.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="struct_function.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/structures/struct_function.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="221">
-                  <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="conf.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/conf/conf.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="646">
-                  <caret line="38" column="16" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="16" />
+                <state relative-caret-position="-714">
+                  <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
                   <folding>
-                    <element signature="e#14#75#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="websockets.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/webserver/websockets.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="65">
-                  <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="main.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/main.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="23" lean-forward="false" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="postdb.go" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/tests/postgres/postdb.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="struct_websocket.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/structures/struct_websocket.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="136">
-                  <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="postgres.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/postgres/postgres.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="118">
-                  <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-                  <folding>
-                    <marker date="1496936474842" expanded="true" signature="1994:2096" ph="UPDATE \&quot;ord... " />
-                    <marker date="1496936474842" expanded="true" signature="2239:2330" ph="UPDATE \&quot;ord... " />
-                    <marker date="1496936474842" expanded="true" signature="2454:2542" ph="UPDATE \&quot;ord... " />
-                    <marker date="1496936474842" expanded="true" signature="2665:2727" ph="UPDATE \&quot;ord... " />
-                    <marker date="1496936474842" expanded="true" signature="3384:3424" ph="SELECT type order" />
-                    <marker date="1496936474842" expanded="true" signature="3555:3599" ph="SELECT org_h... order" />
-                    <marker date="1496936474842" expanded="true" signature="3731:3775" ph="SELECT paid_... order" />
-                    <marker date="1496936474842" expanded="true" signature="3898:4096" ph="select org_h... order" />
-                    <marker date="1496936474842" expanded="true" signature="3944:4010" ph="SELECT order... order_customer" />
-                    <marker date="1496936474842" expanded="true" signature="4230:4260" ph="SELECT count... order" />
-                    <marker date="1496936474842" expanded="true" signature="8889:8924" ph="DELETE FROM " />
-                    <marker date="1496936474842" expanded="true" signature="9283:9481" ph="INSERT INTO order_customer... " />
-                    <marker date="1496936474842" expanded="true" signature="9722:9905" ph="UPDATE order... " />
-                    <marker date="1496936474842" expanded="true" signature="10145:10301" ph="SELECT order... order_customer" />
-                    <marker date="1496936474842" expanded="true" signature="10434:10485" ph="SELECT note order_customer" />
-                    <marker date="1496936474842" expanded="true" signature="10628:10833" ph="SELECT DISTI... order_customer" />
-                    <marker date="1496936474842" expanded="true" signature="10970:11174" ph="SELECT DISTI... order_customer" />
-                    <marker date="1496936474842" expanded="true" signature="11855:12035" ph="SELECT order... order_customer" />
-                    <marker date="1496936474842" expanded="true" signature="12273:12317" ph="DELETE FROM " />
-                    <marker date="1496936474842" expanded="true" signature="16688:16719" ph="SELECT count... order_list" />
-                    <marker date="1496936474842" expanded="true" signature="16856:16948" ph="SELECT count... order_list" />
-                    <marker date="1496936474842" expanded="true" signature="17077:17142" ph="select count... order_list" />
-                    <marker date="1496936474842" expanded="true" signature="17260:17330" ph="select id_pa... order_list" />
-                    <marker date="1496936474842" expanded="true" signature="17471:17520" ph="SELECT count... order_list" />
-                    <marker date="1496936474842" expanded="true" signature="26472:26527" ph="DELETE FROM " />
-                    <marker date="1496936474842" expanded="true" signature="26637:26677" ph="DELETE FROM " />
-                    <marker date="1496936474842" expanded="true" signature="27527:27697" ph="SELECT order... order_personal" />
-                    <marker date="1496936474842" expanded="true" signature="28446:28658" ph="SELECT order... order_personal" />
-                    <marker date="1496936474842" expanded="true" signature="28788:28988" ph="SELECT order... order_personal" />
-                    <marker date="1496936474842" expanded="true" signature="29129:29262" ph="SELECT order... order_personal" />
-                    <marker date="1496936474842" expanded="true" signature="29506:29567" ph="DELETE FROM " />
-                    <marker date="1496936474842" expanded="true" signature="29693:29737" ph="DELETE FROM " />
-                    <marker date="1496936474842" expanded="true" signature="36913:37035" ph="SELECT id, o... order_status" />
-                    <marker date="1496936474842" expanded="true" signature="37175:37330" ph="SELECT id, o... order_status" />
-                    <marker date="1496936474842" expanded="true" signature="37511:37611" ph="select \&quot;tim... order_status" />
-                    <marker date="1496936474842" expanded="true" signature="37767:37845" ph="SELECT user_... order_status" />
-                    <marker date="1496936474842" expanded="true" signature="38324:38505" ph="SELECT id, o... order_status" />
-                    <marker date="1496936474842" expanded="true" signature="38652:38809" ph="SELECT id, o... order_status" />
-                    <marker date="1496936474842" expanded="true" signature="38966:39066" ph="SELECT statu... order_status" />
-                    <marker date="1496936474842" expanded="true" signature="39204:39373" ph="SELECT id, o... order_status" />
-                    <marker date="1496936474842" expanded="true" signature="39683:39732" ph="UPDATE \&quot;ord... " />
-                    <marker date="1496936474842" expanded="true" signature="39976:40025" ph="UPDATE \&quot;ord... " />
-                    <marker date="1496936474842" expanded="true" signature="40218:40267" ph="UPDATE \&quot;ord... " />
-                    <marker date="1496936474842" expanded="true" signature="42124:42165" ph="UPDATE cashb... " />
-                    <marker date="1496936474842" expanded="true" signature="42399:42595" ph="SELECT id, o... cashbox" />
-                    <marker date="1496936474842" expanded="true" signature="42734:42784" ph="SELECT SUM(d... cashbox" />
-                    <marker date="1496936474842" expanded="true" signature="45325:45610" ph="SELECT id, o... cashbox" />
-                    <marker date="1496936474842" expanded="true" signature="45744:45967" ph="SELECT id, o... cashbox" />
-                    <marker date="1496936474842" expanded="true" signature="46104:46304" ph="SELECT id, o... cashbox" />
-                    <marker date="1496936474842" expanded="true" signature="46956:47104" ph="select case " />
-                    <marker date="1496936474842" expanded="true" signature="46974:47025" ph="SELECT SUM(d... cashbox" />
-                    <marker date="1496936474842" expanded="true" signature="47048:47099" ph="SELECT SUM(d... cashbox" />
-                    <marker date="1496936474842" expanded="true" signature="47336:47367" ph="DELETE FROM " />
-                    <marker date="1496936474842" expanded="true" signature="47711:47760" ph="INSERT INTO status... " />
-                    <marker date="1496936474842" expanded="true" signature="47993:48030" ph="UPDATE statu... " />
-                    <marker date="1496936474842" expanded="true" signature="48263:48305" ph="SELECT id, n... status" />
-                    <marker date="1496936474842" expanded="true" signature="48428:48455" ph="SELECT id, n... status" />
-                    <marker date="1496936474842" expanded="true" signature="48686:48716" ph="DELETE FROM " />
-                    <marker date="1496936474842" expanded="true" signature="49072:49127" ph="INSERT INTO type_payment... " />
-                    <marker date="1496936474842" expanded="true" signature="49365:49408" ph="UPDATE type_... " />
-                    <marker date="1496936474842" expanded="true" signature="49646:49694" ph="SELECT id, n... type_payment" />
-                    <marker date="1496936474842" expanded="true" signature="49822:49855" ph="SELECT id, n... type_payment" />
-                    <marker date="1496936474842" expanded="true" signature="50091:50127" ph="DELETE FROM " />
-                    <marker date="1496936474842" expanded="true" signature="56663:56809" ph="SELECT id, u... " />
-                    <marker date="1496936474842" expanded="true" signature="56958:57190" ph="SELECT id, u... " />
-                    <marker date="1496936474842" expanded="true" signature="57331:57544" ph="SELECT id, u... " />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="controller.go" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/postgres/controller.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1019">
-                  <caret line="60" column="49" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="49" />
-                  <folding>
-                    <element signature="e#18#61#0" expanded="true" />
+                    <element signature="e#16#237#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -597,18 +109,18 @@
         <option value="$PROJECT_DIR$/webserver/templates/cook.txt" />
         <option value="$PROJECT_DIR$/conf/conf.go" />
         <option value="$PROJECT_DIR$/structures/struct_interfaces.go" />
-        <option value="$PROJECT_DIR$/structures/struct_transaction.go" />
         <option value="$PROJECT_DIR$/structures/structures.go" />
-        <option value="$PROJECT_DIR$/server/server.go" />
         <option value="$PROJECT_DIR$/structures/struct_function.go" />
-        <option value="$PROJECT_DIR$/webserver/websockets.go" />
-        <option value="$PROJECT_DIR$/structures/struct_websocket.go" />
         <option value="$PROJECT_DIR$/postgres/postgres.go" />
         <option value="$PROJECT_DIR$/client/client.go" />
         <option value="$PROJECT_DIR$/structures/serverclient.go" />
         <option value="$PROJECT_DIR$/webserver/webserver.go" />
-        <option value="$PROJECT_DIR$/webserver/webservfunctable.go" />
         <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/webserver/webservfunctable.go" />
+        <option value="$PROJECT_DIR$/structures/struct_transaction.go" />
+        <option value="$PROJECT_DIR$/structures/struct_websocket.go" />
+        <option value="$PROJECT_DIR$/server/server.go" />
+        <option value="$PROJECT_DIR$/webserver/websockets.go" />
       </list>
     </option>
   </component>
@@ -663,6 +175,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="webserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="order" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="order" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -752,8 +278,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08863275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08863275" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -805,7 +332,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="31" column="37" lean-forward="false" selection-start-line="31" selection-start-column="37" selection-end-line="31" selection-end-column="37" />
-          <folding />
+          <folding>
+            <element signature="e#19#166#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -897,7 +426,7 @@
         <state relative-caret-position="952">
           <caret line="60" column="49" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="49" />
           <folding>
-            <element signature="e#18#61#0" expanded="true" />
+            <element signature="e#18#61#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -906,7 +435,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2142">
           <caret line="142" column="31" lean-forward="true" selection-start-line="142" selection-start-column="31" selection-end-line="142" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="e#16#237#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -915,7 +446,7 @@
         <state relative-caret-position="595">
           <caret line="35" column="1" lean-forward="false" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
           <folding>
-            <element signature="e#18#31#0" expanded="true" />
+            <element signature="e#18#31#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -924,7 +455,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3740">
           <caret line="220" column="24" lean-forward="true" selection-start-line="220" selection-start-column="24" selection-end-line="220" selection-end-column="24" />
-          <folding />
+          <folding>
+            <element signature="e#20#188#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -971,7 +504,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2533">
           <caret line="164" column="96" lean-forward="false" selection-start-line="164" selection-start-column="96" selection-end-line="164" selection-end-column="96" />
-          <folding />
+          <folding>
+            <element signature="e#16#237#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -988,7 +523,7 @@
         <state relative-caret-position="238">
           <caret line="18" column="32" lean-forward="false" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
           <folding>
-            <element signature="e#18#61#0" expanded="true" />
+            <element signature="e#18#61#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1073,7 +608,7 @@
         <state relative-caret-position="119">
           <caret line="7" column="9" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="9" />
           <folding>
-            <element signature="e#18#31#0" expanded="true" />
+            <element signature="e#18#31#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1105,7 +640,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1751">
           <caret line="110" column="25" lean-forward="false" selection-start-line="110" selection-start-column="25" selection-end-line="110" selection-end-column="25" />
-          <folding />
+          <folding>
+            <element signature="e#20#188#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1189,7 +726,7 @@
         <state relative-caret-position="1019">
           <caret line="60" column="49" lean-forward="false" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="49" />
           <folding>
-            <element signature="e#18#61#0" expanded="true" />
+            <element signature="e#18#61#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1207,7 +744,7 @@
         <state relative-caret-position="34">
           <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
           <folding>
-            <element signature="e#18#31#0" expanded="true" />
+            <element signature="e#18#31#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1303,42 +840,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/structures/struct_function.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="18" lean-forward="false" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structures/serverclient.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structures/struct_interfaces.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structures/struct_transaction.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="18" lean-forward="false" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1359,30 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webserver/webservfunctable.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/structures/struct_websocket.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webserver/websockets.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1396,6 +877,72 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webserver/webservfunctable.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1006">
+          <caret line="376" column="63" lean-forward="false" selection-start-line="376" selection-start-column="26" selection-end-line="376" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structures/serverclient.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="67" column="33" lean-forward="true" selection-start-line="67" selection-start-column="33" selection-end-line="67" selection-end-column="33" />
+          <folding>
+            <element signature="e#20#146#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714">
+          <caret line="162" column="0" lean-forward="false" selection-start-line="162" selection-start-column="0" selection-end-line="162" selection-end-column="0" />
+          <folding>
+            <element signature="e#16#237#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structures/struct_transaction.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-275">
+          <caret line="572" column="61" lean-forward="false" selection-start-line="572" selection-start-column="61" selection-end-line="572" selection-end-column="61" />
+          <folding>
+            <element signature="e#20#188#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structures/struct_websocket.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="66" column="42" lean-forward="false" selection-start-line="66" selection-start-column="42" selection-end-line="66" selection-end-column="42" />
+          <folding>
+            <element signature="e#20#141#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/structures/struct_interfaces.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webserver/websockets.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1581">
+          <caret line="150" column="39" lean-forward="true" selection-start-line="150" selection-start-column="39" selection-end-line="150" selection-end-column="39" />
+          <folding>
+            <element signature="e#19#166#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

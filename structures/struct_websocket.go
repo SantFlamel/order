@@ -31,7 +31,7 @@ type ClientConn struct {
 	HashRole  string
 	IP        net.Addr
 	conn      *websocket.Conn
-	Send      chan []byte //message
+	Send      chan Message //message
 }
 
 func (c *ClientConn) SetConn(co *websocket.Conn) {
@@ -56,13 +56,15 @@ func (c *ClientConn) WritePump() {
 			if c.conn == nil {
 				return
 			}
-			c.conn.WriteMessage(1, message)
+			//c.conn.WriteMessage(1, message)
+			c.conn.WriteJSON(message)
 			n := len(c.Send)
 			for i := 0; i < n; i++ {
 				if c.conn == nil {
 					return
 				}
-				c.conn.WriteMessage(1, <-c.Send)
+				//c.conn.WriteMessage(1, <-c.Send)
+				c.conn.WriteJSON(<-c.Send)
 			}
 		case <-ticker.C:
 			c.conn.SetWriteDeadline(time.Now().Add(writeWait))

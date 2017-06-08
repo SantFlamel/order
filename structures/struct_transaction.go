@@ -10,6 +10,8 @@ import (
     "strconv"
     "project/order/conf"
     "log"
+    "strings"
+    "time"
 )
 
 //import "project/orders/structures"
@@ -312,6 +314,8 @@ func (st *StructTransact) Read() (Message,error) {
 	}
 	return m, nil
 }
+
+
 /*
 //----Чтение строк из базы данных
 func (st *StructTransact) ReadRows() (Message,error) {
@@ -379,7 +383,6 @@ func (st *StructTransact) Delete() (error) {
 }
 
 //----------------------------------------------------------------------------------------------------------------------
-
 func (st *StructTransact) messageToWebSocTrans(message *Message, buf_id interface{}) {
     cl := ClientList
     var err error
@@ -444,4 +447,190 @@ func (st *StructTransact) messageToWebSocTrans(message *Message, buf_id interfac
     }else {
         err = errors.New("Need more tables for messageToWebSocTrans")
     }
+}
+
+//----------------------------------------------------------------------------------------------------------------------
+//----Получение данных с других сервисов
+
+func (st *StructTransact) ServiceManager() (Message, error) {
+    var err error
+    var m Message
+    var t Table
+    var co ClientOrder
+    for _,table :=range st.Message.Tables{
+        //----Определяем сервис к которому будем обращаться
+        switch table.Name{
+        case "Printer":
+            st.Printer(&table)
+
+        case "Promotions":
+            co = ClientOrder{IP: conf.Config.TLS_serv_product}
+            t, err = st.getDateWithServicesRangeRead(&co,&table)
+
+        case "PromotionsTypes":
+            co = ClientOrder{IP: conf.Config.TLS_serv_product}
+            t, err = st.getDateWithServicesRangeRead(&co,&table)
+
+        case "ProductOrder":
+            co = ClientOrder{IP: conf.Config.TLS_serv_product}
+            t, err = st.getDateWithServicesRangeRead(&co,&table)
+
+        case "LocalTime":
+            //st.send([]byte(time.Now().String()[11:19]), nil)
+
+        case "ClientInfo":
+            co = ClientOrder{IP: conf.Config.TLS_serv_ClientInfo}
+            t, err = st.getDateWithServicesRangeRead(&co,&table)
+
+        case "ClientOrdersAddress":
+            co = ClientOrder{IP: conf.Config.TLS_serv_ClientInfo}
+            switch table.TypeParameter{
+            case "Range":
+                go st.getDateWithServicesRangeRead(&co,&table)
+            case "Value":
+                go st.getDateWithServicesValueRead(&co,&table)
+            }
+
+        case "Session":
+            co = ClientOrder{IP: conf.Config.TLS_serv_session}
+            t, err = st.getDateWithServicesRangeRead(&co,&table)
+
+        case "SessionInfo":
+            co = ClientOrder{IP: conf.Config.TLS_serv_session}
+            switch table.TypeParameter{
+            case "Range":
+                go st.getDateWithServicesRangeRead(&co,&table)
+            case "Value":
+                go st.getDateWithServicesValueRead(&co,&table)
+            }
+
+        case "Tabel":
+            co = ClientOrder{IP: conf.Config.TLS_serv_tabel}
+            st.getDateWithServicesValueRead(&co,&table)
+
+        case "GetAreas":
+            co = ClientOrder{IP: conf.Config.TLS_serv_areas}
+            st.getDateWithServicesRangeRead(&co,&table)
+
+        case "GetPoint":
+            co = ClientOrder{IP: conf.Config.TLS_serv_org}
+            st.getDateWithServicesRangeRead(&co,&table)
+        default:
+            err = errors.New("ser: ERROR NOT IDENTIFICATION TYPE SERVICES")
+
+        }
+        if err!=nil{
+            break
+        }
+        m.Tables = append(m.Tables, t)
+    }
+    return m, err
+}
+
+func (st *StructTransact) Printer(t *Table) error {
+    println("Printer", fmt.Sprint(t.Values))
+    printer := CHPrint{}
+    var err error
+    switch t.TypeParameter {
+    case "":
+        err = printer.Printer(t.Values...)
+
+    case "AllRange":
+        err = printer.PrintAllRange(t.Values...)
+
+
+    case "CountPriceWithDiscount":
+        err = printer.PrintCountPriceWithDiscount(t.Values...)
+    }
+
+    return err
+}
+
+func (st *StructTransact) getDateWithServicesValueRead(co *ClientOrder,t *Table) (Table,error) {
+    var n int
+    var err error
+    var messt Table
+    var inter interface{}
+    var listen []byte
+    for _,val := range t.Values {
+        co.MSG, err = json.Marshal(val)
+        if err!=nil{
+            return messt,err
+        }
+
+        err = co.Write()
+        //Если при отправки сообщения нет ошибок идем дальше
+        if err == nil && co.Conn != nil {
+            listen = make([]byte, 9999)
+
+            listen, n, err = co.Read()
+            if err == nil {
+                if string(listen[:2]) == "01" {
+                    err = json.Unmarshal(listen[3:n],&inter)
+                    if err != nil {
+                        return messt,err
+                    }
+                    messt.Values = append(messt.Values,inter)
+                } else {
+                    log.Println("tls: ERROR get message", co.Conn.RemoteAddr(), ":", listen[:n])
+                    return messt,errors.New("tls: ERROR get message "+co.Conn.RemoteAddr().String()+": "+string(listen[:n]))
+                }
+            }
+        }
+        if err != nil {
+            return messt,err
+        }
+    }
+    return messt,err
+}
+
+func (st *StructTransact) getDateWithServicesRangeRead(co *ClientOrder,t *Table) (Table,error) {
+    var n int
+    var err error
+    var messt Table
+    var inter interface{}
+    var listen []byte
+    for _,val := range t.Values {
+        co.MSG, err = json.Marshal(val)
+        if err!=nil{
+            return messt,err
+        }
+
+        err = co.Write()
+        //Если при отправки сообщения нет ошибок идем дальше
+        if err == nil && co.Conn != nil {
+            for {
+                listen = make([]byte, 9999)
+
+                listen, n, err = co.Read()
+                if err == nil {
+                    if strings.ToUpper(strings.TrimSpace(string(listen[:n]))) == "01:EOF" {
+                        println("+++++++++++++++")
+                        println("BREAK")
+                        println("---------------")
+
+                        break
+                    }
+
+                    if string(listen[:2]) == "01" {
+                        err = json.Unmarshal(listen[3:n],&inter)
+                        if err != nil {
+                            return messt,err
+                        }
+                        messt.Values = append(messt.Values,inter)
+                    } else {
+                        log.Println("tls: ERROR get message", co.Conn.RemoteAddr(), ":", listen[:n])
+                        return messt,errors.New("tls: ERROR get message "+co.Conn.RemoteAddr().String()+": "+string(listen[:n]))
+                    }
+                }
+
+                time.Sleep(10)
+            }
+        }
+        if err != nil {
+            return messt,err
+        }
+    }
+
+    return messt,err
 }

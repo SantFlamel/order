@@ -142,6 +142,8 @@ func (c *ClientTLS) handleClient() {
 		case "Delete":
 			err = sttr.Delete()
 			//c.message.Tables = nil
+		case "Services":
+			c.message,err = sttr.ServiceManager()
 		default:
 			err = errors.New("NOT IDENTIFICATION QUERY")
 		}
