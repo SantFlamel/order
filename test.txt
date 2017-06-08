@@ -1,0 +1,66 @@
+69 пиццы
+
+type ProductOrder struct {
+    Price_id    int64
+    PriceName   string
+    Type_id     int64
+    TypeName    string
+    Parent_id   int64
+    ParentName  string
+    Image       string
+    Units       string //единицы
+    Value       float64 //вес
+    Set         bool
+    Price       float64
+    TimeCook    int64
+    TimeFry     int64
+}
+
+//Order Product read
+if true {
+fmt.Println("\n\n--------------— ProductOrder —--------------------")
+fmt.Scanf("%f\n", &inputSquare)
+
+i := 0
+
+PO := structures.ProductOrder{}
+
+Q := structures.QueryMessage{
+Table: "ProductOrder",
+Query: "Read"}
+Q.Values = append(Q.Values, "69")
+
+Bytes1, _ := json.Marshal(Q)
+
+message := string(Bytes1)
+send([]byte(message), conn)
+
+t1 = time.Now()
+
+for {
+n, err = conn.Read(reply) //ожидание ответа
+i++
+id := reply[0:2]
+mes := reply[3:n]
+
+if string(id) == "00" {
+fmt.Println("Error:", string(mes))
+break
+}
+if string(mes) == "EOF" {
+break
+}
+json.Unmarshal([]byte(mes), &PO)
+fmt.Println(i, "YES: ", PO)
+}
+
+t2 = time.Now()
+fmt.Println(t2.Sub(t1))
+}
+
+imax<=f.MaxOrder 0 2 true
+f.Distance < 1000 true
+f.Distance < minF +1.877700e+002 +1.797693e+308 true
+f.LastActiveTime.Unix() < t.Unix() 1493038507 1493038507 true
+false
+

@@ -1,0 +1,397 @@
+2017-06-07 06:34:47 - 
+2017-06-07 06:34:47 - _______NEW_START_OF_SERVER_______
+2017-06-07 06:34:47 - [GIN-debug] Loaded HTML Templates (4): 
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+	- operator.html
+
+2017-06-07 06:34:47 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 06:34:47 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 06:34:47 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 06:34:47 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 06:34:47 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 06:34:47 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 06:34:47 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 06:34:47 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 06:34:47 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 06:34:47 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 06:34:47 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 06:38:30 - 
+2017-06-07 06:38:30 - _______NEW_START_OF_SERVER_______
+2017-06-07 06:38:30 - [GIN-debug] Loaded HTML Templates (4): 
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+	- operator.html
+
+2017-06-07 06:38:30 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 06:38:30 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 06:38:30 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 06:38:30 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 06:38:30 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 06:38:30 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 06:38:30 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 06:38:30 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 06:38:30 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 06:38:30 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 06:38:30 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 06:40:31 - 
+2017-06-07 06:40:31 - _______NEW_START_OF_SERVER_______
+2017-06-07 06:40:31 - [GIN-debug] Loaded HTML Templates (4): 
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+	- operator.html
+
+2017-06-07 06:40:31 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 06:40:31 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 06:40:31 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 06:40:31 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 06:40:31 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 06:40:31 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 06:40:31 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 06:40:31 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 06:40:31 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 06:40:31 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 06:40:31 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 06:40:55 - sql: no rows in result set
+2017-06-07 06:49:36 - 
+2017-06-07 06:49:36 - _______NEW_START_OF_SERVER_______
+2017-06-07 06:49:36 - [GIN-debug] Loaded HTML Templates (4): 
+	- operator.html
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+
+2017-06-07 06:49:36 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 06:49:36 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 06:49:36 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 06:49:36 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 06:49:36 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 06:49:36 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 06:49:36 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 06:49:36 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 06:49:36 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 06:49:36 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 06:49:36 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 06:49:45 - sql: no rows in result set
+2017-06-07 07:21:45 - 
+2017-06-07 07:21:45 - _______NEW_START_OF_SERVER_______
+2017-06-07 07:21:45 - [GIN-debug] Loaded HTML Templates (4): 
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+	- operator.html
+
+2017-06-07 07:21:45 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 07:21:45 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 07:21:45 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 07:21:45 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 07:21:45 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 07:21:45 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 07:21:45 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 07:21:45 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 07:21:45 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 07:21:45 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 07:21:45 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 07:21:54 - sql: no rows in result set
+2017-06-07 07:27:35 - 
+2017-06-07 07:27:35 - _______NEW_START_OF_SERVER_______
+2017-06-07 07:27:35 - [GIN-debug] Loaded HTML Templates (4): 
+	- operator.html
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+
+2017-06-07 07:27:35 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 07:27:35 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 07:27:35 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 07:27:35 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 07:27:35 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 07:27:35 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 07:27:35 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 07:27:35 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 07:27:35 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 07:27:35 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 07:27:35 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 07:29:06 - 
+2017-06-07 07:29:06 - _______NEW_START_OF_SERVER_______
+2017-06-07 07:29:06 - [GIN-debug] Loaded HTML Templates (4): 
+	- index.html
+	- operator.html
+	- cassir.html
+	- sushimaker-list.html
+
+2017-06-07 07:29:06 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 07:29:06 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 07:29:06 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 07:29:06 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 07:29:06 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 07:29:06 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 07:29:06 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 07:29:06 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 07:29:06 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 07:29:06 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 07:29:06 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 07:29:15 - sql: no rows in result set
+2017-06-07 07:52:12 - sql: no rows in result set
+2017-06-07 07:52:12 - sql: no rows in result set
+2017-06-07 07:52:33 - client:  dial tcp 192.168.0.132:449: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2017-06-07 07:52:33 - dial tcp 192.168.0.132:449: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2017-06-07 07:52:33 - sql: no rows in result set
+2017-06-07 07:52:54 - client:  dial tcp 192.168.0.132:449: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2017-06-07 07:52:54 - dial tcp 192.168.0.132:449: connectex: A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond.
+2017-06-07 07:52:54 - sql: no rows in result set
+2017-06-07 07:54:31 - 
+2017-06-07 07:54:31 - _______NEW_START_OF_SERVER_______
+2017-06-07 07:54:31 - [GIN-debug] Loaded HTML Templates (4): 
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+	- operator.html
+
+2017-06-07 07:54:31 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 07:54:31 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 07:54:31 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 07:54:31 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 07:54:31 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 07:54:31 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 07:54:31 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 07:54:31 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 07:54:31 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 07:54:31 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 07:54:31 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 07:54:52 - sql: no rows in result set
+2017-06-07 08:10:04 - 
+2017-06-07 08:10:04 - _______NEW_START_OF_SERVER_______
+2017-06-07 08:10:04 - [GIN-debug] Loaded HTML Templates (4): 
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+	- operator.html
+
+2017-06-07 08:10:04 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 08:10:04 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 08:10:04 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 08:10:04 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 08:10:04 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 08:10:04 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 08:10:04 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 08:10:04 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 08:10:04 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:10:04 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:10:04 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 08:14:50 - 
+2017-06-07 08:14:50 - _______NEW_START_OF_SERVER_______
+2017-06-07 08:14:50 - [GIN-debug] Loaded HTML Templates (4): 
+	- operator.html
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+
+2017-06-07 08:14:50 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 08:14:50 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 08:14:50 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 08:14:50 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 08:14:50 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 08:14:50 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 08:14:50 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 08:14:50 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 08:14:50 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:14:50 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:14:50 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 08:15:07 - sql: no rows in result set
+2017-06-07 08:15:45 - sql: no rows in result set
+2017-06-07 08:17:02 - 
+2017-06-07 08:17:02 - _______NEW_START_OF_SERVER_______
+2017-06-07 08:17:02 - [GIN-debug] Loaded HTML Templates (4): 
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+	- operator.html
+
+2017-06-07 08:17:02 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 08:17:02 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 08:17:02 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 08:17:02 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 08:17:02 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 08:17:02 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 08:17:02 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 08:17:02 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 08:17:02 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:17:02 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:17:02 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 08:17:24 - sql: no rows in result set
+2017-06-07 08:18:40 - 
+2017-06-07 08:18:40 - _______NEW_START_OF_SERVER_______
+2017-06-07 08:18:40 - [GIN-debug] Loaded HTML Templates (4): 
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+	- operator.html
+
+2017-06-07 08:18:40 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 08:18:40 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 08:18:40 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 08:18:40 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 08:18:40 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 08:18:40 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 08:18:40 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 08:18:40 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 08:18:40 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:18:40 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:18:40 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 08:18:57 - sql: no rows in result set
+2017-06-07 08:32:20 - 
+2017-06-07 08:32:20 - _______NEW_START_OF_SERVER_______
+2017-06-07 08:32:20 - [GIN-debug] Loaded HTML Templates (4): 
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+	- operator.html
+
+2017-06-07 08:32:20 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 08:32:20 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 08:32:20 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 08:32:20 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 08:32:20 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 08:32:20 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 08:32:20 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 08:32:20 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 08:32:20 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:32:20 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:32:20 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 08:36:42 - 
+2017-06-07 08:36:42 - _______NEW_START_OF_SERVER_______
+2017-06-07 08:36:42 - [GIN-debug] Loaded HTML Templates (4): 
+	- index.html
+	- operator.html
+	- cassir.html
+	- sushimaker-list.html
+
+2017-06-07 08:36:42 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 08:36:42 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 08:36:42 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 08:36:42 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 08:36:42 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 08:36:42 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 08:36:42 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 08:36:42 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 08:36:42 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:36:42 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:36:42 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 08:37:39 - 
+2017-06-07 08:37:39 - _______NEW_START_OF_SERVER_______
+2017-06-07 08:37:39 - [GIN-debug] Loaded HTML Templates (4): 
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+	- operator.html
+
+2017-06-07 08:37:39 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 08:37:39 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 08:37:39 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 08:37:39 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 08:37:39 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 08:37:39 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 08:37:39 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 08:37:39 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 08:37:39 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:37:39 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:37:39 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 08:41:07 - 
+2017-06-07 08:41:07 - _______NEW_START_OF_SERVER_______
+2017-06-07 08:41:07 - [GIN-debug] Loaded HTML Templates (4): 
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+	- operator.html
+
+2017-06-07 08:41:07 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 08:41:07 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 08:41:07 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 08:41:07 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 08:41:07 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 08:41:07 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 08:41:07 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 08:41:07 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 08:41:07 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:41:07 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:41:07 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 08:44:22 - 
+2017-06-07 08:44:22 - _______NEW_START_OF_SERVER_______
+2017-06-07 08:44:22 - [GIN-debug] Loaded HTML Templates (4): 
+	- index.html
+	- operator.html
+	- cassir.html
+	- sushimaker-list.html
+
+2017-06-07 08:44:22 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 08:44:22 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 08:44:22 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 08:44:22 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 08:44:22 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 08:44:22 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 08:44:22 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 08:44:22 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 08:44:22 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:44:22 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:44:22 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 08:46:34 - 
+2017-06-07 08:46:34 - _______NEW_START_OF_SERVER_______
+2017-06-07 08:46:34 - [GIN-debug] Loaded HTML Templates (4): 
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+	- operator.html
+
+2017-06-07 08:46:34 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 08:46:34 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 08:46:34 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 08:46:34 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 08:46:34 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 08:46:34 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 08:46:34 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 08:46:34 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 08:46:34 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:46:34 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:46:34 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 08:48:17 - 
+2017-06-07 08:48:17 - _______NEW_START_OF_SERVER_______
+2017-06-07 08:48:17 - [GIN-debug] Loaded HTML Templates (4): 
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+	- operator.html
+
+2017-06-07 08:48:17 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 08:48:17 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 08:48:17 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 08:48:17 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 08:48:17 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 08:48:17 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 08:48:17 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 08:48:17 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 08:48:17 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:48:17 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:48:17 - [GIN-debug] Listening and serving HTTP on :80
+2017-06-07 08:49:37 - 
+2017-06-07 08:49:37 - _______NEW_START_OF_SERVER_______
+2017-06-07 08:49:37 - [GIN-debug] Loaded HTML Templates (4): 
+	- cassir.html
+	- sushimaker-list.html
+	- index.html
+	- operator.html
+
+2017-06-07 08:49:37 - [GIN-debug] GET    /ws                       --> project/orders/webserver.RegisterRoutes.func1 (3 handlers)
+2017-06-07 08:49:37 - [GIN-debug] GET    /                         --> project/orders/webserver.RegisterRoutes.func2 (3 handlers)
+2017-06-07 08:49:37 - [GIN-debug] GET    /cook.sheldon/            --> project/orders/webserver.RegisterRoutes.func3 (3 handlers)
+2017-06-07 08:49:37 - [GIN-debug] GET    /cassir/                  --> project/orders/webserver.RegisterRoutes.func4 (3 handlers)
+2017-06-07 08:49:37 - [GIN-debug] GET    /operator/                --> project/orders/webserver.RegisterRoutes.func5 (3 handlers)
+2017-06-07 08:49:37 - [GIN-debug] GET    /cook/                    --> project/orders/webserver.RegisterRoutes.func6 (3 handlers)
+2017-06-07 08:49:37 - [GIN-debug] POST   /poststruct/              --> project/orders/webserver.RegisterRoutes.func7 (3 handlers)
+2017-06-07 08:49:37 - [GIN-debug] POST   /                         --> project/orders/webserver.RegisterRoutes.func8 (3 handlers)
+2017-06-07 08:49:37 - [GIN-debug] GET    /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:49:37 - [GIN-debug] HEAD   /public/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+2017-06-07 08:49:37 - [GIN-debug] Listening and serving HTTP on :80

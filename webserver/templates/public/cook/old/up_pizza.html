@@ -1,0 +1,39 @@
+<html lang="ru">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="icon" type="image/png" href="public/image/favicon.png">
+    <link rel="stylesheet" href="public/css/bootstrap.css">
+    <link rel="stylesheet" href="public/css/mystylecss.css">
+    <link rel="stylesheet" href="public/css/media.css">
+    <title>Панель управления</title>
+</head>
+
+<body onload="startTimer()">
+
+<div class="container-fluid" style="height: 100%">
+
+    <header class="row page_header">
+        <div class="col-xs-4 col-sm-4 text-left">
+            <img src="public/image/cloud.png" alt=""> YAPOKI IS
+        </div>
+        <div class="col-xs-8 col-sm-4 text-center">
+            <span id="doc_time" class="font_blue"></span>
+            <span id="doc_date"></span>
+        </div>
+        <div class="col-xs-12 col-sm-4 text-right font_blue">
+            <div class="treker">
+                Трекер:
+                <select id="treker" class="dropdown-toggle font_blue">
+                    <option value="pizzamaker-raskat.html">Раскатка</option>
+                    <option value="pizzamaker-nachinka.html">Начинение</option>
+                    <option value="pizzamaker-upakovka.html">Упаковка</option>
+                </select>
+            </div>
+            <a href="#" class="btn change-traker">Смена трекера</a>
+            <button type="submit" class="btn btn-link font_blue" name="btnExit">Выйти
+            </button>
+
+        </div>
+    </header>

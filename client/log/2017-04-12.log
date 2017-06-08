@@ -1,0 +1,94 @@
+2017/04/12 13:58:49 _______NEW_START_OF_SERVER_______
+2017/04/12 13:58:49 Postgresql running!
+2017/04/12 13:59:25 _______NEW_START_OF_SERVER_______
+2017/04/12 13:59:25 Postgresql running!
+2017/04/12 13:59:25 client: connected to:  127.0.0.1:66
+2017/04/12 13:59:25 client: handshake:  true
+2017/04/12 13:59:25 client: mutual:  true
+2017/04/12 13:59:40 EOF
+2017/04/12 14:00:46 _______NEW_START_OF_SERVER_______
+2017/04/12 14:00:46 Postgresql running!
+2017/04/12 14:00:46 client: connected to:  127.0.0.1:66
+2017/04/12 14:00:46 client: handshake:  true
+2017/04/12 14:00:46 client: mutual:  true
+2017/04/12 14:00:57 _______NEW_START_OF_SERVER_______
+2017/04/12 14:00:57 Postgresql running!
+2017/04/12 14:00:57 client: connected to:  127.0.0.1:66
+2017/04/12 14:00:57 client: handshake:  true
+2017/04/12 14:00:57 client: mutual:  true
+2017/04/12 14:02:20 _______NEW_START_OF_SERVER_______
+2017/04/12 14:02:20 Postgresql running!
+2017/04/12 14:02:20 client: connected to:  127.0.0.1:66
+2017/04/12 14:02:20 client: handshake:  true
+2017/04/12 14:02:20 client: mutual:  true
+2017/04/12 14:03:19 _______NEW_START_OF_SERVER_______
+2017/04/12 14:03:19 Postgresql running!
+2017/04/12 14:03:19 client: connected to:  127.0.0.1:66
+2017/04/12 14:03:19 client: handshake:  true
+2017/04/12 14:03:19 client: mutual:  true
+2017/04/12 14:05:33 _______NEW_START_OF_SERVER_______
+2017/04/12 14:05:33 Postgresql running!
+2017/04/12 14:05:33 client: connected to:  127.0.0.1:66
+2017/04/12 14:05:33 client: handshake:  true
+2017/04/12 14:05:33 client: mutual:  true
+2017/04/12 14:06:06 _______NEW_START_OF_SERVER_______
+2017/04/12 14:06:06 Postgresql running!
+2017/04/12 14:06:06 client: connected to:  127.0.0.1:66
+2017/04/12 14:06:06 client: handshake:  true
+2017/04/12 14:06:06 client: mutual:  true
+2017/04/12 14:06:43 _______NEW_START_OF_SERVER_______
+2017/04/12 14:06:43 Postgresql running!
+2017/04/12 14:06:43 client: connected to:  127.0.0.1:66
+2017/04/12 14:06:43 client: handshake:  true
+2017/04/12 14:06:43 client: mutual:  true
+2017/04/12 14:35:23 _______NEW_START_OF_SERVER_______
+2017/04/12 14:35:23 Postgresql running!
+2017/04/12 14:35:23 client: connected to:  127.0.0.1:66
+2017/04/12 14:35:23 client: handshake:  true
+2017/04/12 14:35:23 client: mutual:  true
+2017/04/12 14:35:23 EOF
+2017/04/12 14:37:05 _______NEW_START_OF_SERVER_______
+2017/04/12 14:37:05 Postgresql running!
+2017/04/12 14:37:05 client: connected to:  127.0.0.1:66
+2017/04/12 14:37:05 client: handshake:  true
+2017/04/12 14:37:05 client: mutual:  true
+2017/04/12 14:37:05 EOF
+2017/04/12 14:37:09 _______NEW_START_OF_SERVER_______
+2017/04/12 14:37:09 Postgresql running!
+2017/04/12 14:37:09 client: connected to:  127.0.0.1:66
+2017/04/12 14:37:09 client: handshake:  true
+2017/04/12 14:37:09 client: mutual:  true
+2017/04/12 14:37:16 _______NEW_START_OF_SERVER_______
+2017/04/12 14:37:16 Postgresql running!
+2017/04/12 14:37:16 client: connected to:  127.0.0.1:66
+2017/04/12 14:37:16 client: handshake:  true
+2017/04/12 14:37:16 client: mutual:  true
+2017/04/12 14:37:16 EOF
+2017/04/12 14:37:26 _______NEW_START_OF_SERVER_______
+2017/04/12 14:37:26 Postgresql running!
+2017/04/12 14:37:26 client: connected to:  127.0.0.1:66
+2017/04/12 14:37:26 client: handshake:  true
+2017/04/12 14:37:26 client: mutual:  true
+2017/04/12 14:37:26 EOF
+2017/04/12 14:37:43 _______NEW_START_OF_SERVER_______
+2017/04/12 14:37:43 Postgresql running!
+2017/04/12 14:37:43 client: connected to:  127.0.0.1:66
+2017/04/12 14:37:43 client: handshake:  true
+2017/04/12 14:37:43 client: mutual:  true
+2017/04/12 14:37:46 _______NEW_START_OF_SERVER_______
+2017/04/12 14:37:46 Postgresql running!
+2017/04/12 14:37:46 client: connected to:  127.0.0.1:66
+2017/04/12 14:37:46 client: handshake:  true
+2017/04/12 14:37:46 client: mutual:  true
+2017/04/12 14:37:49 _______NEW_START_OF_SERVER_______
+2017/04/12 14:37:49 Postgresql running!
+2017/04/12 14:37:49 client: connected to:  127.0.0.1:66
+2017/04/12 14:37:49 client: handshake:  true
+2017/04/12 14:37:49 client: mutual:  true
+2017/04/12 14:37:49 EOF
+2017/04/12 14:37:59 _______NEW_START_OF_SERVER_______
+2017/04/12 14:37:59 Postgresql running!
+2017/04/12 14:37:59 client: connected to:  127.0.0.1:66
+2017/04/12 14:37:59 client: handshake:  true
+2017/04/12 14:37:59 client: mutual:  true
+2017/04/12 14:37:59 EOF

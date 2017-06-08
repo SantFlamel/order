@@ -1,0 +1,475 @@
+2016/10/28 13:47:44 ___________________________
+2016/10/28 13:47:44 Logfile enabled, log start!
+2016/10/28 13:47:44 Postgresql running!
+2016/10/28 13:47:44 Config file not found!:open or.conf: no such file or directory
+2016/10/28 13:50:28 ___________________________
+2016/10/28 13:50:28 Logfile enabled, log start!
+2016/10/28 13:50:28 Postgresql running!
+2016/10/28 13:50:28 Config file not found!:open or.conf: no such file or directory
+2016/10/28 13:50:37 ___________________________
+2016/10/28 13:50:37 Logfile enabled, log start!
+2016/10/28 13:50:37 Postgresql running!
+2016/10/28 13:50:37 Config file not found!:open or.conf: no such file or directory
+2016/10/28 13:51:30 ___________________________
+2016/10/28 13:51:30 Logfile enabled, log start!
+2016/10/28 13:51:30 Postgresql running!
+2016/10/28 13:51:43 EOF
+2016/10/28 13:52:36 EOF
+2016/10/28 13:56:00 EOF
+2016/10/28 15:21:03 ___________________________
+2016/10/28 15:21:03 Logfile enabled, log start!
+2016/10/28 15:21:03 Postgresql running!
+2016/10/28 15:21:20 EOF
+2016/10/28 15:29:07 ___________________________
+2016/10/28 15:29:07 Logfile enabled, log start!
+2016/10/28 15:29:07 Postgresql running!
+2016/10/28 15:29:17 EOF
+2016/10/28 15:29:40 EOF
+2016/10/28 15:31:24 EOF
+2016/10/28 15:31:37 ___________________________
+2016/10/28 15:31:37 Logfile enabled, log start!
+2016/10/28 15:31:37 Postgresql running!
+2016/10/28 15:32:06 EOF
+2016/10/28 15:33:33 ___________________________
+2016/10/28 15:33:33 Logfile enabled, log start!
+2016/10/28 15:33:33 Postgresql running!
+2016/10/28 15:33:39 EOF
+2016/10/28 15:53:57 ___________________________
+2016/10/28 15:53:57 Logfile enabled, log start!
+2016/10/28 15:53:57 Postgresql running!
+2016/10/28 15:54:15 EOF
+2016/10/28 16:03:34 EOF
+2016/10/28 16:06:10 ERROR:UPDATE_DISCOUNT Missmatch request!
+2016/10/28 16:06:10 EOF
+2016/10/28 16:17:15 EOF
+2016/10/28 16:22:16 ___________________________
+2016/10/28 16:22:16 Logfile enabled, log start!
+2016/10/28 16:22:16 Postgresql running!
+2016/10/28 16:22:22 EOF
+2016/10/28 16:25:59 EOF
+2016/10/28 17:35:14 EOF
+2016/10/28 17:36:09 remote error: internal error
+2016/10/28 17:36:20 EOF
+2016/10/31 09:43:18 ___________________________
+2016/10/31 09:43:18 Logfile enabled, log start!
+2016/10/31 09:43:18 Postgresql running!
+2016/10/31 09:45:16 EOF
+2016/10/31 09:56:06 ___________________________
+2016/10/31 09:56:06 Logfile enabled, log start!
+2016/10/31 09:56:06 Postgresql running!
+2016/10/31 09:56:21 EOF
+2016/10/31 11:31:17 ___________________________
+2016/10/31 11:31:17 Logfile enabled, log start!
+2016/10/31 11:31:17 Postgresql running!
+2016/10/31 11:34:59 EOF
+2016/10/31 12:06:47 ___________________________
+2016/10/31 12:06:47 Logfile enabled, log start!
+2016/10/31 12:06:47 Postgresql running!
+2016/10/31 12:06:53 EOF
+2016/10/31 12:07:59 ___________________________
+2016/10/31 12:07:59 Logfile enabled, log start!
+2016/10/31 12:07:59 Postgresql running!
+2016/10/31 12:08:04 EOF
+2016/10/31 12:38:45 remote error: internal error
+2016/10/31 12:39:03 ___________________________
+2016/10/31 12:39:03 Logfile enabled, log start!
+2016/10/31 12:39:03 Postgresql running!
+2016/10/31 12:39:09 EOF
+2016/10/31 12:54:49 ___________________________
+2016/10/31 12:54:49 Logfile enabled, log start!
+2016/10/31 12:54:49 Postgresql running!
+2016/10/31 12:54:54 EOF
+2016/10/31 12:55:00 EOF
+2016/10/31 13:07:57 EOF
+2016/10/31 13:18:31 EOF
+2016/10/31 13:19:27 ERROR: UPDATE TABLE Order - pq: invalid input value for enum statusorder: "Доставлено"
+2016/10/31 13:19:27 EOF
+2016/10/31 13:20:12 EOF
+2016/10/31 15:35:24 ___________________________
+2016/10/31 15:35:24 Logfile enabled, log start!
+2016/10/31 15:35:24 Postgresql running!
+2016/10/31 16:00:15 EOF
+2016/10/31 16:46:26 remote error: internal error
+2016/10/31 16:46:33 ERROR: FOR ORDER NOT IDENTIFICATION TYPE QUERY - 
+2016/10/31 16:46:33 EOF
+2016/10/31 16:46:56 ___________________________
+2016/10/31 16:46:56 Logfile enabled, log start!
+2016/10/31 16:46:56 Postgresql running!
+2016/10/31 16:47:04 ERROR: FOR ORDER NOT IDENTIFICATION TYPE QUERY - 
+2016/10/31 16:47:04 EOF
+2016/10/31 17:02:07 ___________________________
+2016/10/31 17:02:07 Logfile enabled, log start!
+2016/10/31 17:02:07 Postgresql running!
+2016/10/31 17:02:14 EOF
+2016/10/31 17:07:58 EOF
+2016/10/31 17:09:49 EOF
+2016/10/31 17:10:05 EOF
+2016/10/31 17:10:47 EOF
+2016/10/31 17:11:19 EOF
+2016/10/31 17:25:12 ___________________________
+2016/10/31 17:25:12 Logfile enabled, log start!
+2016/10/31 17:25:12 Postgresql running!
+2016/10/31 17:25:29 ERROR: READ TABLE 'Order', QUERY 'TypeEnum' - sql: Scan error on column index 0: converting driver.Value type []uint8 ("{Доставка,Самовывоз}") to a int: invalid syntax
+2016/10/31 17:25:29 EOF
+2016/10/31 17:28:39 ___________________________
+2016/10/31 17:28:39 Logfile enabled, log start!
+2016/10/31 17:28:39 Postgresql running!
+2016/10/31 17:28:49 EOF
+2016/10/31 17:55:02 ___________________________
+2016/10/31 17:55:02 Logfile enabled, log start!
+2016/10/31 17:55:02 Postgresql running!
+2016/10/31 17:55:11 EOF
+2016/10/31 17:55:43 EOF
+2016/11/01 09:30:36 ___________________________
+2016/11/01 09:30:36 Logfile enabled, log start!
+2016/11/01 09:30:36 Postgresql running!
+2016/11/01 09:30:47 EOF
+2016/11/01 09:31:53 ___________________________
+2016/11/01 09:31:53 Logfile enabled, log start!
+2016/11/01 09:31:53 Postgresql running!
+2016/11/01 09:32:00 EOF
+2016/11/01 09:36:00 EOF
+2016/11/01 09:36:27 EOF
+2016/11/01 09:37:10 EOF
+2016/11/01 09:37:25 EOF
+2016/11/01 09:38:27 EOF
+2016/11/01 09:40:52 EOF
+2016/11/01 09:41:49 EOF
+2016/11/01 09:43:40 ___________________________
+2016/11/01 09:43:40 Logfile enabled, log start!
+2016/11/01 09:43:40 Postgresql running!
+2016/11/01 09:43:57 ___________________________
+2016/11/01 09:43:57 Logfile enabled, log start!
+2016/11/01 09:43:57 Postgresql running!
+2016/11/01 09:44:03 EOF
+2016/11/01 10:26:23 ___________________________
+2016/11/01 10:26:23 Logfile enabled, log start!
+2016/11/01 10:26:23 Postgresql running!
+2016/11/01 10:27:46 EOF
+2016/11/01 10:28:02 EOF
+2016/11/01 10:34:14 ___________________________
+2016/11/01 10:34:14 Logfile enabled, log start!
+2016/11/01 10:34:14 Postgresql running!
+2016/11/01 10:34:23 EOF
+2016/11/01 10:35:29 EOF
+2016/11/01 10:41:22 ___________________________
+2016/11/01 10:41:22 Logfile enabled, log start!
+2016/11/01 10:41:22 Postgresql running!
+2016/11/01 10:41:31 EOF
+2016/11/01 10:44:02 ___________________________
+2016/11/01 10:44:02 Logfile enabled, log start!
+2016/11/01 10:44:02 Postgresql running!
+2016/11/01 10:44:12 EOF
+2016/11/01 10:44:48 remote error: internal error
+2016/11/01 10:44:55 EOF
+2016/11/01 10:45:58 EOF
+2016/11/01 10:59:03 ___________________________
+2016/11/01 10:59:03 Logfile enabled, log start!
+2016/11/01 10:59:03 Postgresql running!
+2016/11/01 11:01:26 EOF
+2016/11/01 11:11:44 ___________________________
+2016/11/01 11:11:44 Logfile enabled, log start!
+2016/11/01 11:11:44 Postgresql running!
+2016/11/01 11:11:51 EOF
+2016/11/01 11:12:58 EOF
+2016/11/01 11:14:50 EOF
+2016/11/01 11:14:58 ___________________________
+2016/11/01 11:14:58 Logfile enabled, log start!
+2016/11/01 11:14:58 Postgresql running!
+2016/11/01 11:15:04 EOF
+2016/11/01 11:15:23 EOF
+2016/11/01 11:15:34 EOF
+2016/11/01 11:23:27 ___________________________
+2016/11/01 11:23:27 Logfile enabled, log start!
+2016/11/01 11:23:27 Postgresql running!
+2016/11/01 11:23:32 EOF
+2016/11/01 11:23:50 EOF
+2016/11/01 11:24:02 EOF
+2016/11/01 15:41:14 ___________________________
+2016/11/01 15:41:14 Logfile enabled, log start!
+2016/11/01 15:41:14 Postgresql running!
+2016/11/01 15:42:03 EOF
+2016/11/01 15:43:36 EOF
+2016/11/01 16:08:12 EOF
+2016/11/01 16:08:30 EOF
+2016/11/01 17:43:03 ___________________________
+2016/11/01 17:43:03 Logfile enabled, log start!
+2016/11/01 17:43:03 Postgresql running!
+2016/11/01 17:43:12 ERROR: DELETE TABLE Order - Missmatch request!
+2016/11/01 17:45:26 ___________________________
+2016/11/01 17:45:26 Logfile enabled, log start!
+2016/11/01 17:45:26 Postgresql running!
+2016/11/01 17:45:33 ERROR: DELETE TABLE Order - Missmatch request!
+2016/11/01 17:45:33 EOF
+2016/11/01 17:46:31 ERROR: DELETE TABLE Order - Missmatch request!
+2016/11/01 17:46:31 EOF
+2016/11/01 17:51:09 ___________________________
+2016/11/01 17:51:09 Logfile enabled, log start!
+2016/11/01 17:51:09 Postgresql running!
+2016/11/01 17:51:33 ___________________________
+2016/11/01 17:51:33 Logfile enabled, log start!
+2016/11/01 17:51:33 Postgresql running!
+2016/11/01 17:51:41 ERROR: DELETE TABLE Order - sql: expected 2 arguments, got 1
+2016/11/01 17:51:41 EOF
+2016/11/01 17:52:58 ___________________________
+2016/11/01 17:52:58 Logfile enabled, log start!
+2016/11/01 17:52:58 Postgresql running!
+2016/11/01 17:53:17 EOF
+2016/11/01 17:55:17 EOF
+2016/11/02 09:41:56 ___________________________
+2016/11/02 09:41:56 Logfile enabled, log start!
+2016/11/02 09:41:56 Postgresql running!
+2016/11/02 09:58:02 ERROR: FOR DISCOUNT NOT IDENTIFICATION TYPE QUERY
+2016/11/02 09:58:02 EOF
+2016/11/02 09:58:26 ___________________________
+2016/11/02 09:58:26 Logfile enabled, log start!
+2016/11/02 09:58:26 Postgresql running!
+2016/11/02 09:58:38 ERROR: READ TABLE Discount - Missmatch request!
+2016/11/02 09:58:38 EOF
+2016/11/02 10:15:07 ___________________________
+2016/11/02 10:15:07 Logfile enabled, log start!
+2016/11/02 10:15:07 Postgresql running!
+2016/11/02 10:15:14 ERROR: READ TABLE Discount - sql: no rows in result set
+2016/11/02 10:15:14 EOF
+2016/11/02 10:16:10 EOF
+2016/11/02 10:16:33 EOF
+2016/11/02 10:17:18 EOF
+2016/11/02 10:23:59 ___________________________
+2016/11/02 10:23:59 Logfile enabled, log start!
+2016/11/02 10:23:59 Postgresql running!
+2016/11/02 10:24:09 EOF
+2016/11/02 10:31:45 EOF
+2016/11/02 10:32:53 ___________________________
+2016/11/02 10:32:53 Logfile enabled, log start!
+2016/11/02 10:32:53 Postgresql running!
+2016/11/02 10:33:04 EOF
+2016/11/02 10:35:08 EOF
+2016/11/02 10:36:30 EOF
+2016/11/02 10:37:44 ERROR: READ TABLE Discount - Missmatch request!
+2016/11/02 10:37:44 EOF
+2016/11/02 10:39:05 ___________________________
+2016/11/02 10:39:05 Logfile enabled, log start!
+2016/11/02 10:39:05 Postgresql running!
+2016/11/02 10:39:10 ERROR:The message is not gone -  0 write tcp 127.0.0.1:443->127.0.0.1:58232: write: connection reset by peer
+2016/11/02 10:39:10 ERROR:The message is not gone -  0 write tcp 127.0.0.1:443->127.0.0.1:58232: write: connection reset by peer
+2016/11/02 10:39:10 EOF
+2016/11/02 10:44:36 EOF
+2016/11/02 10:46:33 EOF
+2016/11/02 10:47:04 EOF
+2016/11/02 10:58:56 ___________________________
+2016/11/02 10:58:56 Logfile enabled, log start!
+2016/11/02 10:58:56 Postgresql running!
+2016/11/02 10:59:03 EOF
+2016/11/02 11:04:46 EOF
+2016/11/02 11:05:30 EOF
+2016/11/02 11:07:07 ___________________________
+2016/11/02 11:07:07 Logfile enabled, log start!
+2016/11/02 11:07:07 Postgresql running!
+2016/11/02 11:07:24 EOF
+2016/11/02 11:07:51 EOF
+2016/11/02 11:08:05 EOF
+2016/11/02 11:08:17 EOF
+2016/11/02 11:09:00 EOF
+2016/11/02 11:16:56 EOF
+2016/11/02 11:17:06 EOF
+2016/11/02 11:17:13 EOF
+2016/11/02 11:18:55 remote error: internal error
+2016/11/02 11:20:27 EOF
+2016/11/02 11:20:39 EOF
+2016/11/02 14:05:17 EOF
+2016/11/02 14:05:29 ___________________________
+2016/11/02 14:05:29 Logfile enabled, log start!
+2016/11/02 14:05:29 Postgresql running!
+2016/11/02 14:23:17 ___________________________
+2016/11/02 14:23:17 Logfile enabled, log start!
+2016/11/02 14:23:17 Postgresql running!
+2016/11/02 14:25:36 ___________________________
+2016/11/02 14:25:36 Logfile enabled, log start!
+2016/11/02 14:25:36 Postgresql running!
+2016/11/02 14:25:45 EOF
+2016/11/02 14:31:11 ___________________________
+2016/11/02 14:31:11 Logfile enabled, log start!
+2016/11/02 14:31:11 Postgresql running!
+2016/11/02 14:50:55 ___________________________
+2016/11/02 14:50:55 Logfile enabled, log start!
+2016/11/02 14:50:55 Postgresql running!
+2016/11/02 14:51:08 EOF
+2016/11/02 16:55:35 ___________________________
+2016/11/02 16:55:35 Logfile enabled, log start!
+2016/11/02 16:55:35 Postgresql running!
+2016/11/02 16:55:42 EOF
+2016/11/02 16:56:28 EOF
+2016/11/02 16:58:16 EOF
+2016/11/02 17:00:52 ___________________________
+2016/11/02 17:00:52 Logfile enabled, log start!
+2016/11/02 17:00:52 Postgresql running!
+2016/11/02 17:17:58 ___________________________
+2016/11/02 17:17:58 Logfile enabled, log start!
+2016/11/02 17:17:58 Postgresql running!
+2016/11/02 17:18:06 EOF
+2016/11/02 17:18:26 EOF
+2016/11/02 17:36:09 EOF
+2016/11/09 17:03:16 ___________________________
+2016/11/09 17:03:16 Logfile enabled, log start!
+2016/11/09 17:03:16 Postgresql running!
+2016/11/09 17:03:16 listen tcp :443: bind: address already in use
+2016/11/09 17:03:19 ___________________________
+2016/11/09 17:03:19 Logfile enabled, log start!
+2016/11/09 17:03:19 Postgresql running!
+2016/11/09 17:03:19 listen tcp :443: bind: address already in use
+2016/11/09 17:04:03 ___________________________
+2016/11/09 17:04:03 Logfile enabled, log start!
+2016/11/09 17:04:03 Postgresql running!
+2016/11/09 17:04:03 listen tcp :443: bind: address already in use
+2016/11/09 17:04:11 ___________________________
+2016/11/09 17:04:11 Logfile enabled, log start!
+2016/11/09 17:04:11 Postgresql running!
+2016/11/09 17:04:40 tls: no cipher suite supported by both client and server
+2016/11/09 17:07:23 ___________________________
+2016/11/09 17:07:23 Logfile enabled, log start!
+2016/11/09 17:07:23 Postgresql running!
+2016/11/09 17:07:56 ___________________________
+2016/11/09 17:07:56 Logfile enabled, log start!
+2016/11/09 17:07:56 Postgresql running!
+2016/11/09 17:10:52 ___________________________
+2016/11/09 17:10:52 Logfile enabled, log start!
+2016/11/09 17:10:52 Postgresql running!
+2016/11/09 17:16:11 ___________________________
+2016/11/09 17:16:11 Logfile enabled, log start!
+2016/11/09 17:16:11 Postgresql running!
+2016/11/09 17:24:24 EOF
+2016/11/09 17:24:30 EOF
+2016/11/09 17:24:31 EOF
+2016/11/09 17:24:38 tls: no cipher suite supported by both client and server
+2016/11/09 17:24:49 tls: no cipher suite supported by both client and server
+2016/11/11 09:25:15 ___________________________
+2016/11/11 09:25:15 Logfile enabled, log start!
+2016/11/11 09:25:15 Postgresql running!
+2016/11/11 09:25:54 tls: no cipher suite supported by both client and server
+2016/11/11 12:28:51 EOF
+2016/11/11 13:54:12 EOF
+2016/11/11 14:04:30 EOF
+2016/11/11 14:06:05 tls: client didn't provide a certificate
+2016/11/11 14:49:56 ___________________________
+2016/11/11 14:49:56 Logfile enabled, log start!
+2016/11/11 14:49:56 Postgresql running!
+2016/11/11 15:12:09 EOF
+2016/11/11 15:14:05 tls: client didn't provide a certificate
+2016/11/11 16:18:04 tls: first record does not look like a TLS handshake
+2016/11/11 16:21:55 tls: first record does not look like a TLS handshake
+2016/11/11 16:23:20 EOF
+2016/11/11 16:23:31 EOF
+2016/11/11 16:24:35 EOF
+2016/11/11 16:54:15 ___________________________
+2016/11/11 16:54:15 Logfile enabled, log start!
+2016/11/11 16:54:15 Postgresql running!
+2016/11/11 16:54:46 EOF
+2016/11/11 16:54:49 EOF
+2016/11/11 16:54:50 EOF
+2016/11/11 16:54:50 EOF
+2016/11/11 16:54:53 EOF
+2016/11/14 11:10:29 ___________________________
+2016/11/14 11:10:29 Logfile enabled, log start!
+2016/11/14 11:10:29 Postgresql running!
+2016/11/14 11:29:03 EOF
+2016/11/14 11:35:37 EOF
+2016/11/14 11:35:39 EOF
+2016/11/14 11:35:41 EOF
+2016/11/14 11:35:41 EOF
+2016/11/14 11:35:42 EOF
+2016/11/14 11:35:42 EOF
+2016/11/14 11:35:43 EOF
+2016/11/14 11:35:43 EOF
+2016/11/14 11:36:08 ___________________________
+2016/11/14 11:36:08 Logfile enabled, log start!
+2016/11/14 11:36:08 Postgresql running!
+2016/11/14 12:02:45 tls: client didn't provide a certificate
+2016/11/14 12:07:30 tls: client didn't provide a certificate
+2016/11/14 12:07:46 tls: client didn't provide a certificate
+2016/11/14 12:07:51 tls: client didn't provide a certificate
+2016/11/14 12:07:53 tls: client didn't provide a certificate
+2016/11/14 12:07:55 tls: client didn't provide a certificate
+2016/11/14 12:07:56 tls: client didn't provide a certificate
+2016/11/14 12:07:57 tls: client didn't provide a certificate
+2016/11/14 12:07:59 tls: client didn't provide a certificate
+2016/11/14 12:08:00 tls: client didn't provide a certificate
+2016/11/14 12:08:01 tls: client didn't provide a certificate
+2016/11/14 12:08:02 tls: client didn't provide a certificate
+2016/11/14 12:08:03 tls: client didn't provide a certificate
+2016/11/14 12:08:04 tls: client didn't provide a certificate
+2016/11/14 12:08:05 tls: client didn't provide a certificate
+2016/11/14 12:08:06 tls: client didn't provide a certificate
+2016/11/14 12:10:15 tls: client didn't provide a certificate
+2016/11/14 12:39:19 EOF
+2016/11/14 12:39:26 EOF
+2016/11/14 12:39:52 EOF
+2016/11/14 12:42:06 EOF
+2016/11/14 13:08:38 remote error: unknown certificate authority
+2016/11/14 14:08:54 remote error: unknown certificate authority
+2016/11/14 14:13:01 remote error: unknown certificate authority
+2016/11/14 14:13:01 remote error: unknown certificate authority
+2016/11/14 14:13:02 remote error: unknown certificate authority
+2016/11/14 14:13:02 remote error: unknown certificate authority
+2016/11/14 14:13:03 remote error: unknown certificate authority
+2016/11/14 14:13:03 remote error: unknown certificate authority
+2016/11/14 14:13:04 remote error: unknown certificate authority
+2016/11/14 14:13:04 remote error: unknown certificate authority
+2016/11/14 14:13:05 remote error: unknown certificate authority
+2016/11/14 14:13:05 remote error: unknown certificate authority
+2016/11/14 14:13:06 remote error: unknown certificate authority
+2016/11/14 14:13:08 remote error: unknown certificate authority
+2016/11/14 14:13:09 remote error: unknown certificate authority
+2016/11/14 14:13:10 remote error: unknown certificate authority
+2016/11/14 14:13:10 remote error: unknown certificate authority
+2016/11/14 14:13:11 remote error: unknown certificate authority
+2016/11/14 14:44:07 EOF
+2016/11/14 14:45:28 EOF
+2016/11/14 14:45:47 EOF
+2016/11/14 14:45:55 EOF
+2016/11/14 14:46:03 EOF
+2016/11/14 14:46:55 EOF
+2016/11/14 14:46:58 EOF
+2016/11/14 14:46:59 EOF
+2016/11/14 14:47:00 EOF
+2016/11/14 14:47:00 EOF
+2016/11/14 14:47:01 EOF
+2016/11/14 14:47:01 EOF
+2016/11/14 14:48:19 EOF
+2016/11/14 14:55:02 EOF
+2016/11/14 14:55:54 EOF
+2016/11/14 14:56:12 EOF
+2016/11/14 14:56:24 EOF
+2016/11/14 14:56:38 EOF
+2016/11/14 14:56:49 EOF
+2016/11/14 14:56:57 read tcp 192.168.0.79:666->192.168.0.52:58264: read: connection reset by peer
+2016/11/14 14:56:58 read tcp 192.168.0.79:666->192.168.0.52:58266: read: connection reset by peer
+2016/11/14 14:56:58 read tcp 192.168.0.79:666->192.168.0.52:58268: read: connection reset by peer
+2016/11/14 14:56:59 read tcp 192.168.0.79:666->192.168.0.52:58270: read: connection reset by peer
+2016/11/14 14:56:59 read tcp 192.168.0.79:666->192.168.0.52:58272: read: connection reset by peer
+2016/11/14 14:56:59 read tcp 192.168.0.79:666->192.168.0.52:58274: read: connection reset by peer
+2016/11/14 14:57:00 read tcp 192.168.0.79:666->192.168.0.52:58276: read: connection reset by peer
+2016/11/14 14:57:00 read tcp 192.168.0.79:666->192.168.0.52:58278: read: connection reset by peer
+2016/11/14 14:57:00 read tcp 192.168.0.79:666->192.168.0.52:58280: read: connection reset by peer
+2016/11/14 14:57:00 read tcp 192.168.0.79:666->192.168.0.52:58282: read: connection reset by peer
+2016/11/14 14:57:50 read tcp 192.168.0.79:666->192.168.0.52:58286: read: connection reset by peer
+2016/11/14 14:58:06 read tcp 192.168.0.79:666->192.168.0.52:58288: read: connection reset by peer
+2016/11/14 14:58:15 read tcp 192.168.0.79:666->192.168.0.52:58300: read: connection reset by peer
+2016/11/14 14:58:31 read tcp 192.168.0.79:666->192.168.0.52:58304: read: connection reset by peer
+2016/11/14 14:58:51 read tcp 192.168.0.79:666->192.168.0.52:58306: read: connection reset by peer
+2016/11/14 15:00:17 EOF
+2016/11/14 15:29:02 EOF
+2016/11/14 15:49:23 ___________________________
+2016/11/14 15:49:23 Logfile enabled, log start!
+2016/11/14 15:49:23 Postgresql running!
+2016/11/14 15:49:30 EOF
+2016/11/14 15:50:03 EOF
+2016/11/14 15:50:15 EOF
+2016/11/28 10:38:05 ___________________________
+2016/11/28 10:38:05 Logfile enabled, log start!
+2016/11/28 10:38:05 Postgresql running!
+2016/11/28 10:43:35 ___________________________
+2016/11/28 10:43:35 Logfile enabled, log start!
+2016/11/28 10:43:35 Postgresql running!
+2017/03/26 14:48:26 ___________________________
+2017/03/26 14:48:26 Logfile enabled, log start!
+2017/03/26 14:48:26 Postgresql request init error:pq: relation "Order" does not exist

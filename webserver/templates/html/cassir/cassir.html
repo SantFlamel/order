@@ -1,0 +1,1367 @@
+﻿<html lang="ru">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="icon" type="image/png" href="../../public/cassir/img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../../public/cassir/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../public/cassir/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../public/cassir/css/my.css?123">
+    <link rel="stylesheet" type="text/css" href="../../public/cassir/css/cassa.css">
+    <!--font awesome firefox fix-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.2.1/css/font-awesome.min.css" media="all" rel="stylesheet" type="text/css">
+    <title>Панель управления</title>
+</head>
+
+<body>
+
+
+<div id="warning">
+</div>
+
+<div style="display: none" id="search"><input placeholder="телефон/номер заказа" id="search-input"><label for="search-input"></label>
+    <div id="result-search">
+    </div>
+</div>
+
+<!--cassir.html-->
+<div id="cassir" class="container-fluid " style="display: none; height: 100%">
+    <div class="row">
+        <div class="col-xs-12 col-sm-9">
+            <!--панель вкладок-->
+            <div class="row cassir_header">
+                <div class="col-sx-12 col-sm-2 text-left">
+                    <img src="../../public/cassir/img/cloud.png" alt=""> YAPOKI IS
+                </div>
+                <div class="col-sx-12 col-sm-9">
+                    <ul id="cassir_tab" class="nav nav-tabs">
+                        <li id="new_order"><a href="" data-toggle="tab">+ Новый
+                            заказ</a></li>
+                        <li  data-status="0" id="orders" class="active"><a href=""
+                                data-toggle="tab">Активные<span></span></a></li>
+                        <li  data-status="1" id="pre_order"><a
+                                href="#pre_order"
+                                data-toggle="tab">Предзаказы
+                            <span></span></a></li>
+                        <li data-status="10"><a
+                                class="delivery_order"
+                                href="#delivery_order"
+                                data-toggle="tab">Доставка<span></span></a>
+                        </li>
+                        <li  data-status="999" id="done"><a
+                                class="contractor_order"
+                                href="#contractor_order"
+                                data-toggle="tab">Исполнено<span></span></a>
+                        </li>
+                        <li id="btn_cashbox_nav"><a class="cash_order" href="" data-toggle="tab">Касса</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sx-12 col-sm-1">
+                    <a><i class="fa fa-search"></i></a>
+                </div>
+            </div>
+
+            <!--блок заказов-->
+            <div class="row page_main font_blue">
+                <ul class="col-sm-12 order_block" id="order_block">
+                    <!--сюда добавляются заказы-->
+                </ul>
+            </div>
+        </div>
+
+
+        <!--ТЕЛЕФОН-->
+        <div style="height: 95%" id="block_telephone" class=" block_telephone col-xs-12 col-sm-3 sidebar">
+            <!-- при переключении режима телефона классы dark, black добавляются/дудаляются-->
+            <div class="clearfix text-right font_blue">
+                <button id="logout" type="submit" class="btn btn-link font_blue logout" name="btnExit">Выйти
+                </button>
+            </div>
+            <div class="phone">
+                <div>
+                    <div class="clearfix text-center time-block">
+                        <span id="doc_time" class="font_blue doc_time"></span>
+                        <span id="doc_date" class="doc_date"></span>
+                        <p class="city">(Курган)</p>
+                        <p class="name">Имя Фамилия</p>
+                        <p class="count_time">00:07</p>
+                    </div>
+
+                    <!--клавиатура скрывается при поступлении звонка
+                    но может открыватьчся снопкой клавиатуры -->
+                    <div class="telephone keyboard" id="keyboard">
+                        <div class="dialed">
+                            <i class="add_number"></i><input class="tel_num" id="tel_num" type="tel"
+                                                             placeholder="+7(___)___-__-__"><i
+                                onclick="$('#tel_num').val('')" class="remove_number"></i>
+                        </div>
+                        <ul class="set_number">
+                            <li>
+                                <a onclick="number_tel('1')">1</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('2')">2</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('3')">3</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('4')">4</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('5')">5</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('6')">6</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('7')">7</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('8')">8</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('9')">9</a>
+                            </li>
+                            <li>
+                                <a>*</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('0')">0</a>
+                            </li>
+                            <li>
+                                <a>#</a>
+                            </li>
+                            <li class="telephone green_tube">
+                                <a class="telephone calls"><i class="fa fa-phone"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--нет звонка-->
+
+                    <!--Когда пошел вызов, выводим-->
+                    <div class="call_telephone">
+                        <!--<div class="dialed">-->
+                        <!--<p class="count_time">00:07</p>-->
+                        <!--</div>-->
+
+                        <ul class="set_number">
+                            <li>
+                                <a><i class="fa fa-microphone-slash"></i></a>
+                            </li>
+                            <li>
+                                <a class="btn_telephone_keyboard"><i class="fa fa-th"></i></a>
+                            </li>
+                            <li>
+                                <a><i class="fa fa-user"></i></a>
+                            </li>
+                            <li>
+                                <a class="telephone end_call"><i class="finish_call"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--остаётся открытым всегда-->
+            <ul class="toolbar_phone">
+                <li id="1"><a><i class="fa fa-star-o"></i><span>Избранные</span></a></li>
+                <li id="2"><a><i class="fa fa-clock-o"></i><span>Недавние</span></a></li>
+                <li id="3"><a><i class="contacts_icon"></i><span>Контакты</span></a></li>
+                <li class="btn_telephone_keyboard active"><a><i
+                        class="fa fa-th"></i><span>Клавиши</span></a></li>
+                <li id="5"><a><i class="audio_icon"></i><span>Записи</span></a></li>
+            </ul>
+        </div>
+        <!--ТЕЛЕФОН --END-->
+
+
+    </div>
+
+    <!-- Навигация -->
+    <nav class="row navbar navbar-fixed-bottom page_footer cassir-footer" role="navigation">
+        <div class="col-xs-12">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <p class="visible-xs">
+                    <span id="name_role">Кассир: </span>
+                    <span class="font_blue cashierFIO" id="fio"></span>
+                </p>
+            </div>
+
+            <div class="collapse navbar-collapse nav-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="hidden-xs">
+                        <p class="font_footer">
+                            <span id="name_role">Кассир:<br></span>
+                            <span class="font_blue cashierFIO" id="fio"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="font_footer">Часы с нач.мес.:<br>
+                            <span class="font_blue" id="horse_m"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="font_footer">Среднее время принятие заказа:<br>
+                            <span class="font_blue" id="time_acceptance_order"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="font_footer">Рейтинг:<br>
+                            <span class="font_blue" id="rating"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="font_footer">Премия:<br>
+                            <span class="font_blue" id="award"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="font_footer">Удержано:<br>
+                            <span class="font_blue" id="withheld"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <p class="font_footer">Баланс:<br>
+                            <span class="font_blue" id="balance"></span>
+                        </p>
+                    </li>
+                    <li>
+                        <p>Оффлайн <i id="mode_tel" class="fa fa-toggle-on" aria-hidden="true"></i> Онлайн</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--<div class="modal fade" id="new_order_route" aria-hidden="true">-->
+    <!--<div class="modal-dialog">-->
+    <!--<div class="modal-content">-->
+    <!--<div class="modal-body" id="">-->
+    <!--<div class="modal-footer">-->
+    <!--<button id="btn_take_away" class="" data-toggle="" data-target="">Навынос-->
+    <!--</button>-->
+    <!--<button id="btn_preorder" class="" data-toggle="" data-target="">Предзаказ-->
+    <!--</button>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+
+</div>
+
+
+<!--description_order.html-->
+<div id="description_order" style="display: none;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-lg-9">
+                <div class="row">
+                    <table id="table_order" class="col-lg-12 table-order">
+
+
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3 sidebar-order">
+                <div id="home_description_order" class="sidebar-order__link-home text-right">
+                    <a>Домой
+                        <img src="../../public/cassir/img/home-icon.png" alt="Домой">
+                    </a>
+                </div>
+                <div class="text-center">
+                    <span class="sidebar-order__time doc_time" style="font-size: 52px">--:--</span>
+                </div>
+                <div class="text-center">
+                    <span id="order_ID" class="sidebar-order__order-number blue_txt">#23</span><br>
+                    <span id="name_customer" class="sidebar-order__client-name">Васисуалий</span>
+                </div>
+                <div id="order_type" class="sidebar-order__order-type ">Доставка</div>
+                <div id="address" class="sidebar-order__payment-method">Доставка</div>
+                <div id="payment_met" class="sidebar-order__payment-method">Оплата по карте</div>
+                <div id="payment_over" class="sidebar-order__order-status-order">Оплачен</div>
+                <!-- Верстка таблицей не подойдет по макету   -->
+                <div class="sidebar-order__price">
+                    <div class="sidebar-order__sum clearfix">
+                        <span class="sidebar-order__left-column">Сумма:</span>
+                        <span id="price" class="sidebar-order__right-column">-</span>
+                    </div>
+                    <div class="sidebar-order__discount clearfix">
+                        <span class="sidebar-order__left-column">Скидка:</span>
+                        <span id="discount" class="sidebar-order__right-column">-</span>
+                    </div>
+                    <div class="sidebar-order__bonus clearfix">
+                        <span class="sidebar-order__left-column"> Оплачено наличными:</span>
+                        <span id="cashs" class="sidebar-order__right-column">-</span>
+                    </div>
+                    <div class="sidebar-order__bonus clearfix">
+                        <span class="sidebar-order__left-column"> Оплачено картой:</span>
+                        <span id="cards" class="sidebar-order__right-column">-</span>
+                    </div>
+                    <div class="sidebar-order__bonus clearfix">
+                        <span class="sidebar-order__left-column"> Оплачено бонусами:</span>
+                        <span id="bonuses" class="sidebar-order__right-column">-</span>
+                    </div>
+                    <div class="sidebar-order__sum clearfix">
+                        <span class="sidebar-order__left-column">Сумма к оплате:</span>
+                        <span id="price_with_discount" class="sidebar-order__right-column">-</span>
+                    </div>
+                    <div class="sidebar-order__sum clearfix">
+                        <span class="sidebar-order__left-column">Сдача:</span>
+                        <span class="sidebar-order__right-column">-</span>
+                    </div>
+                </div>
+                <div class="sidebar-order__comments">
+                    <span>Комментарии:</span>
+                    <p id="note" class="sidebar-order__text-comments"></p>
+                </div>
+                <!--<span class="sidebar-order__timer">00:00</span>-->
+                <div class="sidebar-order__order-control-buttons">
+                    <!--получаем айди ордера в котором вызвали модалку и ставим на кнопку "оплатиь"-->
+                    <button id="pay_order" class="btn-deposit" data-toggle="modal" data-target="#introduction">Оплатить
+                    </button>
+                    <!--<button class="btn-change-order" disabled>Изменить заказ</button>-->
+                    <button id="cancel_order" class="btn-cancel-order" data-toggle="modal" data-target="#rework"
+                            type="button">Отменить
+                    </button>
+                    <button id="ready_order"
+                            class="btn-order-ready btn-order-ready__disabled" disabled>Готово
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно подтверждения отмены -->
+    <div class="modal fade" id="rework" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p> Отменить заказ #<span class="blue_txt" id="span_cancel_order"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal">Нет</button>
+                    <button id="btn_cancel_order" type="button" data-dismiss="modal">Да</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно подтверждения переделки -->
+    <div class="modal fade" id="remake" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p id="modal_text">Вы действительно хотите отправить <span class="font_blue" id="modal_price_name">PriceName</span>
+                        в брак?
+                        <br>
+                        <button onclick="var x = document.getElementById('element_remake_count'); x.value = (+x.value - 1)"
+                                class="minus" style="width: 60px;">-
+                        </button>
+                        <input id="element_remake_count" onkeyup="if (+this.value > 500){this.value = 500}else if (+this.value < 0) {this.value = 0}
+                                " class="input number" type="text" placeholder="0" value="0"
+                               style="text-align: center; width: 100px; color: #007aff">
+                        <button onclick="var x = document.getElementById('element_remake_count'); x.value = (+x.value + 1)"
+                                class="plus" style="width: 60px;">+
+                        </button>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal">Нет</button>
+                    <button id="btn_remake" type="button" data-dismiss="modal">Да</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно, показывающее картинку продукта -->
+    <div class="modal fade" id="show-img" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <img style="max-width: 100%;" id="img" src="../../public/cassir/img/roll.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deliveryman" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body" id="txt_deliveryman" style="display: grid;">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal">Отмена</button>
+                    <button id="btn_deliveryman" type="button" data-toggle="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!--cashbox.html-->
+<div id="cash_box" class="container-fluid" style="display: none;">
+    <div class="row">
+        <div class="col-lg-9  left-column">
+            <div class="row page-wrapper">
+                <div class="col-sm-offset-2 col-sm-9">
+                    <div class="row">
+                        <nav class="nav-filter">
+                            <div class="nav-filter__wrapper">
+                                <ul class="nav-filter__list">
+                                    <li class="nav-filter__item nav-filter__item--active" id="all_operation">
+                                        <a>Все операции<!--<span class="amount-transaction">(6)</span>--></a>
+                                    </li>
+                                    <li class="nav-filter__item" id="payment">
+                                        <a>Оплаты<!--<span class="amount-transaction">(3)</span>--></a>
+                                    </li>
+                                    <li class="nav-filter__item" id="return">
+                                        <a>Возвраты<!--<span class="amount-transaction">(1)</span>--></a>
+                                    </li>
+                                    <li class="nav-filter__item" id="deposit">
+                                        <a>Внесения<!--<span class="amount-transaction">(1)</span>--></a>
+                                    </li>
+                                    <li class="nav-filter__item" id="delivery_tab">
+                                        <a>Курьеры<!--<span class="amount-transaction">(1)</span>--></a>
+                                    </li>
+                                    <li class="nav-filter__item" id="withdrawal">
+                                        <a>Изъятие<!--<span class="amount-transaction">(1)</span>--></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="row">
+                        <div class="search">
+                            <i class="fa fa-search"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="table-cashbox-wrapper">
+                    <div class=""></div>
+                    <table id="operations" class="table-cashbox">
+                        <tbody>
+
+                        <!--сдесь опериции-->
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-lg-3  right-column">
+            <div class="row">
+                <div class="sidebar-cashbox">
+                    <div class="link-home text-right">
+                        <a onclick="Page.show.Cassir();">
+                        </a>
+                    </div>
+                    <div class="text-center time-block">
+                        <span id="doc_time" class="font_blue doc_time"></span>
+                        <span id="doc_date" class="doc_date"></span>
+                        <p class="city">(Курган)</p>
+                    </div>
+                    <div class="info-shift">
+                        <table class="info-shift__table">
+                            <tbody>
+                            <tr>
+                                <td class="info-shift__table-name">Номер смены:</td>
+                                <td id="shiftNumber" class="info-shift__table-value">-</td>
+                            </tr>
+                            <tr>
+                                <td class="info-shift__table-name">Дата/Время открытия:</td>
+                                <td id="openedTime" class="info-shift__table-value">-</td>
+                            </tr>
+                            <tr>
+                                <td class="info-shift__table-name">Количество заказов:</td>
+                                <td id="countOrders" class="info-shift__table-value">-</td>
+                            </tr>
+                            <tr>
+                                <td class="info-shift__table-name">Количество отказов:</td>
+                                <td id="countCanceled" class="info-shift__table-value">-</td>
+                            </tr>
+                            <tr>
+                                <td class="info-shift__table-name">Сумма внесений:</td>
+                                <td id="countDeposit" class="info-shift__table-value">-</td>
+                            </tr>
+                            <tr>
+                                <td class="info-shift__table-name">Сумма изъятий:</td>
+                                <td id="countEjecting" class="info-shift__table-value">-</td>
+                            </tr>
+                            <tr>
+                                <td class="info-shift__table-name">Сумма по карте:</td>
+                                <td id="cashFromCards" class="info-shift__table-value">-</td>
+                            </tr>
+                            <tr>
+                                <td class="info-shift__table-name">Сумма в кассе:</td>
+                                <td id="cashInCashBox" class="info-shift__table-value">-</td>
+                            </tr>
+                            <tr>
+                                <td class="info-shift__table-name">Сумма за смену:</td>
+                                <td id="cashOnDay" class="info-shift__table-value">-</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="sidebar-cashbox__control-buttons">
+                        <button id="change_employee" class="btn-close-shift" data-toggle="modal" data-target="#close-shift" type="button">
+                            Открыть смену
+                        </button>
+                        <!--<button class="btn-deposit">Внесение</button>-->
+                        <button id="btn_deposit"
+                                class="btn-deposit" data-toggle="modal" data-target="#introduction">Внесение
+                        </button>
+                        <button id="btn_withdrawal" class="btn-withdraw" data-toggle="modal"
+                                data-target="#withdrawaModal">Изъятие
+                        </button>
+                        <button id="check_print" class="btn-re-check btn-disabled"
+                                data-toggle="modal" data-target="#re-check"
+                                type="button" disabled>
+                            Повторная печать чека
+                        </button>
+                        <button id="check_print_return" class="btn-return-check btn-disabled" data-toggle="modal"
+                                data-target="#return-check"
+                                type="button" disabled>
+                            Печать возвратного чека
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="close-shift" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Вы действительно хотите открыть смену?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal">Нет</button>
+                    <button id="close_day_cashier" type="button" data-dismiss="modal">Да</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="deliveryman_day" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Вы действительно хотите закрыть смену <span id="deliveryman_fio"></span>,<br><span
+                            id="deliveryman_sum"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button id="deliveryman_day_no" type="button" data-dismiss="modal">Нет</button>
+                    <button id="deliveryman_day_yes" type="button" data-dismiss="modal">Да</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="re-check" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Вы действительно хотите повторно напечатать чек?</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal">Нет</button>
+                    <button type="button" data-dismiss="modal" id="check_print_yes">Да</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="return-check" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Вы действительно хотите осуществить печать возвратного чека?</p>
+                </div>
+                <div class="modal-footer">
+                    <button id="print_return_check_no" type="button" data-dismiss="modal">Нет</button>
+                    <button id="print_return_check_yes" type="button" data-dismiss="modal">Да</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modalki">
+    <!-- Модалка внесение -->
+    <div class="modal fade" id="introduction" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" id="modal_tabs">
+                        <li data-type_act="оплата" id="act_payment" class="type_act"><a aria-expanded="true"
+                                                                                        href="#paymenttab"
+                                                                                        data-toggle="tab">Оплата</a>
+                        </li>
+                        <li data-type_act="внесение" class="type_act"><a href="#introduct"
+                                                                         data-toggle="tab">Внесение</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="paymenttab">
+                            <ul class="nav nav-tabs">
+                                <li data-pay_met="cash" class="active type_pay">
+                                    <a href="#nal-block" data-toggle="tab">
+                                        <input id="radio_cash" type="radio">
+                                        <label for="radio_cash">Наличными</label>
+                                    </a>
+                                </li>
+                                <li data-pay_met="card" class="type_pay">
+                                    <a href="#karta-block" data-toggle="tab">
+                                        <input id="karta" type="radio">
+                                        <label for="karta">По карте</label>
+                                    </a>
+                                </li>
+                                <!--<li data-pay_met="bonus" class="type_pay">-->
+                                <!--<a href="#bonus-block" data-toggle="tab">-->
+                                <!--<input id="bonus" type="radio">-->
+                                <!--<label for="bonus">Бонусами</label>-->
+                                <!--</a>-->
+                                <!--</li>-->
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="nal-block">
+                                    <p>Сумма в кассе: <span id="in_cashbox_p_c">-</span> руб.</p>
+                                    <p id="pay_check">К оплате: <span id="price_p_c">-</span> руб.</p>
+                                    <p>Внесённая сумма: <input autocomplete="off" class="number" id="cash_input_modal"
+                                                               type="text"> руб.</p>
+                                    <p>Сдача: <span id="change_p_c">-</span> руб.</p>
+                                    <p>В кассе после внесения: <span id="in_cashbox_after_p_c">-</span> руб.</p>
+                                </div>
+                                <div class="tab-pane fade" id="karta-block">
+                                    <p>К оплате: <span id="price_p_card">-</span> руб.</p>
+                                    <p>Оплатить картой: <input autocomplete="off" class="number" id="card_input_modal"
+                                                               type="text"> руб.</p>
+                                    <p>Неоплаченныый остаток: <span id="not_p_card">-</span> руб.</p>
+                                </div>
+                                <!--<div class="tab-pane fade" id="bonus-block">-->
+                                <!--<p>К оплате: <span id="price_p_b">200</span> руб.</p>-->
+                                <!--<p>Бонусный баланс: <span>qqqq</span> руб.</p>-->
+                                <!--<p>Оплатить бонусами: <input autocomplete="off" class="number"-->
+                                <!--id="bonus_input_modal" type="text"> руб.</p>-->
+                                <!--<p>Бонусов после оплаты: <span>qqqq</span> руб.</p>-->
+                                <!--</div>-->
+                            </div>
+                            <div class="clearfix"></div>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal">Отмена</button>
+                                <button id="btn_pay" onclick="CashBox.action(this);" type="button" data-toggle="modal">
+                                    Оплатить
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="introduct">
+                            <p>Сумма в кассе: <span id="in_cashbox_d">-</span> руб.</p>
+                            <p>Внести: <input id="cash_deposit" autocomplete="off" class="number" type="text"> руб.</p>
+                            <p>В кассе после внесения: <span id="in_cashbox_after_d">-</span> руб.</p>
+                            <label for="note_deposit">Коментарий:</label><textarea id="note_deposit"></textarea>
+                            <div class="modal-footer">
+                                <button type="button" data-dismiss="modal">Отмена</button>
+                                <button id="modal_btn_deposit" type="button" data-toggle="modal">Внести</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модалка изъятие -->
+    <div class="modal fade" id="withdrawaModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p>Сумма в кассе: <span id="in_cashbox_w">-</span> руб.</p>
+                    <p>Изъятие: <input id="cash_withdrawal" autocomplete="off" class="number" type="text"> руб.</p>
+                    <p>В кассе после изъятия: <span id="in_cashbox_after_w">-</span> руб.</p>
+                    <label for="note_deposit">Коментарий:</label><textarea style="height: 90px"
+                                                                           id="note_withdrawal"></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal">Отмена</button>
+                    <button id="withdraw" type="button" data-toggle="modal">Изъять</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--cart.html-->
+<div id="page_cart" class="container-fluid operator-cart" style="display: none; height: 100%">
+    <div class="row">
+
+
+        <!--категории и товары-->
+        <div class="col-xs-12 col-sm-9" id="products_cat">
+            <label class="clearfix" for="product_search"><span>Что будете заказывать?</span> <input type="text"
+                                                                                                    id="product_search"
+                                                                                                    placeholder="Введите название блюда или ингридиента"></label>
+            <ul class="product_group">
+                <li class="active"><a href="#sets" data-toggle="tab">Сеты</a></li>
+                <li><a href="#rols" data-toggle="tab">Роллы</a></li>
+                <li><a href="#zrols" data-toggle="tab">Запеченные роллы</a></li>
+                <li><a href="#sushi" data-toggle="tab">Суши</a></li>
+                <li><a href="#pizza" data-toggle="tab">Пицца</a></li>
+                <li><a href="#salat" data-toggle="tab">Салаты и закуски</a></li>
+                <li><a href="#drink" data-toggle="tab">Напитки и десерты</a></li>
+                <li><a href="#sous" data-toggle="tab">Соусы</a></li>
+                <li><a href="#other" data-toggle="tab">Остальное</a></li>
+            </ul>
+            <div class="tab-content product_search_result">
+                <div class="tab-pane active" id="sets">
+                    <ul class="product_group">
+                        <!--нименования прдуктов-->
+                    </ul>
+                </div>
+                <div class="tab-pane" id="rols">
+                    <ul class="product_group">
+                        <li><a>Ролл унаги</a></li>
+                        <li><a>Ролл филадельфия</a></li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="zrols">
+                    <ul class="product_group"></ul>
+                </div>
+                <div class="tab-pane" id="sushi">
+                    <ul class="product_group"></ul>
+                </div>
+
+                <div class="tab-pane" id="pizza">
+                    <ul class="product_group">
+                        <!--<li><a href="#pizza_big" data-toggle="tab">Большая</a></li>-->
+                        <!--<li><a href="#pizza_small" data-toggle="tab">Маленькая</a></li>-->
+                    </ul>
+                </div>
+                <div class="tab-pane" id="pizza_small">
+                    <ul class="product_group">
+                        <li><a>Маленькая</a></li>
+
+                        <li><a>Маленькая</a></li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="pizza_big">
+                    <ul class="product_group">
+                        <li><a href="#pizza_big_t" data-toggle="tab">Большая тонкая</a></li>
+
+                        <li><a href="#pizza_big_tr" data-toggle="tab">Большая традиционная</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-pane" id="pizza_big_t">
+                    <ul class="product_group">
+                        <li><a>Большая----t</a></li>
+
+                        <li><a>Большая----t</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-pane" id="pizza_big_tr">
+                    <ul class="product_group">
+                        <li><a>Большая----tr</a></li>
+
+                        <li><a>Большая----tr</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-pane" id="salat">
+                    <ul class="product_group"></ul>
+                </div>
+                <div class="tab-pane" id="drink">
+                    <ul class="product_group"></ul>
+                </div>
+                <div class="tab-pane" id="sous">
+                    <ul class="product_group"></ul>
+                </div>
+                <div class="tab-pane" id="other">
+                    <ul class="product_group"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Выбранный продукт-->
+        <div id="description" class="col-xs-12 col-sm-9 discripton" style="display: none"></div>
+        <!--корзина-->
+        <div class="col-xs-12 col-sm-3 sidebar" id="cart">
+            <ul class="nav nav-tabs">
+                <!--<li class="delivery_met active"><a href="#delivery" data-toggle="tab">Доставка</a></li>-->
+                <li class="delivery_met"><a href="#take_away" data-toggle="tab">Навынос</a></li>
+            </ul>
+            <p class="h5 align-left">Вы заказываете</p>
+            <div class="order-list">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div style="" id="cart_list" class="panel">
+
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true"
+                               aria-controls="collapseTwo">
+                                Колличество персон<span class="count" id="count_person_span">0</span>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-expanded="true"
+                             aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <button onclick="var x = document.getElementById('count_person'); x.value = (+x.value < 1 ? 0 : +x.value - 1); document.getElementById('count_person_span').innerHTML = x.value"
+                                        class="minus">-
+                                </button>
+                                <input id="count_person"
+                                       onkeyup="document.getElementById('count_person_span').innerHTML = document.getElementById('count_person').value;"
+                                       class="number" type="text" placeholder="0">
+                                <button onclick="var x = document.getElementById('count_person'); x.value = +x.value + 1; document.getElementById('count_person_span').innerHTML = x.value"
+                                        class="plus">+
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div style="border-top: 2px solid green" class="panel">
+
+                        <div style="" class="panel">
+                            <div class="panel-heading" role="tab" id="heading_promo">
+                                <a id="load_promo">Акции:</a>
+                                 <!--data-toggle="collapse" data-parent="#accordion" href="#collapse_promo"-->
+                                   <!--aria-expanded="true"-->
+                                   <!--aria-controls="collapse_promo"-->
+                                <span></span>
+                            </div>
+                            <div id="collapse_promo" class="panel-collapse collapse in" role="tabpanel"
+                                 aria-expanded="true" aria-labelledby="heading_promo">
+                                <div id="promotion"></div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+            <!--<select class="pull-right" id="promo_discount" name="Скидка"></select>-->
+            <p class="h5 align-left">Без скидки: <span class="pull-right font_blue overall_cost over_price">0 p.</span>
+            </p>
+            <p class="h5 align-left">К оплате: <span
+                    class="pull-right font_blue overall_cost over_price_without">0 p.</span></p>
+            <div class="col-sm-12 finish_buttons">
+                <!--<select class="pull-right" id="promo_discount" name="Скидка">-->
+                <!--<option value="-">Выберите скидку</option>-->
+                <!--<option value="День рождения">День рождения</option>-->
+                <!--</select>-->
+                <!--<input type="text" id="promo" placeholder="Промо" value="Промо">-->
+                <!--<div class="col-sm-12">-->
+                <a class="cart_btn_cancel red_button">Отмена</a>
+                <a id="cart_btn_apply" class="green_button">Готово</a>
+                <!--</div>-->
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!--operator.html-->
+<div id="interfase_operator" class="container-fluid operator" style="display: none; height: 100%">
+    <div class="row">
+        <div class="col-xs-12 col-sm-9">
+            <ul class="nav nav-tabs">
+                <li class="active" id="tab_client"><a href="#client" data-toggle="tab">Клиент</a></li>
+                <li id="tab_order"><a href="#order_client" data-toggle="tab">Заказ</a></li>
+            </ul>
+            <div class="tab-content">
+                <!--оператор, вкладка клиент-->
+                <div class="tab-pane active" id="client">
+                    <!--<p class="h3">Япоки, оператор <span class="cashier_name"></span>, здраствуйте!</p>-->
+
+                    <!--город-->
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label for="city_client">Из какого города Вы звоните?</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input id="city_client" type="text" placeholder="Введите город" value="Курган">
+                            <a class="button_border clearbutton">Очистить</a>
+                        </div>
+                    </div>
+
+                    <!--имя-->
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label for="client_name">Как Вас зовут?<span class="font_red">*</span></label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input id="client_name" placeholder="Введите имя" type="text" autocomplete="off">
+                            <a class="button_border clearbutton">Очистить</a>
+                            Уточните: Вас зовут <span class="client_name_oper">-</span>?
+                        </div>
+                    </div>
+
+                    <!--телефон-->
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label for="client_phone"><span
+                                    class="client_name_oper"> -</span>, Ваш телефон?</label>
+                        </div>
+                        <div class="col-sm-6">
+                            <input class="tel_num" type="text" id="client_phone" placeholder="Введите номер телефона"
+                                   autocomplete="off" value="">
+                            <a class="button_border clearbutton">Очистить</a>
+                            <a style="margin-left: 15px " class="button_border" id="loadtel">Загрузить</a>
+                            <div id="black_list" class="red_txt"></div>
+                        </div>
+                    </div>
+
+                    <!--доставка-->
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <span class="client_name_oper"> -</span>, Вы хотите оформить заказ <!--на доставку или-->
+                            навынос?
+                        </div>
+                        <div class="col-sm-9" style="font-size: 14px">
+
+                            <!--<select class="pull-right" id="take_away_address" name="Точка самовывоза">-->
+                            <!--<option>Пусто</option>-->
+                            <!--</select>-->
+
+                            <!--<p class="pull-right red_txt" id="warning_dellivery"></p>-->
+                            <ul class="nav nav-tabs">
+                                <!--<li class="delivery_met active"><a href="#delivery" data-toggle="tab">Доставка</a></li>-->
+                                <li class="delivery_met"><a href="#take_away" data-toggle="tab">Навынос</a></li>
+                            </ul>
+
+
+                            <!--на время-->
+                            <input type="checkbox" id="on_time"><label class="labelPreOrder" for="on_time"> Заказ на
+                            время</label>
+                            <input disabled id="select_date" type="date" autocomplete="off" style="max-width: 300px">
+                            <input disabled id="select_time" type="time" min="08:00" max="23:00" autocomplete="off"
+                                   style="max-width: 300px">
+
+                            <input style="margin-left: 15px" type="checkbox" id="to_workers"><label
+                                style="margin-left: 5px" for="to_workers">Сотрудникам</label><input
+                                style="display: none" id="input_to_workers" type="text">
+
+                        </div>
+                    </div>
+
+                    <!--адрес-->
+                    <div class="row">
+
+
+                        <div class="col-sm-3">
+                            На какой адрес доставить?
+                        </div>
+                        <div class="col-sm-5 operator_client_adress">
+                            <label for="client_adress"><input type="text" id="client_adress"
+                                                              placeholder="Поиск"></label>
+                            <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                                <div class="panel">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion"
+                                           href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Новый адрес
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                                         aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            <input autocomplete="off" id="street_client" class="col-sm-12" type="text"
+                                                   placeholder="Введите адрес">
+                                            <div class="row">
+                                                <label class="col-sm-4" for="home_number">Дом
+                                                    <input autocomplete="off" id="home_number" type="text"></label>
+                                                <label class="col-sm-4" for="corp_str">Корм./Стр.
+                                                    <input autocomplete="off" id="corp_str" type="text"></label>
+                                                <label class="col-sm-4" for="podyezd">Подъезд
+                                                    <input autocomplete="off" id="podyezd" type="text"></label>
+                                            </div>
+                                            <div class="row">
+                                                <label class="col-sm-4" for="level">Этаж
+                                                    <input autocomplete="off" id="level" type="text"></label>
+                                                <label class="col-sm-4" for="kv_of">Кв./Оф.
+                                                    <input autocomplete="off" id="kv_of" type="text"></label>
+                                                <label class="col-sm-4" for="cod">Код
+                                                    <input autocomplete="off" id="cod" type="text"></label>
+                                                <input type="checkbox" id="domofon">
+                                                <label style="font-size: 14px" for="domofon">Домофон</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-sm-3">
+                            <p>Среднее время ожидания зависит от заказа</p>
+                            <ul class="operator_waite_time">
+                                <li>
+                                    <div class="pull-right font_blue">00:45</div>
+                                    суши и роллы:
+                                </li>
+                                <li>
+                                    <div class="pull-right font_blue">00:55</div>
+                                    пицца и закуски:
+                                </li>
+                                <li>
+                                    <div class="pull-right font_blue">00:35</div>
+                                    смешанный заказ:
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--коментарий-->
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label for="comment_order">Комментарии к заказу</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <textarea class="comment_order" name="" placeholder="Введите текст комментария"
+                                      id="comment_order" cols="60" rows="5"
+                                      onKeyUp="document.getElementById('comment_order1').value = this.value;"></textarea>
+                            <div>
+                                <a style="margin-left: 6px" href="#order_client" data-toggle="tab"
+                                   class="pull-right green_button" id="next_btn">Далее</a>
+                                <a class="cart_btn_cancel pull-right red_button">Отмена</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Оператор, вкладка заказ-->
+                <div class="tab-pane" id="order_client">
+
+                    <!--стоимость заказа-->
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <span class="client_name_oper">-</span>, сумма Вашего заказа <span
+                                class="font_blue overall_cost over_price_without">- р</span>
+                        </div>
+                        <div class="col-sm-7">
+                            <a class="button_border" id="cart_btn">Меню</a>
+                        </div>
+                    </div>
+
+                    <!--способ оплаты-->
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <br>Рассчет наличными или картой?
+                        </div>
+                        <div class="col-sm-7">
+                            <ul class="nav nav-tabs pay_met">
+                                <li class="active" id="1"><a href="#cash" data-toggle="tab">Наличными</a></li>
+                                <li id="2"><a href="#card" data-toggle="tab">Картой</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!--сдача-->
+                    <div class="row">
+                        <div class="col-sm-5">
+                            С какой суммы приготовить сдачу?
+                        </div>
+                        <div class="col-sm-7">
+                            <input id="ostatok" type="text">
+                            <a class="button_border">Ровно</a>
+                            <p class="money_summ"><a>500</a>/<a>700</a>/<a>1000</a></p>
+                        </div>
+                    </div>
+
+                    <!--коментарий-->
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <label for="comment_order">Комментарии к заказу</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <textarea class="comment_order" name="" placeholder="Введите текст комментария"
+                                      id="comment_order1" cols="60" rows="5"
+                                      onKeyUp="document.getElementById('comment_order').value = this.value;"></textarea>
+
+                        </div>
+                    </div>
+
+                    <!--итог-->
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="client_name_oper"> -</span>, заказ будет предоставлен между
+                            <span class="font_blue">13:20</span> и <span class="font_blue">13:30</span>.
+                            <p>Спасибо за заказ и приятного аппетита!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 finish_buttons">
+                            <a class="cart_btn_cancel red_button">Отмена</a>
+                            <a class="green_button" id="finish_btn">Готово</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--ТЕЛЕФОН-->
+        <div style="height: 95%" id="block_telephone" class=" block_telephone col-xs-12 col-sm-3 sidebar">
+            <!-- при переключении режима телефона классы dark, black добавляются/дудаляются-->
+            <div class="clearfix text-right font_blue">
+                <button id="logout" type="submit" class="btn btn-link font_blue logout" name="btnExit">Выйти
+                </button>
+            </div>
+            <div class="phone">
+                <div>
+                    <div class="clearfix text-center time-block">
+                        <span id="doc_time" class="font_blue doc_time"></span>
+                        <span id="doc_date" class="doc_date"></span>
+                        <p class="city">(Курган)</p>
+                        <p class="name">Имя Фамилия</p>
+                        <p class="count_time">00:07</p>
+                    </div>
+
+                    <!--клавиатура скрывается при поступлении звонка
+                    но может открыватьчся снопкой клавиатуры -->
+                    <div class="telephone keyboard" id="keyboard">
+                        <div class="dialed">
+                            <i class="add_number"></i><input class="tel_num" id="tel_num" type="tel"
+                                                             placeholder="+7(___)___-__-__"><i
+                                onclick="$('#tel_num').val('')" class="remove_number"></i>
+                        </div>
+                        <ul class="set_number">
+                            <li>
+                                <a onclick="number_tel('1')">1</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('2')">2</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('3')">3</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('4')">4</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('5')">5</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('6')">6</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('7')">7</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('8')">8</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('9')">9</a>
+                            </li>
+                            <li>
+                                <a>*</a>
+                            </li>
+                            <li>
+                                <a onclick="number_tel('0')">0</a>
+                            </li>
+                            <li>
+                                <a>#</a>
+                            </li>
+                            <li class="telephone green_tube">
+                                <a class="telephone calls"><i class="fa fa-phone"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--нет звонка-->
+
+                    <!--Когда пошел вызов, выводим-->
+                    <div class="call_telephone">
+                        <!--<div class="dialed">-->
+                        <!--<p class="count_time">00:07</p>-->
+                        <!--</div>-->
+
+                        <ul class="set_number">
+                            <li>
+                                <a><i class="fa fa-microphone-slash"></i></a>
+                            </li>
+                            <li>
+                                <a class="btn_telephone_keyboard"><i class="fa fa-th"></i></a>
+                            </li>
+                            <li>
+                                <a><i class="fa fa-user"></i></a>
+                            </li>
+                            <li>
+                                <a class="telephone end_call"><i class="finish_call"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--остаётся открытым всегда-->
+            <ul class="toolbar_phone">
+                <li id="1"><a><i class="fa fa-star-o"></i><span>Избранные</span></a></li>
+                <li id="2"><a><i class="fa fa-clock-o"></i><span>Недавние</span></a></li>
+                <li id="3"><a><i class="contacts_icon"></i><span>Контакты</span></a></li>
+                <li class="btn_telephone_keyboard active"><a><i
+                        class="fa fa-th"></i><span>Клавиши</span></a></li>
+                <li id="5"><a><i class="audio_icon"></i><span>Записи</span></a></li>
+            </ul>
+        </div>
+        <!--ТЕЛЕФОН --END-->
+
+    </div>
+</div>
+
+
+<div id="delivery" style="display: none;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 col-lg-9">
+                <div class="row">
+                    <table id="" class="col-lg-12 table-order">
+
+
+                        <tr class="table-order__spoiler status-ready">
+                            <td class="table-order__order-number">#23-1</td>
+                            <td class="table-order__menu-name">Ролл &laquo;Филадельфия&raquo;
+                                <button class="btn-switch-spoiler" type="button">5
+                                    <span class="arr-up"></span>
+                                </button>
+                            </td>
+                            <td class="table-order__status-trekking">Готово!</td>
+                            <td class="table-order__time">20:00</td>
+                            <td class="table-order__img-product">
+                            </td>
+                            <td class="table-order__refresh">
+                            </td>
+                        </tr>
+                        <tr class="table-order__spoiler-content">
+                            <td colspan="6">
+                                <table class="table-order inner-table">
+                                    <tr>
+                                        <td class="table-order__order-number">#23-1</td>
+                                        <td class="table-order__menu-name">Ролл &laquo;Филадельфия&raquo;
+                                        </td>
+                                        <td class="table-order__status-trekking">Готово!</td>
+                                        <td class="table-order__time">0:00</td>
+                                        <td class="table-order__img-product">
+                                            <button class="btn-switch-img" data-toggle="modal" data-target="#show-img"
+                                                    type="button">
+                                            </button>
+                                        </td>
+                                        <td class="table-order__refresh">
+                                            <button class="btn-refresh" data-toggle="modal" data-target="#rework"
+                                                    type="button">
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-3 sidebar-order">
+                <div onclick="Page.show.Cassir();" class="sidebar-order__link-home text-right">
+                    <a>Домой
+                        <img src="../../public/cassir/img/home-icon.png" alt="Домой">
+                    </a>
+                </div>
+                <div class="text-center">
+                    <span class="sidebar-order__time doc_time" style="font-size: 52px">--:--</span>
+                </div>
+                <!--<div class="text-center">-->
+                <!--<span id="order_ID" class="sidebar-order__order-number blue_txt">#23</span><br>-->
+                <!--<span id="name_customer" class="sidebar-order__client-name">Васисуалий</span>-->
+                <!--</div>-->
+                <!--<div id="order_type" class="sidebar-order__order-type ">Доставка</div>-->
+                <!--<div id="payment_met" class="sidebar-order__payment-method">Оплата по карте</div>-->
+                <!--<div id="payment_over" class="sidebar-order__order-status-order">Оплачен</div>-->
+                <!-- Верстка таблицей не подойдет по макету   -->
+                <div class="sidebar-order__price">
+                    <div class="sidebar-order__sum clearfix">
+                        <span class="sidebar-order__left-column">Сумма:</span>
+                        <span id="" class="sidebar-order__right-column">-</span>
+                    </div>
+                </div>
+                <div class="sidebar-order__comments">
+                    <span>Комментарии:</span>
+                    <p id="" class="sidebar-order__text-comments"></p>
+                </div>
+                <span class="sidebar-order__timer">00:00</span>
+                <div class="sidebar-order__order-control-buttons">
+                    <button id="" class="btn-deposit" data-toggle="modal" data-target="#introduction">Оплатить
+                    </button>
+                    <!--<button class="btn-change-order" disabled>Изменить заказ</button>-->
+                    <button id="" class="btn-cancel-order" data-toggle="modal" data-target="#rework"
+                            type="button">Отменить
+                    </button>
+                    <button id=""
+                            class="btn-order-ready btn-order-ready__disabled" disabled>Готово
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно подтверждения отмены -->
+    <div class="modal fade" id="rework" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p> Отменить заказ #<span class="blue_txt" id="span_cancel_order"></span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" data-dismiss="modal">Нет</button>
+                    <button id="btn_cancel_order" type="button" data-dismiss="modal">Да</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!-- Скрипты -->
+<script src="../../public/cassir/js/jquery.js" type="text/javascript"></script>
+<script src="../../public/cassir/js/jquery.formstyler.js" type="text/javascript"></script>
+<script src="../../public/cassir/js/jquery.maskedinput.js" type="text/javascript"></script>
+<script src="../../public/cassir/js/typeahead.jquery.js" type="text/javascript"></script>
+<script src="../../public/cassir/js/myjs.js?123" type="text/javascript"></script>
+<script src="../../public/cassir/js/cfg.js?123" type="text/javascript"></script>
+<script src="../../public/cassir/js/TEST.js?123" type="text/javascript"></script>
+<script src="../../public/cassir/js/bootstrap.js" type="text/javascript"></script>
+<script src="../../public/cassir/js/cassir.js?123" type="text/javascript"></script>
+<script src="../../public/cassir/js/cart.js?123" type="text/javascript"></script>
+<script src="../../public/cassir/js/description_order.js?123"></script>
+<script src="../../public/cassir/js/cashbox.js?123"></script>
+<script src="../../public/cassir/js/operator.js?123"></script>
+<script src="../../public/cassir/js/ws.js?123"></script>
+<script src="../../public/cassir/js/delivery.js?123" type="text/javascript"></script>
+<!--<script src="../../public/cassir/js/test_promotion.js?123" type="text/javascript"></script>-->
+<!--<script src="../../public/cassir/js/promotion.js?123" type="text/javascript"></script>-->
+<script src="../../public/cassir/js/page.js?123" type="text/javascript"></script>
+
+
+</body>
+
+</html>

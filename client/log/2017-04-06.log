@@ -1,0 +1,8 @@
+2017/04/06 13:26:07 _______NEW_START_OF_SERVER_______
+2017/04/06 13:26:07 Postgresql running!
+2017/04/06 13:26:07 client: dial: dial tcp: missing address
+2017/04/06 13:27:31 _______NEW_START_OF_SERVER_______
+2017/04/06 13:27:31 Postgresql running!
+2017/04/06 13:27:31 client: connected to:  192.168.0.132:441
+2017/04/06 13:27:31 client: handshake:  true
+2017/04/06 13:27:31 client: mutual:  true

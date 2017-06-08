@@ -1,0 +1,65 @@
+<!--ВЕРХНЯЯ ЧАСТЬ САЙТА-->
+{{ template "up_order.html" .}}
+<!--КОНЕЦ ВЕРХНЕЙ ЧАСТИ САЙТА-->
+{{.morder.ID_order}}
+
+{{.wiki.Name}}
+
+<div class="row page_main" accept-charset="UTF-8"  onload="getItem({{.morder.ID_order}}/{{.morder.ID_order_item}})">
+    <div class="col-xs-12 col-sm-4 styleDivOrder late">
+        <input class="startTimeOrder" hidden value="{{.morder.Time_begin}}">
+        <!--<script type="text/javascript"> $('.startTimeOrder').attr('value', '00:00:40')</script>-->
+        <!--$('.startTimeOrder').val().slice(11,19))-->
+        <p class="font_main_check" id="check">{{.morder.ID_order}} - {{.morder.ID_order_item}}</p>
+        <p class="font_main_name" id="name">{{.wiki.Name}}</p>
+        <p class="font_main_time" id="time" data-role="timer">00:00:00</p>
+        <img src="roll.png" id="imgOrder">
+        <p class="font_time" id="in_work" data-role=timer-down title="{{.morder.Time_cook}}" >00:00:00</p>
+    </div>
+    <div class="col-xs-12 col-sm-8 styleDivOrder">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6">
+                <p class="font_block_header">Внутрь:</p>
+                <p class="font_block" id="products_inside">{{.wiki.Filling}}</p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <p class="font_block_header">Наверх:</p>
+                <p class="font_block" id="products_up">{{.wiki.Upstairs}}</p>
+            </div>
+            <div class="col-xs-12">
+                <p class="font_block_header">Примечание:</p>
+                <p class="font_block" id="note">{{.wiki.Note}}</p>
+            </div>
+            <div class="col-xs-12">
+                <p class="font_block_header">Вес: <span class="font_block font_black" id="mass">{{.wiki.Weight}}</span></p>
+            </div>
+            <div class="col-xs-12 actions">
+                <button class="button_cancel" data-toggle="modal" data-target="#confirmCancel" onclick="return false">Отменить</button>
+                <button class="button_ok" onclick="window.location.href='/index/{{.morder.ID_order}}/{{.morder.ID_order_item}}/ok'" id="order_ok">Готово</button>
+                <button class="button_ok" onclick="window.location.href='/index/{{.morder.ID_order}}/{{.morder.ID_order_item}}/timer'" id="order_not_ok">Запечь</button>
+                <button class="button_ok" onclick="window.location.href='/index/'" id="order_next">Продолжить</button>
+                <!--<script type="text/javascript">if ({{.morder.Type_id}}==15) $('#order_ok").css.attr{</script>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="confirmCancel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <p>Вы действительно хотите отменить блюдо?</p>
+            </div>
+            <div class="modal-footer">
+                <!-- Используйте data-dismiss="modal" чтобы просто закрыть окно -->
+                <button type="button" data-dismiss="modal" onclick="window.location.href='/index/{{.morder.ID_order}}/{{.morder.ID_order_item}}/cancel'">Отменить без списания</button>
+                <button type="button" onclick="window.location.href='/index/{{.morder.ID_order}}/{{.morder.ID_order_item}}/cancel'">Отменить со списанием</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--НИЖНЯЯ ЧАСТЬ САЙТА-->
+{{ template "down_site.html" .}}
+<!--КОНЕЦ НИЖНЕЙ ЧАСТИ САЙТА-->

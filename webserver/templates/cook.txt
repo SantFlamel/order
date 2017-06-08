@@ -1,0 +1,42 @@
+----Читать Все элементы заказа
+{"Table":"OrderList","Query":"Read","TypeParameter":"RangeForCook","Values":[hashorg,timenow,cooking_tracker,userhash],"Limit":10,"Offset":0,"ID_msg":""}
+
+----Читать Все элементы заказа по статусу
+{"Table":"OrderList","Query":"Read","TypeParameter":"RangeWithStatus","Values":[hashorg,timenow,cooking_tracker,userhash,status_id],"Limit":10,"Offset":0,"ID_msg":""}
+
+----Взять в готовку если не взят
+{"Table":"OrderStatus","Query":"Create","TypeParameter":"GetError","Values":null,"Limit":0,"Offset":0}{"Order_id":14,"Order_id_item":1,"Cause":"","Status_id":1,"UserHash":"asdasd"}
+--88888888888888888888888888888888888888888888888888888888888888888
+
+/*
+1-сушист
+2-раскатка
+3-начинение
+4-упаковка.запекание
+5-салаты закуски
+*/
+
+--88888888888888888888888888888888888888888888888888888888888888888
+
+курьер - 34876c15cf8bcdd3261aa10c29c84d9df529d5f784e1dc39ef84240fac8e54c3366dd6b9420023ded5fa4965f1392f16aa1687fde41fd7825d1e11a1686abe9c
+сушист - 8746fffb4f2e033aabefa8103e7e4f4d183f0098f1e6513a718c0dcff60be6c2048faaefc6477973c321c8f7c52c96d078c99b188ac2a11a221fb97fa957ccd3
+пиццерист - b6b8c237446b537594a2e1fc44d1d522b0ac62ef3e157e940eb39db9c45deefe151ee05a292e8366127c26901efca3882670d1c53ba11c1169c3c53a71b686c2
+
+тест сушист - 4b7533b27ef6981f23c48c1d6b26c7835f8a8b6db11f377016168caf4148f7872a13649b1580ca3504452dcb8485d27b0d544a730950af360e351f6adcb6cad5
+тест пицца - b6b8c237446b537594a2e1fc44d1d522b0ac62ef3e157e940eb39db9c45deefe151ee05a292e8366127c26901efca3882670d1c53ba11c1169c3c53a71b686c2
+тест курьер - 1
+
+
+//----НОВЫЕ ХЕШИ
+ HASH_COOK        = "8746fffb4f2e033aabefa8103e7e4f4d183f0098f1e6513a718c0dcff60be6c2048faaefc6477973c321c8f7c52c96d078c99b188ac2a11a221fb97fa957ccd3"
+ HASH_DELIVERYMAN = "34876c15cf8bcdd3261aa10c29c84d9df529d5f784e1dc39ef84240fac8e54c3366dd6b9420023ded5fa4965f1392f16aa1687fde41fd7825d1e11a1686abe9c"
+ HASH_CASHIER     = "dcfb7d4d43418b73fba6be0d51ce988e1a84dacda379e3ba3e1f3bef932d4c92c074009d331af45875dabc4fcf6e161925b93d1e67336f13540dfe4af063b556"
+ HASH_OPERATOR    = "30a88dcd705dda89507babfb30c44c2d0fd42e5ed7b4c453290a6b6e919937f7344bca0bbb8de040573254f728658869e1e069b50a70766a03a8a2be463ec5e6"
+ HASH_PIZZAMAKER  = "b6b8c237446b537594a2e1fc44d1d522b0ac62ef3e157e940eb39db9c45deefe151ee05a292e8366127c26901efca3882670d1c53ba11c1169c3c53a71b686c2"
+ HASH_SUSHIST     = "8746fffb4f2e033aabefa8103e7e4f4d183f0098f1e6513a718c0dcff60be6c2048faaefc6477973c321c8f7c52c96d078c99b188ac2a11a221fb97fa957ccd3"
+
+
+Хеши организаций
+----------------
+5-й микрорайон
+"8d530b253ab52715733e6d92caa19cbcf5edfb43f63311970d3ed5af7265763302a2a29843231753616c4f8b64a8d1602800ea2303caca35477ff6bc09d15231"

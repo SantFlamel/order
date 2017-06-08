@@ -1,0 +1,39 @@
+2017/02/15 15:59:02 ___________________________
+2017/02/15 15:59:02 Logfile enabled, log start!
+2017/02/15 15:59:02 Postgresql running!
+2017/02/15 15:59:02 client: connected to:  127.0.0.1:666
+2017/02/15 15:59:02 client: handshake:  true
+2017/02/15 15:59:02 client: mutual:  true
+2017/02/15 16:00:19 ___________________________
+2017/02/15 16:00:19 Logfile enabled, log start!
+2017/02/15 16:00:19 Postgresql running!
+2017/02/15 16:00:19 client: connected to:  127.0.0.1:666
+2017/02/15 16:00:19 client: handshake:  true
+2017/02/15 16:00:19 client: mutual:  true
+2017/02/15 16:04:55 ___________________________
+2017/02/15 16:04:55 Logfile enabled, log start!
+2017/02/15 16:04:55 Postgresql running!
+2017/02/15 16:04:55 client: connected to:  127.0.0.1:666
+2017/02/15 16:04:55 client: handshake:  true
+2017/02/15 16:04:55 client: mutual:  true
+2017/02/15 16:17:46 ___________________________
+2017/02/15 16:17:46 Logfile enabled, log start!
+2017/02/15 16:17:46 Postgresql running!
+2017/02/15 16:17:46 client: connected to:  127.0.0.1:666
+2017/02/15 16:17:46 client: handshake:  true
+2017/02/15 16:17:46 client: mutual:  true
+2017/02/15 17:18:32 ___________________________
+2017/02/15 17:18:32 Logfile enabled, log start!
+2017/02/15 17:18:32 Postgresql request init error:pq: column "discount_name" of relation "order" does not exist
+2017/02/15 17:25:42 ___________________________
+2017/02/15 17:25:42 Logfile enabled, log start!
+2017/02/15 17:25:42 Postgresql running!
+2017/02/15 17:25:43 client: connected to:  127.0.0.1:666
+2017/02/15 17:25:43 client: handshake:  true
+2017/02/15 17:25:43 client: mutual:  true
+2017/02/15 17:33:04 ___________________________
+2017/02/15 17:33:04 Logfile enabled, log start!
+2017/02/15 17:33:04 Postgresql running!
+2017/02/15 17:33:04 client: connected to:  127.0.0.1:666
+2017/02/15 17:33:04 client: handshake:  true
+2017/02/15 17:33:04 client: mutual:  true

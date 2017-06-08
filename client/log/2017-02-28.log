@@ -1,0 +1,332 @@
+2017/02/28 12:58:25 ___________________________
+2017/02/28 12:58:25 Logfile enabled, log start!
+2017/02/28 12:58:25 Postgresql running!
+2017/02/28 12:58:25 client: connected to:  127.0.0.1:66
+2017/02/28 12:58:25 client: handshake:  true
+2017/02/28 12:58:25 client: mutual:  true
+2017/02/28 14:08:34 ___________________________
+2017/02/28 14:08:34 Logfile enabled, log start!
+2017/02/28 14:08:34 Postgresql running!
+2017/02/28 14:08:34 client: connected to:  127.0.0.1:66
+2017/02/28 14:08:34 client: handshake:  true
+2017/02/28 14:08:34 client: mutual:  true
+2017/02/28 14:16:20 ___________________________
+2017/02/28 14:16:20 Logfile enabled, log start!
+2017/02/28 14:16:20 Postgresql running!
+2017/02/28 14:16:20 client: connected to:  127.0.0.1:66
+2017/02/28 14:16:20 client: handshake:  true
+2017/02/28 14:16:20 client: mutual:  true
+2017/02/28 14:17:58 ___________________________
+2017/02/28 14:17:58 Logfile enabled, log start!
+2017/02/28 14:17:58 Postgresql running!
+2017/02/28 14:17:58 client: connected to:  127.0.0.1:66
+2017/02/28 14:17:58 client: handshake:  true
+2017/02/28 14:17:58 client: mutual:  true
+2017/02/28 15:11:46 ___________________________
+2017/02/28 15:11:46 Logfile enabled, log start!
+2017/02/28 15:11:46 Postgresql running!
+2017/02/28 15:11:46 client: connected to:  127.0.0.1:66
+2017/02/28 15:11:46 client: handshake:  true
+2017/02/28 15:11:46 client: mutual:  true
+2017/02/28 15:11:46 client: connected to:  127.0.0.1:66
+2017/02/28 15:11:46 client: handshake:  true
+2017/02/28 15:11:46 client: mutual:  true
+2017/02/28 15:11:46 client: connected to:  127.0.0.1:66
+2017/02/28 15:11:46 client: handshake:  true
+2017/02/28 15:11:46 client: mutual:  true
+2017/02/28 15:11:46 client: connected to:  127.0.0.1:66
+2017/02/28 15:11:46 client: handshake:  true
+2017/02/28 15:11:46 client: mutual:  true
+2017/02/28 15:11:46 client: connected to:  127.0.0.1:66
+2017/02/28 15:11:46 client: handshake:  true
+2017/02/28 15:11:46 client: mutual:  true
+2017/02/28 15:11:46 EOF
+2017/02/28 15:11:46 client: dial: dial tcp 127.0.0.1:66: getsockopt: connection refused
+2017/02/28 15:22:15 ___________________________
+2017/02/28 15:22:15 Logfile enabled, log start!
+2017/02/28 15:22:15 Postgresql running!
+2017/02/28 15:22:15 client: connected to:  127.0.0.1:66
+2017/02/28 15:22:15 client: handshake:  true
+2017/02/28 15:22:15 client: mutual:  true
+2017/02/28 15:22:15 client: connected to:  127.0.0.1:66
+2017/02/28 15:22:15 client: handshake:  true
+2017/02/28 15:22:15 client: mutual:  true
+2017/02/28 15:22:15 client: connected to:  127.0.0.1:66
+2017/02/28 15:22:15 client: handshake:  true
+2017/02/28 15:22:15 client: mutual:  true
+2017/02/28 15:22:15 client: connected to:  127.0.0.1:66
+2017/02/28 15:22:15 client: handshake:  true
+2017/02/28 15:22:15 client: mutual:  true
+2017/02/28 15:22:15 client: connected to:  127.0.0.1:66
+2017/02/28 15:22:15 client: handshake:  true
+2017/02/28 15:22:15 client: mutual:  true
+2017/02/28 15:22:15 EOF
+2017/02/28 15:22:15 client: dial: dial tcp 127.0.0.1:66: getsockopt: connection refused
+2017/02/28 15:25:55 ___________________________
+2017/02/28 15:25:55 Logfile enabled, log start!
+2017/02/28 15:25:55 Postgresql running!
+2017/02/28 15:25:55 client: connected to:  127.0.0.1:66
+2017/02/28 15:25:55 client: handshake:  true
+2017/02/28 15:25:55 client: mutual:  true
+2017/02/28 15:25:55 client: connected to:  127.0.0.1:66
+2017/02/28 15:25:55 client: handshake:  true
+2017/02/28 15:25:55 client: mutual:  true
+2017/02/28 15:25:55 client: connected to:  127.0.0.1:66
+2017/02/28 15:25:55 client: handshake:  true
+2017/02/28 15:25:55 client: mutual:  true
+2017/02/28 15:25:56 client: connected to:  127.0.0.1:66
+2017/02/28 15:25:56 client: handshake:  true
+2017/02/28 15:25:56 client: mutual:  true
+2017/02/28 15:25:56 client: connected to:  127.0.0.1:66
+2017/02/28 15:25:56 client: handshake:  true
+2017/02/28 15:25:56 client: mutual:  true
+2017/02/28 15:25:56 EOF
+2017/02/28 15:25:56 client: dial: dial tcp 127.0.0.1:66: getsockopt: connection refused
+2017/02/28 15:27:50 ___________________________
+2017/02/28 15:27:50 Logfile enabled, log start!
+2017/02/28 15:27:50 Postgresql running!
+2017/02/28 15:27:50 client: connected to:  127.0.0.1:66
+2017/02/28 15:27:50 client: handshake:  true
+2017/02/28 15:27:50 client: mutual:  true
+2017/02/28 15:27:50 client: connected to:  127.0.0.1:66
+2017/02/28 15:27:50 client: handshake:  true
+2017/02/28 15:27:50 client: mutual:  true
+2017/02/28 15:27:50 client: connected to:  127.0.0.1:66
+2017/02/28 15:27:50 client: handshake:  true
+2017/02/28 15:27:50 client: mutual:  true
+2017/02/28 15:27:50 client: connected to:  127.0.0.1:66
+2017/02/28 15:27:50 client: handshake:  true
+2017/02/28 15:27:50 client: mutual:  true
+2017/02/28 15:27:50 client: connected to:  127.0.0.1:66
+2017/02/28 15:27:51 client: handshake:  true
+2017/02/28 15:27:51 client: mutual:  true
+2017/02/28 15:44:19 ___________________________
+2017/02/28 15:44:19 Logfile enabled, log start!
+2017/02/28 15:44:19 Postgresql running!
+2017/02/28 15:44:19 client: connected to:  127.0.0.1:66
+2017/02/28 15:44:19 client: handshake:  true
+2017/02/28 15:44:19 client: mutual:  true
+2017/02/28 15:44:19 client: connected to:  127.0.0.1:66
+2017/02/28 15:44:19 client: handshake:  true
+2017/02/28 15:44:19 client: mutual:  true
+2017/02/28 15:44:19 client: connected to:  127.0.0.1:66
+2017/02/28 15:44:19 client: handshake:  true
+2017/02/28 15:44:19 client: mutual:  true
+2017/02/28 15:44:19 client: connected to:  127.0.0.1:66
+2017/02/28 15:44:19 client: handshake:  true
+2017/02/28 15:44:19 client: mutual:  true
+2017/02/28 15:44:19 client: connected to:  127.0.0.1:66
+2017/02/28 15:44:19 client: handshake:  true
+2017/02/28 15:44:19 client: mutual:  true
+2017/02/28 15:44:19 client: connected to:  127.0.0.1:66
+2017/02/28 15:44:19 client: handshake:  true
+2017/02/28 15:44:19 client: mutual:  true
+2017/02/28 15:44:19 client: connected to:  127.0.0.1:66
+2017/02/28 15:44:19 client: handshake:  true
+2017/02/28 15:44:19 client: mutual:  true
+2017/02/28 15:44:19 client: connected to:  127.0.0.1:66
+2017/02/28 15:44:19 client: handshake:  true
+2017/02/28 15:44:19 client: mutual:  true
+2017/02/28 16:01:14 ___________________________
+2017/02/28 16:01:14 Logfile enabled, log start!
+2017/02/28 16:01:14 Postgresql running!
+2017/02/28 16:01:14 client: connected to:  127.0.0.1:66
+2017/02/28 16:01:14 client: handshake:  true
+2017/02/28 16:01:14 client: mutual:  true
+2017/02/28 16:01:14 client: connected to:  127.0.0.1:66
+2017/02/28 16:01:14 client: handshake:  true
+2017/02/28 16:01:14 client: mutual:  true
+2017/02/28 16:01:14 client: connected to:  127.0.0.1:66
+2017/02/28 16:01:14 client: handshake:  true
+2017/02/28 16:01:14 client: mutual:  true
+2017/02/28 16:01:14 client: connected to:  127.0.0.1:66
+2017/02/28 16:01:14 client: handshake:  true
+2017/02/28 16:01:14 client: mutual:  true
+2017/02/28 16:01:14 client: connected to:  127.0.0.1:66
+2017/02/28 16:01:14 client: handshake:  true
+2017/02/28 16:01:14 client: mutual:  true
+2017/02/28 16:01:14 client: connected to:  127.0.0.1:66
+2017/02/28 16:01:14 client: handshake:  true
+2017/02/28 16:01:14 client: mutual:  true
+2017/02/28 16:01:14 client: connected to:  127.0.0.1:66
+2017/02/28 16:01:14 client: handshake:  true
+2017/02/28 16:01:14 client: mutual:  true
+2017/02/28 16:02:11 ___________________________
+2017/02/28 16:02:11 Logfile enabled, log start!
+2017/02/28 16:02:11 Postgresql running!
+2017/02/28 16:02:11 client: connected to:  127.0.0.1:66
+2017/02/28 16:02:11 client: handshake:  true
+2017/02/28 16:02:11 client: mutual:  true
+2017/02/28 16:02:11 client: connected to:  127.0.0.1:66
+2017/02/28 16:02:11 client: handshake:  true
+2017/02/28 16:02:11 client: mutual:  true
+2017/02/28 16:02:11 client: connected to:  127.0.0.1:66
+2017/02/28 16:02:11 client: handshake:  true
+2017/02/28 16:02:11 client: mutual:  true
+2017/02/28 16:02:11 client: connected to:  127.0.0.1:66
+2017/02/28 16:02:11 client: handshake:  true
+2017/02/28 16:02:11 client: mutual:  true
+2017/02/28 16:02:11 client: connected to:  127.0.0.1:66
+2017/02/28 16:02:11 client: handshake:  true
+2017/02/28 16:02:11 client: mutual:  true
+2017/02/28 16:02:11 client: connected to:  127.0.0.1:66
+2017/02/28 16:02:11 client: handshake:  true
+2017/02/28 16:02:11 client: mutual:  true
+2017/02/28 16:02:11 client: connected to:  127.0.0.1:66
+2017/02/28 16:02:11 client: handshake:  true
+2017/02/28 16:02:11 client: mutual:  true
+2017/02/28 16:03:30 ___________________________
+2017/02/28 16:03:30 Logfile enabled, log start!
+2017/02/28 16:03:30 Postgresql running!
+2017/02/28 16:03:30 client: connected to:  127.0.0.1:66
+2017/02/28 16:03:30 client: handshake:  true
+2017/02/28 16:03:30 client: mutual:  true
+2017/02/28 16:03:30 client: connected to:  127.0.0.1:66
+2017/02/28 16:03:30 client: handshake:  true
+2017/02/28 16:03:30 client: mutual:  true
+2017/02/28 16:03:30 client: connected to:  127.0.0.1:66
+2017/02/28 16:03:30 client: handshake:  true
+2017/02/28 16:03:30 client: mutual:  true
+2017/02/28 16:03:30 client: connected to:  127.0.0.1:66
+2017/02/28 16:03:30 client: handshake:  true
+2017/02/28 16:03:30 client: mutual:  true
+2017/02/28 16:03:30 client: connected to:  127.0.0.1:66
+2017/02/28 16:03:30 client: handshake:  true
+2017/02/28 16:03:30 client: mutual:  true
+2017/02/28 16:03:30 client: connected to:  127.0.0.1:66
+2017/02/28 16:03:30 client: handshake:  true
+2017/02/28 16:03:30 client: mutual:  true
+2017/02/28 16:03:30 client: connected to:  127.0.0.1:66
+2017/02/28 16:03:30 client: handshake:  true
+2017/02/28 16:03:30 client: mutual:  true
+2017/02/28 16:04:41 ___________________________
+2017/02/28 16:04:41 Logfile enabled, log start!
+2017/02/28 16:04:41 Postgresql running!
+2017/02/28 16:04:41 client: dial: dial tcp 127.0.0.1:66: getsockopt: connection refused
+2017/02/28 16:04:47 ___________________________
+2017/02/28 16:04:47 Logfile enabled, log start!
+2017/02/28 16:04:47 Postgresql running!
+2017/02/28 16:04:47 client: connected to:  127.0.0.1:66
+2017/02/28 16:04:47 client: handshake:  true
+2017/02/28 16:04:47 client: mutual:  true
+2017/02/28 16:04:47 client: connected to:  127.0.0.1:66
+2017/02/28 16:04:47 client: handshake:  true
+2017/02/28 16:04:47 client: mutual:  true
+2017/02/28 16:04:47 client: connected to:  127.0.0.1:66
+2017/02/28 16:04:47 client: handshake:  true
+2017/02/28 16:04:47 client: mutual:  true
+2017/02/28 16:04:47 client: connected to:  127.0.0.1:66
+2017/02/28 16:04:47 client: handshake:  true
+2017/02/28 16:04:47 client: mutual:  true
+2017/02/28 16:04:47 client: connected to:  127.0.0.1:66
+2017/02/28 16:04:47 client: handshake:  true
+2017/02/28 16:04:47 client: mutual:  true
+2017/02/28 16:04:47 client: connected to:  127.0.0.1:66
+2017/02/28 16:04:47 client: handshake:  true
+2017/02/28 16:04:47 client: mutual:  true
+2017/02/28 16:04:47 client: connected to:  127.0.0.1:66
+2017/02/28 16:04:47 client: handshake:  true
+2017/02/28 16:04:47 client: mutual:  true
+2017/02/28 16:06:14 ___________________________
+2017/02/28 16:06:14 Logfile enabled, log start!
+2017/02/28 16:06:14 Postgresql running!
+2017/02/28 16:06:14 client: connected to:  127.0.0.1:66
+2017/02/28 16:06:14 client: handshake:  true
+2017/02/28 16:06:14 client: mutual:  true
+2017/02/28 16:06:14 client: connected to:  127.0.0.1:66
+2017/02/28 16:06:14 client: handshake:  true
+2017/02/28 16:06:14 client: mutual:  true
+2017/02/28 16:06:14 client: connected to:  127.0.0.1:66
+2017/02/28 16:06:14 client: handshake:  true
+2017/02/28 16:06:14 client: mutual:  true
+2017/02/28 16:06:14 client: connected to:  127.0.0.1:66
+2017/02/28 16:06:14 client: handshake:  true
+2017/02/28 16:06:14 client: mutual:  true
+2017/02/28 16:06:14 client: connected to:  127.0.0.1:66
+2017/02/28 16:06:14 client: handshake:  true
+2017/02/28 16:06:14 client: mutual:  true
+2017/02/28 16:06:14 client: connected to:  127.0.0.1:66
+2017/02/28 16:06:14 client: handshake:  true
+2017/02/28 16:06:14 client: mutual:  true
+2017/02/28 16:06:14 client: connected to:  127.0.0.1:66
+2017/02/28 16:06:14 client: handshake:  true
+2017/02/28 16:06:14 client: mutual:  true
+2017/02/28 17:42:57 ___________________________
+2017/02/28 17:42:57 Logfile enabled, log start!
+2017/02/28 17:42:57 Postgresql running!
+2017/02/28 17:42:58 client: connected to:  127.0.0.1:66
+2017/02/28 17:42:58 client: handshake:  true
+2017/02/28 17:42:58 client: mutual:  true
+2017/02/28 17:42:58 client: connected to:  127.0.0.1:66
+2017/02/28 17:42:58 client: handshake:  true
+2017/02/28 17:42:58 client: mutual:  true
+2017/02/28 17:42:58 client: connected to:  127.0.0.1:66
+2017/02/28 17:42:58 client: handshake:  true
+2017/02/28 17:42:58 client: mutual:  true
+2017/02/28 17:42:58 client: connected to:  127.0.0.1:66
+2017/02/28 17:42:58 client: handshake:  true
+2017/02/28 17:42:58 client: mutual:  true
+2017/02/28 17:42:58 client: connected to:  127.0.0.1:66
+2017/02/28 17:42:58 client: handshake:  true
+2017/02/28 17:42:58 client: mutual:  true
+2017/02/28 17:42:58 client: connected to:  127.0.0.1:66
+2017/02/28 17:42:58 client: handshake:  true
+2017/02/28 17:42:58 client: mutual:  true
+2017/02/28 17:42:58 client: connected to:  127.0.0.1:66
+2017/02/28 17:42:58 client: handshake:  true
+2017/02/28 17:42:58 client: mutual:  true
+2017/02/28 17:48:30 ___________________________
+2017/02/28 17:48:30 Logfile enabled, log start!
+2017/02/28 17:48:30 Postgresql running!
+2017/02/28 17:48:30 client: connected to:  127.0.0.1:66
+2017/02/28 17:48:30 client: handshake:  true
+2017/02/28 17:48:30 client: mutual:  true
+2017/02/28 17:48:30 client: connected to:  127.0.0.1:66
+2017/02/28 17:48:30 client: handshake:  true
+2017/02/28 17:48:30 client: mutual:  true
+2017/02/28 17:48:30 client: connected to:  127.0.0.1:66
+2017/02/28 17:48:30 client: handshake:  true
+2017/02/28 17:48:30 client: mutual:  true
+2017/02/28 17:48:30 client: connected to:  127.0.0.1:66
+2017/02/28 17:48:30 client: handshake:  true
+2017/02/28 17:48:30 client: mutual:  true
+2017/02/28 17:48:30 client: connected to:  127.0.0.1:66
+2017/02/28 17:48:30 client: handshake:  true
+2017/02/28 17:48:30 client: mutual:  true
+2017/02/28 17:48:30 client: connected to:  127.0.0.1:66
+2017/02/28 17:48:30 client: handshake:  true
+2017/02/28 17:48:30 client: mutual:  true
+2017/02/28 17:48:30 client: connected to:  127.0.0.1:66
+2017/02/28 17:48:30 client: handshake:  true
+2017/02/28 17:48:30 client: mutual:  true
+2017/02/28 17:55:21 ___________________________
+2017/02/28 17:55:21 Logfile enabled, log start!
+2017/02/28 17:55:21 Postgresql running!
+2017/02/28 17:55:21 client: dial: dial tcp 127.0.0.1:66: getsockopt: connection refused
+2017/02/28 17:55:49 ___________________________
+2017/02/28 17:55:49 Logfile enabled, log start!
+2017/02/28 17:55:49 Postgresql running!
+2017/02/28 17:55:49 client: connected to:  127.0.0.1:66
+2017/02/28 17:55:49 client: handshake:  true
+2017/02/28 17:55:49 client: mutual:  true
+2017/02/28 17:55:50 client: connected to:  127.0.0.1:66
+2017/02/28 17:55:50 client: handshake:  true
+2017/02/28 17:55:50 client: mutual:  true
+2017/02/28 17:55:50 client: connected to:  127.0.0.1:66
+2017/02/28 17:55:50 client: handshake:  true
+2017/02/28 17:55:50 client: mutual:  true
+2017/02/28 17:55:50 client: connected to:  127.0.0.1:66
+2017/02/28 17:55:50 client: handshake:  true
+2017/02/28 17:55:50 client: mutual:  true
+2017/02/28 17:55:50 client: connected to:  127.0.0.1:66
+2017/02/28 17:55:50 client: handshake:  true
+2017/02/28 17:55:50 client: mutual:  true
+2017/02/28 17:55:50 client: connected to:  127.0.0.1:66
+2017/02/28 17:55:50 client: handshake:  true
+2017/02/28 17:55:50 client: mutual:  true
+2017/02/28 17:55:50 client: connected to:  127.0.0.1:66
+2017/02/28 17:55:50 client: handshake:  true
+2017/02/28 17:55:50 client: mutual:  true
+2017/02/28 17:55:50 client: connected to:  127.0.0.1:66
+2017/02/28 17:55:50 client: handshake:  true
+2017/02/28 17:55:50 client: mutual:  true

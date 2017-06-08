@@ -1,0 +1,1003 @@
+<html lang="ru">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="icon" type="image/png" href="../../public/oper/image/favicon.png">
+    <link rel="stylesheet" href="../../public/oper/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/oper/css/mystylecss.css">
+    <link rel="stylesheet" href="../../public/oper/css/media.css">
+    <link rel="stylesheet" href="../../public/oper/css/my_oper.css">
+    <title>Панель управления</title>
+</head>
+
+<body>    
+
+<div class="container-fluid operator" style="height: 100%">
+    <div class="row">
+
+        <!--Главная страница оператора-->
+        <div class="col-xs-12 col-sm-9 operator_panel" id="main_div_tab">
+            <div class="row">
+                <div class="col-sm-2 logo">
+                    <img src="../../public/oper/image/cloud.png" alt=""> YAPOKI IS
+                </div>
+                <div class="col-sm-9">
+                    <ul id="main_nav_tab" class="nav nav-tabs">
+                      <li id="new_tab"><a  data-toggle="tab">+ Новый заказ</a></li>
+                        <li class="active" id="active_tab"><a href="#" data-toggle="tab">Активные (<span>0</span>)</a></li>
+                      <li  id="preorder_tab"><a href="#" data-toggle="tab">Предзаказы (<span>0</span>)</a></li>
+                      <li id="done_tab"><a href="#" data-toggle="tab">Завершенные (<span>0</span>)</a></li>
+                      <li id="history_tab"><a href="#" data-toggle="tab">История заказов (<span>0</span>)</a></li>
+                      <li id="black_tab"><a href="#" data-toggle="tab">ЧС (<span>0</span>)</a></li>
+
+
+                        <!--<li id="new_tab" class="nav-filter__item"><a  data-toggle="tab">+ Новый заказ</a></li>-->
+                        <!--<li class="nav-filter__item active" id="active_tab"><a  data-toggle="tab">Активные (2)</a></li>-->
+                        <!--<li  id="preorder_tab" class="nav-filter__item"><a  data-toggle="tab">Предзаказы (1)</a></li>-->
+                        <!--<li id="done_tab" class="nav-filter__item"><a  data-toggle="tab">Завершенные (2)</a></li>-->
+                        <!--<li id="black_tab" class="nav-filter__item"><a  data-toggle="tab">ЧС (2)</a></li>-->
+                    </ul>
+                </div>
+                <div class="col-sm-1 text-right">
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane active" id="activeOrder">
+                    <div class="table-wrapper">
+                        <table class="filterable">
+                            <thead>
+                                <tr class="">
+                                    <th>Город</th>
+                                    <th>№ Заказа</th>
+                                    <th>Время</th>
+                                    <th>Тип заказа</th>
+                                    <th>Статус</th>
+                                    <th>Точка/ресторан</th>
+                                    <th>Имя/телефон</th>
+                                    <th>Адрес доставки</th>
+                                    <th>Принял заказ</th>
+                                    <th>Курьер</th>
+
+                                    <!--<th ><input type="text" class="form-control" placeholder="Город" disabled></th>-->
+                                    <!--<th ><input type="text" class="form-control" placeholder="№ заказа" disabled></th>-->
+                                    <!--<th ><input type="text" class="form-control" placeholder="Время" disabled></th>-->
+                                    <!--<th><input type="text" class="form-control" placeholder="Тип заказа" disabled>  </th>-->
+                                    <!--<th > <input type="text" class="form-control" placeholder="Статус" disabled></th>-->
+                                    <!--<th > <input type="text" class="form-control" placeholder="Точка/ресторан" disabled> </th>-->
+                                    <!--<th ><input type="text" class="form-control" placeholder="Имя/Телефон" disabled></th>-->
+                                    <!--<th> <input type="text" class="form-control" placeholder="Адрес доставки" disabled> </th>-->
+                                    <!--<th > <input type="text" class="form-control" placeholder="Принял заказ" disabled></th>-->
+                                    <!--<th >  <input type="text" class="form-control" placeholder="Курьер" disabled>   </th>-->
+                                </tr>
+                                <tr class="collapse filters">
+                                    <td><input placeholder="Город" type="text"></td>
+                                    <td><input placeholder="№ заказа" type="text"></td>
+                                    <td><input placeholder="Время" type="text"></td>
+                                    <td><input placeholder="Тип заказа" type="text"></td>
+                                    <td><input placeholder="Статус" type="text"></td>
+                                    <td><input placeholder="Точка/ресторан" type="text"></td>
+                                    <td><input placeholder="Имя/телефон" type="text"></td>
+                                    <td><input placeholder="Адрес доставки" type="text"></td>
+                                    <td><input placeholder="Принял заказ" type="text"></td>
+                                    <td><input placeholder="Курьер" type="text"></td>
+                                </tr>
+
+                            </thead>
+                            <tbody class="orderList" id="tbody1">
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="preOrder">
+                    <div class="table-wrapper">
+                        <table class="filterable">
+                            <thead>
+                                <tr>
+                                    <th>Город</th>
+                                    <th>№ Заказа</th>
+                                    <th>Время</th>
+                                    <th>Тип заказа</th>
+                                    <th>Статус</th>
+                                    <th>Точка/ресторан</th>
+                                    <th>Имя/телефон</th>
+                                    <th>Адрес доставки</th>
+                                    <th>Принял заказ</th>
+                                    <th>Курьер</th>
+                                </tr>
+                                <tr class="collapse filters">
+                                    <td><input placeholder="Город" type="text"></td>
+                                    <td><input placeholder="№ заказа" type="text"></td>
+                                    <td><input placeholder="Время" type="text"></td>
+                                    <td><input placeholder="Тип заказа" type="text"></td>
+                                    <td><input placeholder="Статус" type="text"></td>
+                                    <td><input placeholder="Точка/ресторан" type="text"></td>
+                                    <td><input placeholder="Имя/телефон" type="text"></td>
+                                    <td><input placeholder="Адрес доставки" type="text"></td>
+                                    <td><input placeholder="Принял заказ" type="text"></td>
+                                    <td><input placeholder="Курьер" type="text"></td>
+                                </tr>
+                            </thead>
+                            <tbody class="orderList" id="orderListPre">
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="finishOrder">
+                    <div class="table-wrapper">
+                        <table class="filterable">
+                            <thead>
+                                <tr>
+                                    <th>Город</th>
+                                    <th>№ Заказа</th>
+                                    <th>Время</th>
+                                    <th>Тип заказа</th>
+                                    <th>Статус</th>
+                                    <th>Точка/ресторан</th>
+                                    <th>Имя/телефон</th>
+                                    <th>Адрес доставки</th>
+                                    <th>Принял заказ</th>
+                                    <th>Курьер</th>
+                                </tr>
+                                <tr class="collapse filters">
+                                    <td><input placeholder="Город" type="text"></td>
+                                    <td><input placeholder="№ заказа" type="text"></td>
+                                    <td><input placeholder="Время" type="text"></td>
+                                    <td><input placeholder="Тип заказа" type="text"></td>
+                                    <td><input placeholder="Статус" type="text"></td>
+                                    <td><input placeholder="Точка/ресторан" type="text"></td>
+                                    <td><input placeholder="Имя/телефон" type="text"></td>
+                                    <td><input placeholder="Адрес доставки" type="text"></td>
+                                    <td><input placeholder="Принял заказ" type="text"></td>
+                                    <td><input placeholder="Курьер" type="text"></td>
+                                </tr>
+                            </thead>
+                            <tbody class="orderList" id="orderListFinish">
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="bl">
+                </div>
+                <div class="tab-pane" id="historyOrder">
+                    <div class="col-sm-8">
+                        <label for="client_phone2">Номер телефона</label>
+                        <input type="text" id="client_phone2" class="tel_num" placeholder="Введите номер телефона">
+                        <a href="#" class="button_border" id="loadtel2">Загрузить</a>
+                        <label class="radio-inline">
+                        <input name="RG1" id="radio1" value="1" checked="" type="radio"> за неделю
+                        </label>
+                        <label class="radio-inline">
+                        <input name="RG1" id="radio2" value="2" type="radio"> за месяц
+                        </label>
+                        <label class="radio-inline">
+                            <input name="RG1" id="radio3" value="3" type="radio"> за год
+                        </label>
+                    </div>
+                    <br>
+                    <div class="table-wrapper">
+                        <table class="filterable">
+                            <thead>
+                            <tr>
+                                <th>Город</th>
+                                <th>№ Заказа</th>
+                                <th>Время</th>
+                                <th>Тип заказа</th>
+                                <th>Статус</th>
+                                <th>Точка/ресторан</th>
+                                <th>Имя/телефон</th>
+                                <th>Адрес доставки</th>
+                                <th>Принял заказ</th>
+                                <th>Курьер</th>
+                            </tr>
+                            <tr class="collapse filters">
+                                <td><input placeholder="Город" type="text"></td>
+                                <td><input placeholder="№ заказа" type="text"></td>
+                                <td><input placeholder="Время" type="text"></td>
+                                <td><input placeholder="Тип заказа" type="text"></td>
+                                <td><input placeholder="Статус" type="text"></td>
+                                <td><input placeholder="Точка/ресторан" type="text"></td>
+                                <td><input placeholder="Имя/телефон" type="text"></td>
+                                <td><input placeholder="Адрес доставки" type="text"></td>
+                                <td><input placeholder="Принял заказ" type="text"></td>
+                                <td><input placeholder="Курьер" type="text"></td>
+                            </tr>
+                            </thead>
+                            <tbody class="orderList" id="orderListHistory">
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Модальные окна -->
+           
+            <div class="modal fade"  tabindex="-1" role="dialog" id="confirm" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p class="h4">Вы действительно хотите отменить заказ?</p>
+                            <p>Отменённый заказ будет перенесён в "Завершенные" с пометкой "Отменён"</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" data-toggle="modal" data-target="#confirmReason">Да</button>
+                            <button type="button" data-dismiss="modal">Нет</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade"  tabindex="-1" role="dialog" id="confirmReason" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <p class="h4">Укажите причину отмены заказа:</p>
+                            <textarea name="" id="cancelCause" cols="30" rows="5"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="cancelCauseYes" data-dismiss="modal">Да</button>
+                            <button type="button" data-dismiss="modal">Нет</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Страница нового заказа-->
+        <div class="col-xs-12 col-sm-9" id="new_div_tab">
+            <ul class="nav nav-tabs client_order">
+                <li class="active"  id="tab_client"><a href="#client" data-toggle="tab">Клиент</a></li>
+                <li id="tab_order"><a href="#order_client" data-toggle="tab">Заказ</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="client">
+                    <p class="h3">Япоки, оператор Анжела, здраствуйте!</p>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label for="city_client">Из какого города Вы звоните?</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input id="city_client" type="text" placeholder="Введите город" value="Курган">
+                            <a href="#" class="button_border clearbutton">Очистить</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label for="client_name">Как Вас зовут?<span class="font_red">*</span></label>
+                        </div>
+                        <div class="col-sm-5">
+                            <input id="client_name" placeholder="Введите имя" type="text">
+                            <a href="#" class="button_border clearbutton">Очистить</a>
+                        </div>
+                        <div class="col-sm-4">
+                            Уточните: Вас зовут <span class="client_name_oper">Дмитрий</span>?
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label for="client_phone"><span class="client_name_oper"> Дмитрий</span>, Ваш телефон?</label>
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="text" id="client_phone" class="tel_num" placeholder="Введите номер телефона">
+                            <a href="#" class="button_border clearbutton">Очистить</a>
+                            <a href="#" class="button_border" id="loadtel">Загрузить</a>
+                        </div>
+                        <div class="col-sm-4">
+                            <!-- Не используем в новой версии? <a href="#" class="client_phone_cleaner button_border">Очистить и вставить код города</a>-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <span class="client_name_oper"> Дмитрий</span>, Вы хотите оформить заказ на доставку или навынос?
+                        </div>
+                        <div class="col-sm-5">
+                            <ul class="nav nav-tabs">
+                                <!--<ul class="nav nav-tabs delivery_met">-->
+                                <li id="delivery" class="active  delivery_met"><a href="#delivery" data-toggle="tab">Доставка</a></li>
+                                <li id="self" class="delivery_met"><a href="#take_away" data-toggle="tab">Навынос</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <!--class="dropdown pull-right"-->
+                            <div >
+                                <p class="pull-left" id="warning_dellivery"> </p>
+                            <select  id="take_away_address" name="Точка самовывоза"  >
+                                <option value="1">Гоголя</option>
+                                <option value="2">Пролетарская</option>
+                                <option value="3">5 мкрн.</option>
+                            </select>
+
+
+                            </div>
+
+                            <div >
+
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                        </div>
+                        <div class="col-sm-5">
+                        </div>
+                        <div class="col-sm-4">
+                        <input  type="checkbox"  id="ignore_delivery">
+                        <label  style="margin-left: 5px" for="ignore_delivery">Любая зона доставки</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="checkbox" id="on_time"><label for="on_time">Заказ на время</label>
+                            <!--<input id="chuse_time" type="text" placeholder="14:00">-->
+                            <input disabled id="select_date" type="date" autocomplete="off">
+                            <input disabled id="select_time" type="time" min="08:00" max="23:00" autocomplete="off">
+                        </div>
+                        <div class="col-sm-4">
+                            <input  type="checkbox"  id="to_workers">
+                            <label  style="margin-left: 5px" for="to_workers">Обед сотрудника</label>
+                            <input  style="display: none" id="input_to_workers" type="text" placeholder="Введите подразделение">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            На какой адрес доставить?
+                        </div>
+                        <div class="col-sm-5 operator_client_adress">
+                            <label for="client_adress"><input type="text" id="client_adress" placeholder="Поиск"></label>
+                            <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                                <div class="panel">
+                                    <div class="panel-heading" role="tab" id="headingOne">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                            Новый адрес
+                                        </a>
+                                    </div>
+                                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                                        <div class="panel-body">
+                                            <input id="street_client" class="col-sm-12" type="text" placeholder="Введите адрес" value="">
+                                            <div class="row">
+                                                <label class="col-sm-4" for="home_number">Дом <input id="home_number" type="text"></label>
+                                                <label class="col-sm-4" for="corp_str">Корп./Стр. <input id="corp_str" type="text"></label>
+                                                <label class="col-sm-4" for="kv_of">Кв./Оф. <input id="kv_of" type="text"></label>
+
+                                            </div>
+                                            <div class="row">
+                                                <label class="col-sm-4" for="podyezd">Подъезд <input id="podyezd" type="text"></label>
+                                                <label class="col-sm-4" for="level">Этаж <input id="level" type="text"></label>
+                                                <label class="col-sm-4" for="cod">Код <input id="cod" type="text"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <p>Среднее время ожидания зависит от заказа</p>
+                            <ul class="operator_waite_time">
+                                <li><div class="pull-right font_blue">00:45</div>суши и роллы:</li>
+                                <li><div class="pull-right font_blue">00:55</div>пицца и закуски:</li>
+                                <li><div class="pull-right font_blue">00:35</div>смешанный заказ:</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label for="comment_order">Комментарии к заказу</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <textarea name="" id="comment_order" cols="60" rows="5" placeholder="Введите текст комментария"></textarea>
+                            <a href="#"  class="pull-right green_button" id="next_btn">
+                                Далее
+                            </a>
+                            <a href="#" class="pull-right red_button" id="cancel_btn2">
+                                Отмена
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="order_client">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <span class="client_name_oper"> Дмитрий</span>, сумма Вашего заказа
+                            <span class="font_blue" id="overall_cost">0 р</span>
+                        </div>
+                        <div class="col-sm-7">
+                            <a class="button_border" href="#" id="cart_btn">В меню</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            Рассчет наличными или картой?
+                        </div>
+                        <div class="col-sm-7">
+                            <ul class="nav nav-tabs pay_met">
+                                <!--<ul class="nav nav-tabs pay_met">-->
+                                <li class="active" id="cash"><a href="#cash" data-toggle="tab">Наличными</a></li>
+                                <li id="card"><a href="#card" data-toggle="tab">Картой</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            С какой суммы приготовить сдачу?
+                        </div>
+                        <div class="col-sm-7">
+                            <input id="ostatok" type="text">
+                            <a class="button_border" href="#">Ровно</a>
+                            <p class="money_summ"><a href="#">500</a>/<a href="#">1000</a>/<a href="#">5000</a></p>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <label for="comment_order2">Комментарии к заказу</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <textarea name="" placeholder="Введите текст комментария" id="comment_order2" cols="60" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <span class="client_name_oper"> Дмитрий</span>, заказ будет <span class="delivery_name"> приготовлен </span> между
+                            <span class="font_blue" id="timeFinish1">13:20</span> и <span class="font_blue" id="timeFinish2">13:30</span>.
+                            <p>Спасибо за заказ и приятного аппетита!</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 finish_buttons">
+                            <a class="red_button" id="cancel_btn" href="#">Отмена</a>
+                            <a class="green_button" id="finish_btn" href="#">Готово</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--редактирование заказа-->
+        <div class="col-xs-12 col-sm-9" id="new_div_tab2">
+            <ul class="nav nav-tabs client_order">
+                <li class="active"  id="tab_client2"><a href="#client2" data-toggle="tab">Клиент</a></li>
+                <li id="tab_order2"><a href="#order_client2" data-toggle="tab">Заказ</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="client2">
+                    <p class="h3">Япоки, оператор Анжела, здраствуйте!</p>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label for="city_client2">Из какого города Вы звоните?</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <input id="city_client2" type="text" placeholder="Введите город" value="Курган">
+                            <a href="#" class="button_border clearbutton">Очистить</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label for="client_name2">Как Вас зовут?<span class="font_red">*</span></label>
+                        </div>
+                        <div class="col-sm-5">
+                            <input id="client_name2" placeholder="Введите имя" type="text">
+                            <a href="#" class="button_border clearbutton">Очистить</a>
+                        </div>
+                        <div class="col-sm-4">
+                            Уточните: Вас зовут <span class="client_name_oper">Дмитрий</span>?
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label for="client_phone_2"><span class="client_name_oper"> Дмитрий</span>, Ваш телефон?</label>
+                        </div>
+                        <div class="col-sm-5">
+                            <input type="text" id="client_phone_2" class="tel_num" placeholder="Введите номер телефона">
+                            <a href="#" class="button_border clearbutton">Очистить</a>
+                            <a href="#" class="button_border" id="loadtel22">Загрузить</a>
+                        </div>
+                        <div class="col-sm-4"> </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <span class="client_name_oper"> Дмитрий</span>, Вы хотите оформить заказ на доставку или навынос?
+                        </div>
+                        <div class="col-sm-5">
+                            <ul class="nav nav-tabs">
+                                <!--<ul class="nav nav-tabs delivery_met">-->
+                                <li id="delivery2" class="active  delivery_met"><a href="#delivery2" data-toggle="tab">Доставка</a></li>
+                                <li id="self2" class="delivery_met"><a href="#take_away2" data-toggle="tab">Навынос</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="col-sm-4">
+                            <div >
+                                <p class="pull-left" id="warning_dellivery2"> </p>
+                                <select  id="take_away_address2" name="Точка самовывоза"  >
+                                    <option value="1">Гоголя</option>
+                                    <option value="2">Пролетарская</option>
+                                    <option value="3">5 мкрн.</option>
+                                </select>
+                            </div>
+                            <div >   </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3"> </div>
+                        <div class="col-sm-5"> </div>
+                        <div class="col-sm-4">
+                            <input  type="checkbox"  id="ignore_delivery2">
+                            <label  style="margin-left: 5px" for="ignore_delivery">Любая зона доставки</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">  </div>
+                        <div class="col-sm-5">
+                            <input type="checkbox" id="on_time2"><label for="on_time">Заказ на время</label>
+                            <!--<input id="chuse_time" type="text" placeholder="14:00">-->
+                            <input disabled id="select_date2" type="date" autocomplete="off">
+                            <input disabled id="select_time2" type="time" min="08:00" max="23:00" autocomplete="off">
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3"> На какой адрес доставить? </div>
+                        <div class="col-sm-5 operator_client_adress">
+
+                            <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+                                <div class="panel">
+                                    <div class="panel-heading" role="tab" id="headingOneEdit">
+                                        <a role="button" data-toggle="collapse" data-parent="#accordion2" href="#collapseOneEdit" aria-expanded="false" aria-controls="collapseOneEdit">
+                                            Новый адрес
+                                        </a>
+                                    </div>
+                                    <div id="collapseOneEdit" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOneEdit">
+                                        <div class="panel-body">
+                                            <input id="street_client_edit" class="col-sm-12" type="text" placeholder="Введите адрес" value="">
+                                            <div class="row">
+                                                <label class="col-sm-4" for="home_number_edit">Дом <input id="home_number_edit" type="text"></label>
+                                                <label class="col-sm-4" for="corp_str_edit">Корп./Стр. <input id="corp_str_edit" type="text"></label>
+                                                <label class="col-sm-4" for="kv_of_edit">Кв./Оф. <input id="kv_of_edit" type="text"></label>
+
+                                            </div>
+                                            <div class="row">
+                                                <label class="col-sm-4" for="podyezd_edit">Подъезд <input id="podyezd_edit" type="text"></label>
+                                                <label class="col-sm-4" for="level_edit">Этаж <input id="level_edit" type="text"></label>
+                                                <label class="col-sm-4" for="cod_edit">Код <input id="cod_edit" type="text"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div></div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label for="comment_order_edit">Комментарии к заказу</label>
+                        </div>
+                        <div class="col-sm-9">
+                            <textarea name="" id="comment_order_edit" cols="60" rows="5" placeholder="Введите текст комментария"></textarea>
+                            <a href="#"  class="pull-right green_button" id="next_btn2"> Далее   </a>
+                            <a href="#" class="pull-right red_button" id="cancel_btn22"> Отмена  </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" id="order_client2">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <span class="client_name_oper"> Дмитрий</span>, сумма Вашего заказа
+                            <span class="font_blue" id="overall_cost2">0 р</span>
+                        </div>
+                        <div class="col-sm-7">
+                            <a class="button_border" href="#" id="cart_btn2">В меню</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            Рассчет наличными или картой?
+                        </div>
+                        <div class="col-sm-7">
+                            <ul class="nav nav-tabs pay_met">
+                                <!--<ul class="nav nav-tabs pay_met">-->
+                                <li class="active" id="cash2"><a href="#cash2" data-toggle="tab">Наличными</a></li>
+                                <li id="card2"><a href="#card2" data-toggle="tab">Картой</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <label for="comment_order2">Комментарии к заказу</label>
+                        </div>
+                        <div class="col-sm-7">
+                            <textarea name="" placeholder="Введите текст комментария" id="comment_order22" cols="60" rows="5"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-12 finish_buttons">
+                            <a class="red_button" id="cancel_btn222" href="#">Отмена</a>
+                            <a class="green_button" id="finish_btn2" href="#">Готово</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Боковая панель-->
+        <div class="col-xs-12 col-sm-3 sidebar">
+            <div class="clearfix text-right font_blue">
+                <button id="logout"  class="btn btn-link font_blue logout" name="btnExit">Выйти
+                </button>                
+            </div>
+            <div style="display: table;height: 90%;width: 100%;">
+                <div style="display: table-cell;vertical-align: middle;">
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="dial">
+                            <div class="clearfix text-center time-block">
+                                <span id="doc_time" class="font_blue"></span>
+                                <span id="doc_date"></span>
+                                <p class="city">(Курган)</p>
+                            </div>
+                            <div class="dialed text-center">
+                                <i class="add_number"></i><input class="num tel_num" id="tel_num" type="tel" placeholder="8(___)___-__-__"><i onclick="$('#tel_num').val('')" class="remove_number"></i>
+                                <p class="name">Дмитрий Медведев</p>
+                            </div>
+                            <ul class="set_number">
+                                <li>
+                                    <a onclick="number_tel('1')">1</a>
+                                </li>
+                                <li>
+                                    <a onclick="number_tel('2')">2 <span>ABC</span></a>
+                                </li>
+                                <li>
+                                    <a onclick="number_tel('3')">3 <span>DEF</span></a>
+                                </li>
+                                <li>
+                                    <a onclick="number_tel('4')">4 <span>GHI</span></a>
+                                </li>
+                                <li>
+                                    <a onclick="number_tel('5')">5 <span>JKL</span></a>
+                                </li>
+                                <li>
+                                    <a onclick="number_tel('6')">6 <span>MNO</span></a>
+                                </li>
+                                <li>
+                                    <a onclick="number_tel('7')">7 <span>PQRS</span></a>
+                                </li>
+                                <li>
+                                    <a onclick="number_tel('8')">8 <span>TUV</span></a>
+                                </li>
+                                <li>
+                                    <a onclick="number_tel('9')">9 <span>WXYZ</span></a>
+                                </li>
+                                <li class="star-button">
+                                    <a>*</a>
+                                </li>
+                                <li>
+                                    <a onclick="number_tel('0')">0 <span>+</span></a>
+                                </li>
+                                <li class="grille-button">
+                                    <a>#</a>
+                                </li>
+                                <li class="call-button">
+                                    <a href="#activeCall" data-toggle="tab"><i class="fa fa-phone"></i></a>
+                                </li>
+                            </ul>
+                            <ul class="toolbar_phone">
+                                <li><a href="#"><i class="fa fa-star-o"></i><span>Избранные</span></a></li>
+                                <li><a href="#"><i class="fa fa-clock-o"></i><span>Недавние</span></a></li>
+                                <li><a href="#"><i class="contacts_icon"></i><span>Контакты</span></a></li>
+                                <li class="active"><a href="#"><i class="fa fa-th"></i><span>Клавиши</span></a></li>
+                                <li><a href="#"><i class="audio_icon"></i><span>Записи</span></a></li>
+                            </ul>
+                        </div>                
+                        <div class="tab-pane" id="activeCall">
+                            <!-- Когда пошел вызов, выводим -->
+                            <div class="clearfix text-center time-block">
+                                <span id="doc_time_dark" class="font_blue"></span>
+                                <span id="doc_date_dark"></span>
+                                <p class="city">(Курган)</p>
+                            </div>
+                            <div class="dialed">
+                                <p class="name">Дмитрий Медведев</p>
+                                <p class="count_time">00:07</p>
+                            </div>
+                            <ul class="set_number">
+                                <li>
+                                    <a href="#"><i class="fa fa-microphone-slash"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-th"></i></a>
+                                </li>
+                                <li>
+                                    <a href="#"><i class="fa fa-user"></i></a>
+                                </li>
+                                <li class="finishcall-button">
+                                    <a href="#dial" data-toggle="tab"><i class="finish_call"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+            </div>          
+        </div>
+    </div>
+
+</div>
+
+<!--основной див корзины-->
+<div id="page_cart" class="container-fluid operator-cart" style="height: 95%">
+    <div class="row">
+
+
+        <!--категории и товары-->
+        <div class="col-xs-12 col-sm-9" id="products_cat">
+            <label class="clearfix" for="product_search"><span>Что будете заказывать?</span> <input type="text"
+                                                                                                    id="product_search"
+                                                                                                    placeholder="Введите название блюда или ингридиента"></label>
+            <ul class="product_group">
+                <li class="active"><a href="#sets" data-toggle="tab">Сеты</a></li>
+                <li><a href="#rols" data-toggle="tab">Роллы</a></li>
+                <li><a href="#zrols" data-toggle="tab">Запеченные роллы</a></li>
+                <li><a href="#sushi" data-toggle="tab">Суши</a></li>
+                <li><a href="#pizza" data-toggle="tab">Пицца</a></li>
+                <li><a href="#salat" data-toggle="tab">Салаты и закуски</a></li>
+                <li><a href="#drink" data-toggle="tab">Напитки и десерты</a></li>
+                <li><a href="#sous" data-toggle="tab">Соусы</a></li>
+                <li><a href="#other" data-toggle="tab">Остальное</a></li>
+            </ul>
+            <div class="tab-content product_search_result">
+                <div class="tab-pane active" id="sets">
+                    <ul class="product_group">
+                        <!--нименования прдуктов-->
+                    </ul>
+                </div>
+                <div class="tab-pane" id="rols">
+                    <ul class="product_group">
+                        <li><a href="#">Ролл унаги</a></li>
+                        <li><a href="#">Ролл филадельфия</a></li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="zrols">
+                    <ul class="product_group"></ul>
+                </div>
+                <div class="tab-pane" id="sushi">
+                    <ul class="product_group"></ul>
+                </div>
+                <div class="tab-pane" id="pizza">
+                    <ul class="product_group">
+
+                            <li><a href="#pizza_big" data-toggle="tab">Большая</a></li>
+
+                            <li><a href="#pizza_small" data-toggle="tab">Маленькая</a></li>
+
+                    </ul>
+                </div>
+                <div class="tab-pane" id="pizza_small">
+                    <ul class="product_group">
+
+                        <li><a href="#">Маленькая</a></li>
+
+                        <li><a href="#">Маленькая</a></li>
+
+                    </ul>
+                </div>
+                <div class="tab-pane" id="pizza_big">
+                    <ul class="product_group">
+
+                        <li><a href="#pizza_big_t" data-toggle="tab">Тонкое тесто</a></li>
+
+                        <li><a href="#pizza_big_tr" data-toggle="tab">Традиционная</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="tab-pane" id="pizza_big_t">
+                    <ul class="product_group">
+                        <li><a href="#">Большая----t</a></li>
+
+                        <li><a href="#">Большая----t</a></li>
+                    </ul>
+                </div>
+
+                <div class="tab-pane" id="pizza_big_tr">
+                    <ul class="product_group">
+                        <li><a href="#">Большая----tr</a></li>
+
+                        <li><a href="#">Большая----tr</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="tab-pane" id="salat">
+                    <ul class="product_group"></ul>
+                </div>
+                <div class="tab-pane" id="drink">
+                    <ul class="product_group"></ul>
+                </div>
+                <div class="tab-pane" id="sous">
+                    <ul class="product_group"></ul>
+                </div>
+                <div class="tab-pane" id="other">
+                    <ul class="product_group"></ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Выбранный продукт-->
+        <div id="description" class="col-xs-12 col-sm-9 discripton" style="display: none">
+
+        </div>
+
+        <!--корзина-->
+        <div class="col-xs-12 col-sm-3 sidebar" id="cart">
+            <ul class="nav nav-tabs">
+                <li class="delivery_met active"><a href="#delivery" data-toggle="tab">Доставка</a></li>
+                <li class="delivery_met"><a href="#take_away" data-toggle="tab">Навынос</a></li>
+            </ul>
+            <p class="h5 align-left">Вы заказываете</p>
+            <div class="order-list">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div id="cart_list" class="panel">
+
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true"
+                               aria-controls="collapseTwo">
+                                Колличество персон<span class="count" id="count_person_span">0</span>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-expanded="true"
+                             aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <button onclick="var x = document.getElementById('count_person'); x.value = (+x.value < 1 ? 0 : +x.value - 1); document.getElementById('count_person_span').innerHTML = x.value"
+                                        class="minus">-
+                                </button>
+                                <input id="count_person"
+                                       onkeyup="this.value = this.value.replace(/[^0-9\\.]/g, '');  document.getElementById('count_person_span').innerHTML = document.getElementById('count_person').value;"
+                                       class="input" type="text" placeholder="0" value="0">
+                                <button onclick="var x = document.getElementById('count_person'); x.value = +x.value + 1; document.getElementById('count_person_span').innerHTML = x.value"
+                                        class="plus">+
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="border-top: 2px solid green" class="panel">
+
+                        <div class="panel">
+                            <div class="panel">
+                                <div class="panel-heading" role="tab" id="heading_promo">
+                                    <a id="load_promo">
+                                            <!--data-toggle="collapse" data-parent="#accordion" href="#collapse_promo"-->
+                                       <!--aria-expanded="true"-->
+                                       <!--aria-controls="collapse_promo"-->
+                                        Акции:
+                                    </a>
+                                    <span></span>
+                                </div>
+                                <div id="collapse_promo" class="panel-collapse collapse in" role="tabpanel"
+                                     aria-expanded="true" aria-labelledby="heading_promo">
+                                    <div id="promotion"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<select class="pull-right" id="promo_discount" name="Скидка"></select>-->
+            <p class="h5 align-left">Без скидки: <span class="pull-right font_blue overall_cost over_price">0 p.</span></p>
+            <p class="h5 align-left">К оплате: <span class="pull-right font_blue overall_cost over_price_without" id="over_price">0 p.</span></p>
+            <div class="col-sm-12 finish_buttons">
+                <div class="col-sm-12">
+                <a id="cart_btn_cancel" class="cart_btn_cancel red_button" >Отмена</a>
+                <a id="cart_btn_apply" class="green_button">Готово</a>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Навигация -->
+<nav class="row navbar navbar-fixed-bottom page_footer cassir-footer" role="navigation">
+    <div class="col-xs-12">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse" onmousedown="procCollapse()">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <p class="visible-xs">
+                <span id="name_role1">Оператор: </span>
+                <span class="font_blue" id="fio1">Не авторизован</span>
+            </p>
+        </div>
+        <!--user_stat= {-->
+        <!--WorkHours: 148,             //Часы с нач.мес.: 148-->
+        <!--TimeGetMedium:"1:10",       //Среднее время принятие заказа: 1:15-->
+        <!--Rating:95,                  //Рейтинг: 95-->
+        <!--BalansMinus: 3599,          //Списания: 3 552-->
+        <!--Balans: 15451-->
+        <div class="collapse navbar-collapse nav-collapse">
+            <ul class="nav navbar-nav">
+                <li class="hidden-xs">
+                    <p class="font_footer">
+                        <span id="name_role">Оператор: </span>
+                        <span class="font_blue" id="fio">Не авторизован</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="font_footer">
+                        Часы с нач.мес.:
+                        <span class="font_blue" id="horse_m">0</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="font_footer">
+                        Среднее время принятие заказа:
+                        <span class="font_blue" id="time_acceptance_order">0</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="font_footer">
+                        Рейтинг:
+                        <span class="font_blue" id="rating">0</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="font_footer">
+                        Списания:
+                        <span class="font_blue" id="award">0</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="font_footer">
+                        Баланс:
+                        <span class="font_blue" id="balance">0</span>
+                    </p>
+                </li>
+                <li>
+                    <p>Оффлайн <i onclick="onOff()" class="fa fa-toggle-on" aria-hidden="true"></i> Онлайн</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div id="warning">
+</div>
+<!-- Скрипты -->
+<script src="../../public/oper/js/jquery.js" type="text/javascript"></script>
+<script src="../../public/oper/js/myjs.js" type="text/javascript"></script>
+<script src="../../public/oper/js/bootstrap.js" type="text/javascript"></script>
+<script src="../../public/oper/js/jquery.formstyler.js" type="text/javascript"></script>
+<script src="../../public/oper/js/jquery.maskedinput.js" type="text/javascript"></script>
+<script src="../../public/oper/js/typeahead.jquery.js" type="text/javascript"></script>
+<script src="../../public/oper/js/jquery.cookie.js"></script>
+
+<script src="../../public/oper/js/cart.js" type="text/javascript"></script>
+<script src="../../public/oper/js/promotion.js" type="text/javascript"></script>
+<script src="../../public/oper/js/conf.js"></script>
+<script src="../../public/oper/js/time.js"></script>
+<script src="../../public/oper/js/wsocket.js"></script>
+
+<script src="../../public/oper/js/new.js"></script>
+<!--<script src="../../public/oper/js/sip-0.7.7.js"></script>-->
+<!--<script src="../../public/oper/js/wsip.js"></script>-->
+
+<!--<script src="../../public/oper/js/jssip-3.0.7.js"></script>-->
+
+
+
+
+</body>
+
+</html>

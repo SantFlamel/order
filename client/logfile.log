@@ -1,0 +1,427 @@
+2016/12/26 16:37:57 ___________________________
+2016/12/26 16:37:57 Logfile enabled, log start!
+2016/12/26 16:37:57 client: connected to:  127.0.0.1:666
+2016/12/26 16:37:57 client: handshake:  true
+2016/12/26 16:37:57 client: mutual:  true
+2016/12/26 16:41:05 ___________________________
+2016/12/26 16:41:05 Logfile enabled, log start!
+2016/12/26 16:41:05 client: connected to:  127.0.0.1:666
+2016/12/26 16:41:05 client: handshake:  true
+2016/12/26 16:41:05 client: mutual:  true
+2016/12/27 14:51:51 ___________________________
+2016/12/27 14:51:51 Logfile enabled, log start!
+2016/12/27 14:51:51 client: connected to:  127.0.0.1:666
+2016/12/27 14:51:51 client: handshake:  true
+2016/12/27 14:51:51 client: mutual:  true
+2016/12/27 14:51:51 00: ERROR CONNECTION - OrderItems dial tcp 192.168.0.78:500: getsockopt: connection refused
+2016/12/27 17:43:12 ___________________________
+2016/12/27 17:43:12 Logfile enabled, log start!
+2016/12/27 17:43:12 client: connected to:  127.0.0.1:666
+2016/12/27 17:43:12 client: handshake:  true
+2016/12/27 17:43:12 client: mutual:  true
+2016/12/28 16:30:45 ___________________________
+2016/12/28 16:30:45 Logfile enabled, log start!
+2016/12/28 16:30:45 client: connected to:  127.0.0.1:666
+2016/12/28 16:30:45 client: handshake:  true
+2016/12/28 16:30:45 client: mutual:  true
+2016/12/28 16:34:57 ___________________________
+2016/12/28 16:34:57 Logfile enabled, log start!
+2016/12/28 16:34:57 client: connected to:  127.0.0.1:666
+2016/12/28 16:34:57 client: handshake:  true
+2016/12/28 16:34:57 client: mutual:  true
+2016/12/28 16:35:26 ___________________________
+2016/12/28 16:35:26 Logfile enabled, log start!
+2016/12/28 16:35:26 client: connected to:  127.0.0.1:666
+2016/12/28 16:35:26 client: handshake:  true
+2016/12/28 16:35:26 client: mutual:  true
+2016/12/28 16:43:36 ___________________________
+2016/12/28 16:43:36 Logfile enabled, log start!
+2016/12/28 16:43:36 client: connected to:  127.0.0.1:666
+2016/12/28 16:43:36 client: handshake:  true
+2016/12/28 16:43:36 client: mutual:  true
+2016/12/28 16:55:34 ___________________________
+2016/12/28 16:55:34 Logfile enabled, log start!
+2016/12/28 16:55:34 client: connected to:  127.0.0.1:666
+2016/12/28 16:55:34 client: handshake:  true
+2016/12/28 16:55:34 client: mutual:  true
+2016/12/28 16:55:34 EOF
+2016/12/28 16:59:45 ___________________________
+2016/12/28 16:59:45 Logfile enabled, log start!
+2016/12/28 16:59:45 client: connected to:  127.0.0.1:666
+2016/12/28 16:59:45 client: handshake:  true
+2016/12/28 16:59:45 client: mutual:  true
+2016/12/28 16:59:45 EOF
+2016/12/28 17:01:16 ___________________________
+2016/12/28 17:01:16 Logfile enabled, log start!
+2016/12/28 17:01:16 client: connected to:  127.0.0.1:666
+2016/12/28 17:01:16 client: handshake:  true
+2016/12/28 17:01:16 client: mutual:  true
+2016/12/28 17:01:16 EOF
+2016/12/28 17:01:41 ___________________________
+2016/12/28 17:01:41 Logfile enabled, log start!
+2016/12/28 17:01:41 client: connected to:  127.0.0.1:666
+2016/12/28 17:01:41 client: handshake:  true
+2016/12/28 17:01:41 client: mutual:  true
+2016/12/28 17:01:41 EOF
+2016/12/28 17:05:26 ___________________________
+2016/12/28 17:05:26 Logfile enabled, log start!
+2016/12/28 17:05:26 client: connected to:  127.0.0.1:666
+2016/12/28 17:05:26 client: handshake:  true
+2016/12/28 17:05:26 client: mutual:  true
+2016/12/28 17:05:26 EOF
+2016/12/28 17:06:40 ___________________________
+2016/12/28 17:06:40 Logfile enabled, log start!
+2016/12/28 17:06:40 client: connected to:  127.0.0.1:666
+2016/12/28 17:06:40 client: handshake:  true
+2016/12/28 17:06:40 client: mutual:  true
+2016/12/28 17:07:30 ___________________________
+2016/12/28 17:07:30 Logfile enabled, log start!
+2016/12/28 17:07:30 client: connected to:  127.0.0.1:666
+2016/12/28 17:07:30 client: handshake:  true
+2016/12/28 17:07:30 client: mutual:  true
+2016/12/28 17:52:18 ___________________________
+2016/12/28 17:52:18 Logfile enabled, log start!
+2016/12/28 17:52:18 client: connected to:  127.0.0.1:666
+2016/12/28 17:52:18 client: handshake:  true
+2016/12/28 17:52:18 client: mutual:  true
+2016/12/28 17:53:12 EOF
+2016/12/29 09:22:25 ___________________________
+2016/12/29 09:22:25 Logfile enabled, log start!
+2016/12/29 09:22:25 client: connected to:  127.0.0.1:666
+2016/12/29 09:22:25 client: handshake:  true
+2016/12/29 09:22:25 client: mutual:  true
+2016/12/29 09:28:30 ___________________________
+2016/12/29 09:28:30 Logfile enabled, log start!
+2016/12/29 09:28:30 client: connected to:  127.0.0.1:666
+2016/12/29 09:28:30 client: handshake:  true
+2016/12/29 09:28:30 client: mutual:  true
+2016/12/29 09:28:57 ___________________________
+2016/12/29 09:28:57 Logfile enabled, log start!
+2016/12/29 09:28:57 client: connected to:  127.0.0.1:666
+2016/12/29 09:28:57 client: handshake:  true
+2016/12/29 09:28:57 client: mutual:  true
+2017/02/10 16:16:44 ___________________________
+2017/02/10 16:16:44 Logfile enabled, log start!
+2017/02/10 16:16:44 client: connected to:  127.0.0.1:666
+2017/02/10 16:16:44 client: handshake:  true
+2017/02/10 16:16:44 client: mutual:  true
+2017/02/13 16:28:02 ___________________________
+2017/02/13 16:28:02 Logfile enabled, log start!
+2017/02/13 16:28:02 client: dial: EOF
+2017/02/13 17:07:08 ___________________________
+2017/02/13 17:07:08 Logfile enabled, log start!
+2017/02/13 17:07:08 client: dial: EOF
+2017/02/13 17:07:57 ___________________________
+2017/02/13 17:07:57 Logfile enabled, log start!
+2017/02/13 17:07:57 client: dial: EOF
+2017/02/13 17:09:54 ___________________________
+2017/02/13 17:09:54 Logfile enabled, log start!
+2017/02/13 17:09:54 client: dial: dial tcp 127.0.0.1:666: getsockopt: connection refused
+2017/02/13 17:10:04 ___________________________
+2017/02/13 17:10:04 Logfile enabled, log start!
+2017/02/13 17:10:04 client: dial: EOF
+2017/02/13 17:12:37 ___________________________
+2017/02/13 17:12:37 Logfile enabled, log start!
+2017/02/13 17:12:37 client: dial: EOF
+2017/02/13 17:13:06 ___________________________
+2017/02/13 17:13:06 Logfile enabled, log start!
+2017/02/13 17:13:06 client: dial: EOF
+2017/02/13 17:21:22 ___________________________
+2017/02/13 17:21:22 Logfile enabled, log start!
+2017/02/13 17:21:22 client: dial: EOF
+2017/02/13 17:23:32 ___________________________
+2017/02/13 17:23:32 Logfile enabled, log start!
+2017/02/13 17:23:32 client: dial: EOF
+2017/02/13 17:24:35 ___________________________
+2017/02/13 17:24:35 Logfile enabled, log start!
+2017/02/13 17:24:35 client: dial: EOF
+2017/02/13 17:25:02 ___________________________
+2017/02/13 17:25:02 Logfile enabled, log start!
+2017/02/13 17:25:02 client: dial: EOF
+2017/02/13 17:26:36 ___________________________
+2017/02/13 17:26:36 Logfile enabled, log start!
+2017/02/13 17:26:36 client: dial: EOF
+2017/02/13 17:28:44 ___________________________
+2017/02/13 17:28:44 Logfile enabled, log start!
+2017/02/13 17:28:44 client: dial: EOF
+2017/02/13 17:30:23 ___________________________
+2017/02/13 17:30:23 Logfile enabled, log start!
+2017/02/13 17:30:23 client: dial: EOF
+2017/02/13 17:32:15 ___________________________
+2017/02/13 17:32:15 Logfile enabled, log start!
+2017/02/13 17:32:43 ___________________________
+2017/02/13 17:32:43 Logfile enabled, log start!
+2017/02/13 17:33:18 ___________________________
+2017/02/13 17:33:18 Logfile enabled, log start!
+2017/02/13 17:33:53 ___________________________
+2017/02/13 17:33:53 Logfile enabled, log start!
+2017/02/13 17:34:46 ___________________________
+2017/02/13 17:34:46 Logfile enabled, log start!
+2017/02/13 17:40:02 ___________________________
+2017/02/13 17:40:02 Logfile enabled, log start!
+2017/02/13 17:47:56 ___________________________
+2017/02/13 17:47:56 Logfile enabled, log start!
+2017/02/13 17:48:39 ___________________________
+2017/02/13 17:48:39 Logfile enabled, log start!
+2017/02/13 17:49:44 ___________________________
+2017/02/13 17:49:44 Logfile enabled, log start!
+2017/02/13 17:51:13 ___________________________
+2017/02/13 17:51:13 Logfile enabled, log start!
+2017/02/14 09:44:24 ___________________________
+2017/02/14 09:44:24 Logfile enabled, log start!
+2017/02/14 09:44:24 client: connected to:  127.0.0.1:666
+2017/02/14 09:44:24 client: handshake:  true
+2017/02/14 09:44:24 client: mutual:  true
+2017/02/14 10:09:51 ___________________________
+2017/02/14 10:09:51 Logfile enabled, log start!
+2017/02/14 10:09:51 client: dial: remote error: bad certificate
+2017/02/14 10:13:19 ___________________________
+2017/02/14 10:13:19 Logfile enabled, log start!
+2017/02/14 10:14:21 ___________________________
+2017/02/14 10:14:21 Logfile enabled, log start!
+2017/02/14 10:19:02 ___________________________
+2017/02/14 10:19:02 Logfile enabled, log start!
+2017/02/14 10:19:46 ___________________________
+2017/02/14 10:19:46 Logfile enabled, log start!
+2017/02/14 10:19:46 client: dial: remote error: bad certificate
+2017/02/14 10:27:29 ___________________________
+2017/02/14 10:27:29 Logfile enabled, log start!
+2017/02/14 10:27:51 ___________________________
+2017/02/14 10:27:51 Logfile enabled, log start!
+2017/02/14 10:27:51 client: dial: tls: failed to parse client certificate #0: asn1: structure error: tags don't match (16 vs {class:0 tag:13 length:45 isCompound:true}) {optional:false explicit:false application:false defaultValue:<nil> tag:<nil> stringType:0 timeType:0 set:false omitEmpty:false} certificate @2
+2017/02/14 10:28:17 ___________________________
+2017/02/14 10:28:17 Logfile enabled, log start!
+2017/02/14 10:28:18 client: dial: remote error: bad certificate
+2017/02/14 10:46:45 ___________________________
+2017/02/14 10:46:45 Logfile enabled, log start!
+2017/02/14 10:46:45 client: connected to:  127.0.0.1:666
+2017/02/14 10:46:45 client: handshake:  true
+2017/02/14 10:46:45 client: mutual:  true
+2017/02/14 14:34:53 ___________________________
+2017/02/14 14:34:53 Logfile enabled, log start!
+2017/02/14 14:34:53 Postgresql running!
+2017/02/14 14:34:54 client: connected to:  127.0.0.1:666
+2017/02/14 14:34:54 client: handshake:  true
+2017/02/14 14:34:54 client: mutual:  true
+2017/02/14 14:43:12 ___________________________
+2017/02/14 14:43:12 Logfile enabled, log start!
+2017/02/14 14:43:12 Postgresql running!
+2017/02/14 14:43:12 client: connected to:  127.0.0.1:666
+2017/02/14 14:43:12 client: handshake:  true
+2017/02/14 14:43:12 client: mutual:  true
+2017/02/14 14:45:02 EOF
+2017/02/14 14:45:15 ___________________________
+2017/02/14 14:45:15 Logfile enabled, log start!
+2017/02/14 14:45:15 Postgresql running!
+2017/02/14 14:45:15 client: connected to:  127.0.0.1:666
+2017/02/14 14:45:15 client: handshake:  true
+2017/02/14 14:45:15 client: mutual:  true
+2017/02/14 14:47:02 ___________________________
+2017/02/14 14:47:02 Logfile enabled, log start!
+2017/02/14 14:47:02 Postgresql running!
+2017/02/14 14:47:02 client: connected to:  127.0.0.1:666
+2017/02/14 14:47:02 client: handshake:  true
+2017/02/14 14:47:02 client: mutual:  true
+2017/02/14 15:03:51 EOF
+2017/02/14 15:05:09 ___________________________
+2017/02/14 15:05:09 Logfile enabled, log start!
+2017/02/14 15:05:09 Postgresql running!
+2017/02/14 15:05:10 client: connected to:  127.0.0.1:666
+2017/02/14 15:05:10 client: handshake:  true
+2017/02/14 15:05:10 client: mutual:  true
+2017/02/14 15:09:41 ___________________________
+2017/02/14 15:09:41 Logfile enabled, log start!
+2017/02/14 15:09:41 Postgresql running!
+2017/02/14 15:09:41 client: connected to:  127.0.0.1:666
+2017/02/14 15:09:41 client: handshake:  true
+2017/02/14 15:09:41 client: mutual:  true
+2017/02/14 15:12:10 ___________________________
+2017/02/14 15:12:10 Logfile enabled, log start!
+2017/02/14 15:12:10 Postgresql running!
+2017/02/14 15:12:10 client: connected to:  127.0.0.1:666
+2017/02/14 15:12:10 client: handshake:  true
+2017/02/14 15:12:10 client: mutual:  true
+2017/02/14 15:13:24 ___________________________
+2017/02/14 15:13:24 Logfile enabled, log start!
+2017/02/14 15:13:24 Postgresql running!
+2017/02/14 15:13:24 client: connected to:  127.0.0.1:666
+2017/02/14 15:13:24 client: handshake:  true
+2017/02/14 15:13:24 client: mutual:  true
+2017/02/14 15:19:22 ___________________________
+2017/02/14 15:19:22 Logfile enabled, log start!
+2017/02/14 15:19:22 Postgresql running!
+2017/02/14 15:19:23 client: connected to:  127.0.0.1:666
+2017/02/14 15:19:23 client: handshake:  true
+2017/02/14 15:19:23 client: mutual:  true
+2017/02/14 15:19:23 EOF
+2017/02/14 15:21:54 ___________________________
+2017/02/14 15:21:54 Logfile enabled, log start!
+2017/02/14 15:21:54 Postgresql running!
+2017/02/14 15:21:54 client: connected to:  127.0.0.1:666
+2017/02/14 15:21:54 client: handshake:  true
+2017/02/14 15:21:54 client: mutual:  true
+2017/02/14 15:24:13 ___________________________
+2017/02/14 15:24:13 Logfile enabled, log start!
+2017/02/14 15:24:13 Postgresql running!
+2017/02/14 15:24:13 client: connected to:  127.0.0.1:666
+2017/02/14 15:24:13 client: handshake:  true
+2017/02/14 15:24:13 client: mutual:  true
+2017/02/14 15:25:13 ___________________________
+2017/02/14 15:25:13 Logfile enabled, log start!
+2017/02/14 15:25:13 Postgresql running!
+2017/02/14 15:25:13 client: connected to:  127.0.0.1:666
+2017/02/14 15:25:13 client: handshake:  true
+2017/02/14 15:25:13 client: mutual:  true
+2017/02/14 15:52:56 ___________________________
+2017/02/14 15:52:56 Logfile enabled, log start!
+2017/02/14 15:52:56 Postgresql running!
+2017/02/14 15:52:56 client: connected to:  127.0.0.1:666
+2017/02/14 15:52:56 client: handshake:  true
+2017/02/14 15:52:56 client: mutual:  true
+2017/02/14 15:52:56 EOF
+2017/02/14 16:45:25 ___________________________
+2017/02/14 16:45:25 Logfile enabled, log start!
+2017/02/14 16:45:25 Postgresql running!
+2017/02/14 16:45:25 client: connected to:  127.0.0.1:666
+2017/02/14 16:45:25 client: handshake:  true
+2017/02/14 16:45:25 client: mutual:  true
+2017/02/14 16:45:25 EOF
+2017/02/14 16:49:36 ___________________________
+2017/02/14 16:49:36 Logfile enabled, log start!
+2017/02/14 16:49:36 Postgresql running!
+2017/02/14 16:49:36 client: connected to:  127.0.0.1:666
+2017/02/14 16:49:36 client: handshake:  true
+2017/02/14 16:49:36 client: mutual:  true
+2017/02/14 16:51:50 ___________________________
+2017/02/14 16:51:50 Logfile enabled, log start!
+2017/02/14 16:51:50 Postgresql running!
+2017/02/14 16:51:50 client: connected to:  127.0.0.1:666
+2017/02/14 16:51:50 client: handshake:  true
+2017/02/14 16:51:50 client: mutual:  true
+2017/02/14 16:53:16 ___________________________
+2017/02/14 16:53:16 Logfile enabled, log start!
+2017/02/14 16:53:16 Postgresql running!
+2017/02/14 16:53:16 client: connected to:  127.0.0.1:666
+2017/02/14 16:53:16 client: handshake:  true
+2017/02/14 16:53:16 client: mutual:  true
+2017/02/14 16:55:06 ___________________________
+2017/02/14 16:55:06 Logfile enabled, log start!
+2017/02/14 16:55:06 Postgresql running!
+2017/02/14 16:55:06 client: connected to:  127.0.0.1:666
+2017/02/14 16:55:06 client: handshake:  true
+2017/02/14 16:55:06 client: mutual:  true
+2017/02/14 16:55:45 ___________________________
+2017/02/14 16:55:45 Logfile enabled, log start!
+2017/02/14 16:55:45 Postgresql running!
+2017/02/14 16:55:45 client: connected to:  127.0.0.1:666
+2017/02/14 16:55:45 client: handshake:  true
+2017/02/14 16:55:45 client: mutual:  true
+2017/02/14 16:55:45 EOF
+2017/02/14 16:56:28 ___________________________
+2017/02/14 16:56:28 Logfile enabled, log start!
+2017/02/14 16:56:28 Postgresql running!
+2017/02/14 16:56:28 client: connected to:  127.0.0.1:666
+2017/02/14 16:56:28 client: handshake:  true
+2017/02/14 16:56:28 client: mutual:  true
+2017/02/14 17:47:16 ___________________________
+2017/02/14 17:47:16 Logfile enabled, log start!
+2017/02/14 17:47:16 Postgresql running!
+2017/02/14 17:47:16 client: connected to:  127.0.0.1:666
+2017/02/14 17:47:16 client: handshake:  true
+2017/02/14 17:47:16 client: mutual:  true
+2017/02/14 17:49:42 ___________________________
+2017/02/14 17:49:42 Logfile enabled, log start!
+2017/02/14 17:49:42 Postgresql running!
+2017/02/14 17:49:42 client: connected to:  127.0.0.1:666
+2017/02/14 17:49:42 client: handshake:  true
+2017/02/14 17:49:42 client: mutual:  true
+2017/02/14 17:56:56 ___________________________
+2017/02/14 17:56:56 Logfile enabled, log start!
+2017/02/14 17:56:56 Postgresql running!
+2017/02/14 17:56:57 client: connected to:  127.0.0.1:666
+2017/02/14 17:56:57 client: handshake:  true
+2017/02/14 17:56:57 client: mutual:  true
+2017/02/14 17:57:26 ___________________________
+2017/02/14 17:57:26 Logfile enabled, log start!
+2017/02/14 17:57:26 Postgresql running!
+2017/02/14 17:57:27 client: connected to:  127.0.0.1:666
+2017/02/14 17:57:27 client: handshake:  true
+2017/02/14 17:57:27 client: mutual:  true
+2017/02/15 09:44:56 ___________________________
+2017/02/15 09:44:56 Logfile enabled, log start!
+2017/02/15 09:44:57 Postgresql running!
+2017/02/15 09:44:57 client: connected to:  127.0.0.1:666
+2017/02/15 09:44:57 client: handshake:  true
+2017/02/15 09:44:57 client: mutual:  true
+2017/02/15 10:27:25 ___________________________
+2017/02/15 10:27:25 Logfile enabled, log start!
+2017/02/15 10:27:25 Postgresql running!
+2017/02/15 10:27:25 client: connected to:  127.0.0.1:666
+2017/02/15 10:27:25 client: handshake:  true
+2017/02/15 10:27:25 client: mutual:  true
+2017/02/15 10:32:01 ___________________________
+2017/02/15 10:32:01 Logfile enabled, log start!
+2017/02/15 10:32:01 Postgresql running!
+2017/02/15 10:32:01 client: connected to:  127.0.0.1:666
+2017/02/15 10:32:01 client: handshake:  true
+2017/02/15 10:32:01 client: mutual:  true
+2017/02/15 10:41:28 ___________________________
+2017/02/15 10:41:28 Logfile enabled, log start!
+2017/02/15 10:41:28 Postgresql running!
+2017/02/15 10:41:28 client: connected to:  127.0.0.1:666
+2017/02/15 10:41:28 client: handshake:  true
+2017/02/15 10:41:28 client: mutual:  true
+2017/02/15 10:43:19 ___________________________
+2017/02/15 10:43:19 Logfile enabled, log start!
+2017/02/15 10:43:19 Postgresql running!
+2017/02/15 10:43:19 client: connected to:  127.0.0.1:666
+2017/02/15 10:43:19 client: handshake:  true
+2017/02/15 10:43:19 client: mutual:  true
+2017/02/15 12:19:51 ___________________________
+2017/02/15 12:19:51 Logfile enabled, log start!
+2017/02/15 12:19:51 Postgresql running!
+2017/02/15 12:19:51 client: connected to:  127.0.0.1:666
+2017/02/15 12:19:51 client: handshake:  true
+2017/02/15 12:19:51 client: mutual:  true
+2017/02/15 12:24:55 ___________________________
+2017/02/15 12:24:55 Logfile enabled, log start!
+2017/02/15 12:24:55 Postgresql running!
+2017/02/15 12:24:55 client: connected to:  127.0.0.1:666
+2017/02/15 12:24:55 client: handshake:  true
+2017/02/15 12:24:55 client: mutual:  true
+2017/02/15 12:25:59 ___________________________
+2017/02/15 12:25:59 Logfile enabled, log start!
+2017/02/15 12:25:59 Postgresql running!
+2017/02/15 12:26:00 client: connected to:  127.0.0.1:666
+2017/02/15 12:26:00 client: handshake:  true
+2017/02/15 12:26:00 client: mutual:  true
+2017/02/15 12:48:04 ___________________________
+2017/02/15 12:48:04 Logfile enabled, log start!
+2017/02/15 12:48:04 Postgresql running!
+2017/02/15 12:48:04 client: connected to:  127.0.0.1:666
+2017/02/15 12:48:04 client: handshake:  true
+2017/02/15 12:48:04 client: mutual:  true
+2017/02/15 12:56:43 ___________________________
+2017/02/15 12:56:43 Logfile enabled, log start!
+2017/02/15 12:56:43 Postgresql running!
+2017/02/15 12:56:44 client: connected to:  127.0.0.1:666
+2017/02/15 12:56:44 client: handshake:  true
+2017/02/15 12:56:44 client: mutual:  true
+2017/02/15 14:59:02 ___________________________
+2017/02/15 14:59:02 Logfile enabled, log start!
+2017/02/15 14:59:02 Postgresql running!
+2017/02/15 14:59:02 client: connected to:  127.0.0.1:666
+2017/02/15 14:59:02 client: handshake:  true
+2017/02/15 14:59:02 client: mutual:  true
+2017/02/15 15:19:52 ___________________________
+2017/02/15 15:19:52 Logfile enabled, log start!
+2017/02/15 15:19:52 Postgresql running!
+2017/02/15 15:19:52 client: connected to:  127.0.0.1:666
+2017/02/15 15:19:52 client: handshake:  true
+2017/02/15 15:19:52 client: mutual:  true
+2017/02/15 15:25:00 ___________________________
+2017/02/15 15:25:00 Logfile enabled, log start!
+2017/02/15 15:25:00 Postgresql running!
+2017/02/15 15:25:00 client: connected to:  127.0.0.1:666
+2017/02/15 15:25:00 client: handshake:  true
+2017/02/15 15:25:00 client: mutual:  true

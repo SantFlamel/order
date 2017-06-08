@@ -1,0 +1,804 @@
+2017/03/14 11:57:30 ___________________________
+2017/03/14 11:57:30 Logfile enabled, log start!
+2017/03/14 11:57:30 Postgresql running!
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:57:30 client: connected to:  127.0.0.1:66
+2017/03/14 11:57:30 client: handshake:  true
+2017/03/14 11:57:30 client: mutual:  true
+2017/03/14 11:59:58 ___________________________
+2017/03/14 11:59:58 Logfile enabled, log start!
+2017/03/14 11:59:58 Postgresql running!
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:58 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:58 client: handshake:  true
+2017/03/14 11:59:58 client: mutual:  true
+2017/03/14 11:59:59 client: connected to:  127.0.0.1:66
+2017/03/14 11:59:59 client: handshake:  true
+2017/03/14 11:59:59 client: mutual:  true
+2017/03/14 12:00:20 ___________________________
+2017/03/14 12:00:20 Logfile enabled, log start!
+2017/03/14 12:00:20 Postgresql running!
+2017/03/14 12:00:20 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:20 client: handshake:  true
+2017/03/14 12:00:20 client: mutual:  true
+2017/03/14 12:00:20 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:20 client: handshake:  true
+2017/03/14 12:00:20 client: mutual:  true
+2017/03/14 12:00:20 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:20 client: handshake:  true
+2017/03/14 12:00:20 client: mutual:  true
+2017/03/14 12:00:20 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:20 client: handshake:  true
+2017/03/14 12:00:20 client: mutual:  true
+2017/03/14 12:00:20 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:20 client: handshake:  true
+2017/03/14 12:00:20 client: mutual:  true
+2017/03/14 12:00:20 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:20 client: handshake:  true
+2017/03/14 12:00:20 client: mutual:  true
+2017/03/14 12:00:20 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:20 client: handshake:  true
+2017/03/14 12:00:20 client: mutual:  true
+2017/03/14 12:00:20 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:20 client: handshake:  true
+2017/03/14 12:00:20 client: mutual:  true
+2017/03/14 12:00:20 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:20 client: handshake:  true
+2017/03/14 12:00:20 client: mutual:  true
+2017/03/14 12:00:20 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:20 client: handshake:  true
+2017/03/14 12:00:20 client: mutual:  true
+2017/03/14 12:00:20 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:20 client: handshake:  true
+2017/03/14 12:00:20 client: mutual:  true
+2017/03/14 12:00:20 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:20 client: handshake:  true
+2017/03/14 12:00:20 client: mutual:  true
+2017/03/14 12:00:20 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:20 client: handshake:  true
+2017/03/14 12:00:20 client: mutual:  true
+2017/03/14 12:00:20 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:20 client: handshake:  true
+2017/03/14 12:00:20 client: mutual:  true
+2017/03/14 12:00:21 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:21 client: handshake:  true
+2017/03/14 12:00:21 client: mutual:  true
+2017/03/14 12:00:21 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:21 client: handshake:  true
+2017/03/14 12:00:21 client: mutual:  true
+2017/03/14 12:00:21 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:21 client: handshake:  true
+2017/03/14 12:00:21 client: mutual:  true
+2017/03/14 12:00:21 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:21 client: handshake:  true
+2017/03/14 12:00:21 client: mutual:  true
+2017/03/14 12:00:21 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:21 client: handshake:  true
+2017/03/14 12:00:21 client: mutual:  true
+2017/03/14 12:00:21 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:21 client: handshake:  true
+2017/03/14 12:00:21 client: mutual:  true
+2017/03/14 12:00:21 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:21 client: handshake:  true
+2017/03/14 12:00:21 client: mutual:  true
+2017/03/14 12:00:21 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:21 client: handshake:  true
+2017/03/14 12:00:21 client: mutual:  true
+2017/03/14 12:00:21 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:21 client: handshake:  true
+2017/03/14 12:00:21 client: mutual:  true
+2017/03/14 12:00:21 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:21 client: handshake:  true
+2017/03/14 12:00:21 client: mutual:  true
+2017/03/14 12:00:21 client: connected to:  127.0.0.1:66
+2017/03/14 12:00:21 client: handshake:  true
+2017/03/14 12:00:21 client: mutual:  true
+2017/03/14 12:01:36 ___________________________
+2017/03/14 12:01:36 Logfile enabled, log start!
+2017/03/14 12:01:36 Postgresql running!
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:01:36 client: connected to:  127.0.0.1:66
+2017/03/14 12:01:36 client: handshake:  true
+2017/03/14 12:01:36 client: mutual:  true
+2017/03/14 12:03:31 ___________________________
+2017/03/14 12:03:31 Logfile enabled, log start!
+2017/03/14 12:03:31 Postgresql running!
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:03:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:03:31 client: handshake:  true
+2017/03/14 12:03:31 client: mutual:  true
+2017/03/14 12:05:48 ___________________________
+2017/03/14 12:05:48 Logfile enabled, log start!
+2017/03/14 12:05:48 Postgresql running!
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:05:48 client: connected to:  127.0.0.1:66
+2017/03/14 12:05:48 client: handshake:  true
+2017/03/14 12:05:48 client: mutual:  true
+2017/03/14 12:13:31 ___________________________
+2017/03/14 12:13:31 Logfile enabled, log start!
+2017/03/14 12:13:31 Postgresql running!
+2017/03/14 12:13:31 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:31 client: handshake:  true
+2017/03/14 12:13:31 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:13:32 client: connected to:  127.0.0.1:66
+2017/03/14 12:13:32 client: handshake:  true
+2017/03/14 12:13:32 client: mutual:  true
+2017/03/14 12:25:13 ___________________________
+2017/03/14 12:25:13 Logfile enabled, log start!
+2017/03/14 12:25:13 Postgresql running!
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:25:13 client: connected to:  127.0.0.1:66
+2017/03/14 12:25:13 client: handshake:  true
+2017/03/14 12:25:13 client: mutual:  true
+2017/03/14 12:26:18 ___________________________
+2017/03/14 12:26:18 Logfile enabled, log start!
+2017/03/14 12:26:18 Postgresql running!
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:26:18 client: connected to:  127.0.0.1:66
+2017/03/14 12:26:18 client: handshake:  true
+2017/03/14 12:26:18 client: mutual:  true
+2017/03/14 12:27:00 ___________________________
+2017/03/14 12:27:00 Logfile enabled, log start!
+2017/03/14 12:27:00 Postgresql running!
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true
+2017/03/14 12:27:00 client: connected to:  127.0.0.1:66
+2017/03/14 12:27:00 client: handshake:  true
+2017/03/14 12:27:00 client: mutual:  true

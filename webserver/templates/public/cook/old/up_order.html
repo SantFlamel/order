@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{{.title}}</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="icon" type="image/png" href="/public/image/favicon.png">
+    <link rel="stylesheet" href="/public/css/bootstrap.css">
+    <link rel="stylesheet" href="/public/css/mystylecss.css">
+    <link rel="stylesheet" href="/public/css/media.css">
+</head>
+
+<body onload="getItem('{{.morder.ID_order}}/{{.morder.ID_order_item}}')">
+
+<div class="container-fluid" style="height: 100%">
+
+    <header class="row page_header">
+        <div class="col-xs-4 col-sm-4 text-left">
+            <img src="/public/image/cloud.png" alt=""> YAPOKI IS
+        </div>
+        <div class="col-xs-8 col-sm-4 text-right font_blue pull-right">
+            <!--<div  class="col-xs-8 col-sm-4 text-right font_blue pull-right">-->
+                <!--<ul class="dropdown-menu user_role styler" role="menu" aria-labelledby="dropdownMenu">-->
+                <!--<li><a tabindex="-1" href="#">Действие</a></li>-->
+                <!--<li><a tabindex="-1" href="#">Другое действие</a></li>-->
+                <!--<li><a tabindex="-1" href="#">Еще ссылка</a></li>-->
+            <!--</ul>-->
+            <!--</div>-->
+            <select class="dropdown-toggle user_role styler" name="user_role">
+                <option>Сушимейкер</option>
+                <option>Пиццемейкер</option>
+            </select>
+            <button type="submit" class="btn btn-link font_blue" name="btnExit">Выйти
+            </button>
+
+        </div>
+        <div class="col-xs-12 col-sm-4 text-center">
+            <span id="doc_time" class="font_blue"></span>
+            <span id="doc_date"></span>
+        </div>
+    </header>

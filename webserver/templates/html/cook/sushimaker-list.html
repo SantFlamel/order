@@ -1,0 +1,275 @@
+<html lang="ru">
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <link rel="icon" type="image/png" href="../../public/cook/image/favicon.png">
+    <link rel="stylesheet" href="../../public/cook/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/cook/css/mystylecss.css">
+    <link rel="stylesheet" href="../../public/cook/css/media.css">
+    <title>Панель управления</title>
+</head>
+
+
+<body >
+<div id="warning"></div>
+
+
+    <div class="container-fluid" style="height: 100%">
+
+        <header class="row page_header">
+            <div class="col-xs-4 col-sm-2 text-left">
+                <img src="../../public/cook/image/cloud.png" alt=""> YAPOKI IS
+            </div>
+            <div class="  buttons pull-right">
+                <!--<select class="dropdown-toggle user_role styler" name="user_role">-->
+                    <!--<option>Сушимейкер</option>-->
+                    <!--<option>Раскатка</option>-->
+                    <!--<option>Начинение</option>-->
+                    <!--<option>Упаковка</option>-->
+                <!--</select>-->
+                <select  class="btn btn-dropdown dropdown-toggle user_role" name="user_role">
+                    <option disabled>Сушимейкер</option>
+                    <option>Раскатка</option>
+                    <option>Начинение</option>
+                    <option>Упаковка</option>
+                </select>
+                <button id="logout" type="submit" class="btn  font_blue btn-logout" name="btnExit">Выйти
+                </button>
+
+            </div>
+            <div class="col-xs-9 col-sm-4 text-center">
+                <span id="doc_time" class="font_blue"></span>
+                <span id="doc_date"></span>
+            </div>
+            <div class="col-sm-2 buttons">
+                <button type="button" class="btn btn-connection" id="change_employee" data-toggle="modal" data-target="#connection">Присоединиться</button>
+
+                <!-- Single button -->
+                    <div class="btn-group">
+                          <button type="button" class="btn btn-dropdown dropdown-toggle idgroup" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Нет гурппы <span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu users_list">
+
+                          </ul>
+                    </div>
+            </div>
+
+        </header>
+
+
+
+        <!--Форма авторизациидля работников-->
+        <div class="modal fade" id="connection" tabindex="-1" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div id="name_user">  </div>
+                        <div class="form-group">
+                            <label for="usr" >Логин:</label>
+                            <input type="text" tag="" class="form-control" id="usr">
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Пароль:</label>
+                            <input type="password" class="form-control" id="pwd">
+                        </div>
+                    </div>
+                    <div class="modal-buttons">
+                        <button type="button" data-dismiss="modal" id="ok_day_cashier" class="send_auth_data" >ОК</button>
+                        <button type="button" style="background-color: #fe8600" id="close_day_cashier" data-dismiss="modal">Отмена</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!--Основная панель-->
+        <div class="row page_main  order_table font_blue" accept-charset="UTF-8">
+
+        </div>
+        <div class="row page_main order_item" accept-charset="UTF-8">
+            <div class="col-xs-12 col-sm-4 styleDivOrder late">
+                <input class="startTimeOrder" hidden value="23:10:00">
+                <p class="font_main_check" id="check">#</p>
+                <p class="font_main_name" id="name">Ролл )</p>
+                <p class="font_main_time" id="time" data-role="timer">00:25:05</p>
+                <img src="" id="imgOrder">
+                <p class="font_time" id="in_work">00:03:00</p>
+            </div>
+            <div class="col-xs-12 col-sm-8 styleDivOrder">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <p class="font_block_header">Внутрь:</p>
+                        <p class="font_block" id="products_inside"></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <p class="font_block_header">Наверх:</p>
+                        <p class="font_block" id="products_up"></p>
+                    </div>
+                    <div class="col-xs-12">
+                        <p class="font_block_header">Примечание:</p>
+                        <p class="font_block" id="note"></p>
+                    </div>
+                    <div class="col-xs-12">
+                        <p class="font_block_header">Вес: <span class="font_block font_black" id="mass"></span></p>
+                    </div>
+                    <div class="col-xs-12 actions">
+                        <button class="button_cancel"  onclick="return false">Назад</button>
+                        <button class="button_orange" data-toggle="modal" data-target="#confirmRedone" onclick="return false">Переделать</button>
+                        <!--data-toggle="modal" data-target="#confirmCancel"-->
+                        <button class="button_ok">Готово</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="confirmCancel" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>Заказ был отменен.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <!-- Используйте data-dismiss="modal" чтобы просто закрыть окно -->
+                        <button type="button" data-dismiss="modal" onclick="$('.button_cancel').click();">OK</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="confirmRedone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h3><b>Переделать заказ</b><h3>
+
+                        <div class="row">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-default redone_button">
+                                    <input name="RG2" id="radio3" value="0" type="radio">Самостоятельно
+                                </label>
+                                <label class="btn btn-default redone_button">
+                                    <input name="RG2" id="radio4" value="1" checked="" type="radio">Вернуть в трекер
+                                </label>
+                            </div>
+                        </div>
+                        <br>
+                        <h3><b>Причина переделки</b><h3>
+                        <div class="row">
+                            <div class="btn-group" data-toggle="buttons">
+                                <label class="btn btn-default redone_button">
+                                    <input name="RG3" id="radio5" value="0" type="radio"> Продукт испорчен
+                                </label>
+                                <label class="btn btn-default redone_button">
+                                    <input name="RG3" id="radio6" value="1" checked="" type="radio">Поломка оборудования
+                                </label>
+                            </div>
+                        </div>
+                        </div>
+
+                        <br>
+
+
+
+                    <div class="modal-footer">
+                        <!-- Используйте data-dismiss="modal" чтобы просто закрыть окно -->
+                        <button type="button" data-dismiss="modal" >Назад</button>
+                        <button type="button" data-dismiss="modal" onclick="redoneActive($('input[name=RG2]:checked').val(),$('input[name=RG3]:checked').val());">Ок</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <footer>
+			<!-- Навигация -->
+<nav class="row navbar navbar-fixed-bottom page_footer" role="navigation">
+    <div class="col-xs-12">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse" onmousedown="procCollapse()">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <p class="visible-xs">
+                <span id="name_role">Сушимейкер: </span>
+                <span class="font_blue" id="fio">Порсев Алексей</span>
+            </p>
+        </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+            <ul class="nav navbar-nav">
+                <li class="hidden-xs">
+                    <p class="font_footer">
+                        <span id="name_role1">Сушимейкер: </span>
+                        <span class="font_blue" id="fio1">Не авторизован</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="font_footer">
+                        Часы с нач.мес.:
+                        <span class="font_blue" id="horse_m">0</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="font_footer">
+                        Сегодня изделий:
+                        <span class="font_blue" id="prod_count">0</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="font_footer">
+                        Изделия с нач.мес.:
+                        <span class="font_blue" id="prod_m">0</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="font_footer">
+                        Рейтинг:
+                        <span class="font_blue" id="rating">0</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="font_footer">
+                        Списания:
+                        <span class="font_blue" id="write-off">0</span>
+                    </p>
+                </li>
+                <li>
+                    <p class="font_footer">
+                        Баланс:
+                        <span class="font_blue" id="balance">0</span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+            <!-- Скрипты -->
+            <script src="../../public/cook/js/jquery.js" type="text/javascript"></script>
+            <script src="../../public/cook/js/jquery.cookie.js" type="text/javascript"></script>
+            <script src="../../public/cook/js/jquery.formstyler.js" type="text/javascript"></script>
+
+
+            <script src="../../public/cook/js/conf.js" type="text/javascript"></script>
+            <script src="../../public/cook/js/new_ws.js" type="text/javascript"></script>
+            <script src="../../public/cook/js/ws.js" type="text/javascript"></script>
+            <script src="../../public/cook/js/time.js" type="text/javascript"></script>
+
+
+            <script src="../../public/cook/js/bootstrap.js" type="text/javascript"></script>
+
+
+        </footer>
+        
+    </div>
+
+    <div id="sound">
+    </div>
+
+</body>
+
+</html>

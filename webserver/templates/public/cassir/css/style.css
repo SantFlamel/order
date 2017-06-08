@@ -1,0 +1,582 @@
+/* Начало стилей (Интерфейс кассира - описание) */
+
+body {
+  font-family: 'San Francisco Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: #f1f2f6;
+}
+
+/*Таблица*/
+.table-order {
+  width: 100%;
+  font-size: 28px;
+  background-color: #fff;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.table-order tr {
+  border-bottom: 1px solid #c8c7cc;
+  border-collapse: collapse;
+  height: 90px;
+}
+
+.table-order__spoiler-content {
+  display: none;
+}
+
+.table-order__order-number {
+  width: 175px;
+  padding-left: 40px;
+}
+
+.table-order__menu-name {
+  width: 660px;
+  padding-left: 90px;
+}
+
+.table-order__status-trekking {
+  white-space: nowrap;
+  width: 180px;
+  padding-left: 15px;
+}
+
+.table-order__time {
+  text-align: right;
+  width: 100px;
+}
+
+.table-order__img-product {
+  width: 125px;
+  padding-left: 15px;
+}
+
+.table-order__refresh {
+  width: 125px;
+  padding-left: 15px;
+}
+
+.inner-table .table-order__order-number {
+  padding-left: 60px;
+}
+
+.inner-table .table-order__menu-name {
+  padding-left: 110px;
+}
+
+.inner-table:last-child {
+  margin-bottom: -1px;
+}
+
+/*Боковая панель*/
+.sidebar-order {
+  border-left: 1px solid #c8c7cc;
+  min-height: 100vh;
+}
+
+.sidebar-order__link-home {
+  font-size: 0;
+  padding-top: 20px;
+  padding-right: 10px;
+}
+
+.sidebar-order__time {
+  display: inline-block;
+  font-size: 64px;
+  line-height: 64px;
+  color: #007aff;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.sidebar-order__time::after {
+  content: "";
+  position: absolute;
+  bottom: 13px;
+  left: -34px;
+  width: 22px;
+  height: 22px;
+  background: transparent url(../img/alarm-icon.png) no-repeat;
+}
+
+.sidebar-order__order-number,
+.sidebar-order__client-name {
+  font-size: 46px;
+  line-height: 46px;
+  color: #666666;
+}
+
+.sidebar-order__order-type,
+.sidebar-order__order-status-order,
+.sidebar-order__payment-method {
+  margin-top: 25px;
+  font-size: 30px;
+  line-height: 30px;
+  color: #007aff;
+}
+
+.sidebar-order__order-status-order,
+.sidebar-order__payment-method {
+  margin-top: 5px;
+}
+
+.sidebar-order__price {
+  margin-top: 25px;
+}
+
+.sidebar-order__left-column {
+  float: left;
+  font-size: 30px;
+  line-height: 35px;
+  color: #666666;
+}
+
+.sidebar-order__right-column {
+  float: right;
+  font-size: 30px;
+  line-height: 35px;
+  color: #007aff;
+}
+
+.sidebar-order__comments {
+  margin-top: 25px;
+  font-size: 30px;
+  color: #666666;
+}
+
+.sidebar-order__text-comments {
+  font-size: 20px;
+  line-height: 25px;
+  color: #007aff;
+}
+
+.sidebar-order__timer {
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 45px;
+  color: #007aff;
+  padding-left: 40px;
+  position: relative;
+}
+
+.sidebar-order__timer::after {
+  content: "";
+  position: absolute;
+  bottom: 18px;
+  left: 0px;
+  width: 25px;
+  height: 25px;
+  background: transparent url(../img/timer-icon.png) no-repeat;
+}
+
+/*Кнопки*/
+.btn-switch-spoiler {
+  width: 115px;
+  height: 48px;
+  background-color: #fff;
+  border: 3px solid #666666;
+  border-radius: 10px;
+  color: #666666;
+  outline: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn-switch-img,
+.btn-refresh {
+  width: 106px;
+  height: 48px;
+  background-color: rgba(241, 242, 246, 0);
+  border: 3px solid #ff2d55;
+  border-radius: 12px;
+  color: #666666;
+  outline: none;
+  position: relative;
+}
+
+.btn-switch-img,
+.btn-refresh {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.btn-switch-img {
+  background-image: url("../img/camera-icon.png");
+}
+
+.btn-refresh {
+  background-image: url("../img/refresh-icon.png");
+}
+
+.btn-switch-img__white,
+.btn-refresh__white {
+  border-color: #fff;
+}
+
+.btn-switch-img__white {
+  background-image: url("../img/camera-white-icon.png");
+}
+
+.btn-refresh__white {
+  background-image: url("../img/refresh-white-icon.png");
+}
+
+.arr-up,
+.arr-down {
+  border-bottom: 2px solid;
+  border-right: 2px solid;
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  transform: rotate(45deg);
+  transition: transform .25s ease-in-out;
+}
+
+.arr-down {
+  transform: rotate(-135deg);
+  transition: transform .25s ease-in-out;
+}
+
+.btn-change-order {
+  width: 100%;
+  height: 79px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f1f2f6;
+  border: 2px solid #007aff;
+  border-radius: 10px;
+  color: #007aff;
+  outline: none;
+  margin-bottom: 11px;
+}
+
+.btn-change-order:hover {
+  color: #3395ff;
+  border-color: #3395ff;
+}
+
+.btn-cancel-order,
+.btn-order-ready {
+  width: 49%;
+  height: 79px;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+.btn-cancel-order {
+  float: left;
+  background-color: #ff3b30;
+  color: #fff;
+  border: 2px solid #ff3b30;
+}
+
+.btn-cancel-order:hover {
+  background-color: #ff6b63;
+  border-color: #ff6b63;
+}
+
+.btn-order-ready {
+  float: right;
+  background-color: #43c043;
+  color: #fff;
+  border: 2px solid #43c043;
+  transition: all .25s;
+}
+
+.btn-order-ready:hover {
+  background-color: #69cd69;
+  border-color: #69cd69;
+}
+
+.btn-order-ready__disabled {
+  background-color: #f1f2f6;
+  color: #666666;
+  border: 2px solid #666666;
+  cursor: default;
+}
+
+.btn-order-ready__disabled:hover {
+  background-color: #f1f2f6;
+  color: #666666;
+  border: 2px solid #666666;
+}
+
+/*Модальные окна*/
+/*#rework .modal-dialog {*/
+  /*!*max-width: 300px;*!*/
+  /*margin-top: 30vh;*/
+/*}*/
+
+.modal-content {
+  box-shadow: none;
+  border-color: transparent;
+  border: 1px solid #c8c7cc;
+}
+
+.modal-body {
+  text-align: center;
+  line-height: 24px;
+}
+
+.modal-footer {
+  padding: 0;
+  border-top: 0;
+}
+
+.modal-footer button {
+  width: 50%;
+  border: 0px;
+  background-image: none;
+  background-color: transparent;
+  font-size: 14px;
+  padding: 8px;
+  line-height: 16px;
+  border-top: 1px solid #c8c7cc;
+  color: #0076ff;
+}
+
+.modal-footer button:last-child {
+  border-left: 1px solid #c8c7cc;
+  margin-left: -6px;
+}
+
+/*Статусы заказа. Добавлять класс статуса к строке <tr class="table-order__spoiler">
+Пример: <tr class="table-order__spoiler status-ready">*/
+.status-ready,
+.status-ready .btn-switch-spoiler,
+.status-ready + .table-order__spoiler-content * {
+  color: #ff2d55;
+  background-color: #fff;
+}
+
+.status-ready .btn-switch-spoiler {
+  border-color: #ff2d55;
+}
+
+.status-prepare,
+.status-prepare .btn-switch-spoiler,
+.status-prepare + .table-order__spoiler-content * {
+  color: #000;
+  background-color: #ffcc00;
+}
+
+.status-prepare .btn-switch-spoiler {
+  border-color: #000;
+}
+
+.status-wait,
+.status-wait .btn-switch-spoiler,
+.status-wait + .table-order__spoiler-content * {
+  color: #666666;
+  background-color: #f1f2f6;
+}
+
+.inner-table .row-highlight * {
+  color: #fff;
+  background-color: #ff2d55;
+}
+
+@media (max-width: 1900px){
+  .table-order{
+    font-size: 24px;
+  }
+  .table-order__order-number{
+    width: 155px;
+    padding-left: 20px;
+  }
+  .table-order__menu-name{
+    width: 570px;
+    padding-left: 20px;
+  }
+  .table-order__status-trekking{
+    white-space: nowrap;
+    width: 160px;
+    padding-left: 15px;
+  }
+  .table-order__time{
+    text-align: right;
+    width: 90px;
+  }
+  .table-order__img-product{
+    width: 120px;
+    padding-left: 15px;
+  }
+  .table-order__refresh{
+    width: 120px;
+    padding-left: 10px;
+  }
+  .inner-table .table-order__order-number{
+    padding-left: 40px;
+  }
+  .inner-table .table-order__menu-name{
+    padding-left: 40px;
+  }
+  .btn-switch-spoiler{
+    width: 110px;
+    height: 43px;
+  }
+  .btn-switch-img,
+  .btn-refresh{
+    width: 101px;
+    height: 43px;
+  }
+}
+
+@media (max-width: 1650px){
+  .table-order{
+    font-size: 18px;
+  }
+  .table-order__order-number{
+    width: 135px;
+    padding-left: 20px;
+  }
+  .table-order__menu-name{
+    width: 500px;
+    padding-left: 10px;
+  }
+  .table-order__status-trekking{
+    white-space: nowrap;
+    width: 130px;
+    padding-left: 10px;
+  }
+  .table-order__time{
+    text-align: right;
+    width: 70px;
+  }
+  .table-order__img-product{
+    width: 100px;
+    padding-left: 10px;
+  }
+  .table-order__refresh{
+    width: 100px;
+    padding-left: 5px;
+  }
+  .inner-table .table-order__order-number{
+    padding-left: 40px;
+  }
+  .inner-table .table-order__menu-name{
+    padding-left: 30px;
+  }
+  .btn-switch-spoiler{
+    width: 80px;
+    height: 35px;
+    border: 2px solid;
+    border-radius: 8px;
+  }
+  .btn-switch-img,
+  .btn-refresh{
+    width: 71px;
+    height: 35px;
+    border: 2px solid;
+    border-radius: 9px;
+  }
+  .arr-up,
+  .arr-down{
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 1100px){
+  .table-order{
+    font-size: 14px;
+  }
+  .table-order__order-number{
+    width: 120px;
+    padding-left: 10px;
+  }
+  .table-order__menu-name{
+    width: 350px;
+    padding-left: 10px;
+  }
+  .table-order__status-trekking{
+    white-space: nowrap;
+    width: 110px;
+    padding-left: 5px;
+  }
+  .table-order__time{
+    text-align: right;
+    width: 60px;
+  }
+  .table-order__img-product{
+    width: 90px;
+    padding-left: 15px;
+  }
+  .table-order__refresh{
+    width: 90px;
+    padding-left: 15px;
+  }
+  .inner-table .table-order__order-number{
+    padding-left: 30px;
+  }
+  .inner-table .table-order__menu-name{
+    padding-left: 30px;
+  }
+  .btn-switch-spoiler{
+    width: 69px;
+    height: 30px;
+    border-radius: 8px;
+  }
+  .btn-switch-img,
+  .btn-refresh{
+    width: 60px;
+    height: 30px;
+    border-radius: 9px;
+  }
+  .arr-up,
+  .arr-down{
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    width: 8px;
+    height: 8px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1650px){
+  .sidebar-order__time{
+    font-size: 46px;
+    line-height: 46px;
+  }
+  .sidebar-order__order-number,
+  .sidebar-order__client-name{
+    font-size: 32px;
+    line-height: 32px;
+  }
+  .sidebar-order__order-type,
+  .sidebar-order__order-status-order,
+  .sidebar-order__payment-method{
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .sidebar-order__left-column{
+    float: left;
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .sidebar-order__right-column{
+    float: right;
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .sidebar-order__comments{
+    margin-top: 22px;
+    font-size: 27px;
+  }
+  .sidebar-order__text-comments{
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .sidebar-order__timer{
+    font-size: 37px;
+  }
+}
+
+
+/* Начало стилей (Интерфейс кассира - описание) */
+

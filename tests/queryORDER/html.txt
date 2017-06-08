@@ -1,0 +1,9 @@
+<h1>TEST POST</h1>
+<form action="/" method="post">
+    userhash: <input name="userhash" type="text" value="23423423"/>
+    qmessage: <input name="qmessage" type="text" value=""/>
+
+    <input name="mySubmit" type="submit" value="submit" />
+</form>
+
+{"Table":"OrderPayments","Query":"Create","TypeParameter":"","Values":null,"Limit":0,"Offset":0}{"Order_id":10,"UserHash":"2342342444434456","Name":"Card","Price":123123.23}

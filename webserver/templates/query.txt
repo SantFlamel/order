@@ -1,0 +1,330 @@
+﻿Posiflex PP6900 576 Partial Cut v3.01
+
+Авторизация
+{"HashAuth":"хешавторизации"}
+
+----Получить системное время
+{"Table":"LocalTime"}
+
+
+
+
+----Пост запрос должен содержать
+userhash := c.PostForm("userhash")
+qmessage := c.PostForm("qmessage")
+
+<form action="/" method="post">
+    userhash: <input name="userhash" type="text" value="alksjdhalksjdh"/>
+    qmessage: <input name="qmessage" type="text" value=""/>
+
+    <input name="mySubmit" type="submit" value="submit" />
+</form>
+
+
+----ПОВТОРНАЯ ПЕЧАТЬ ЧЕКА----
+{"Table":"Printer","TypeParameter":"","Values":[order_id],"ID_msg":""}
+
+----ПЕЧАТЬ ОТЧЕТНОГО ЧЕКА----
+{"Table":"Printer","TypeParameter":"AllRange","Values":[orgHash, userHash, timeBegin, timeEnd],"ID_msg":""}
+
+----ПЕЧАТЬ ОТЧЕТНОГО ЧЕКА ВСЕ ЧТО ДОСТАВЛЕНО----
+{"Table":"Printer","TypeParameter":"CountPriceWithDiscount","Values":[orgHash, userHash, type_payment, timeBegin, timeEnd],"ID_msg":""}
+
+
+
+----ПОЛУЧЕНИЕ ВСЕХ ПРОДУКТОВ----
+{"Table":"ProductOrder","ID_msg":""}
+{"Table":"ProductOrder","TypeParameter":"OrgHash","ID_msg":""}
+Скидки
+{"Table":"ProductOrder","TypeParameter":"PromotionsTypes","ID_msg":""}
+{"Table":"ProductOrder","TypeParameter":"Promotions","ID_msg":""}
+{"Table":"ProductOrder","TypeParameter":"Subjects","ID_msg":""}
+
+----ПОЛУЧЕНЕ ХЕШЕЙ ДОСТУПНЫХ ПРОДУКТОВ----
+{"Table":"ProductOrder","TypeParameter":"OrgHash","Values":["OrgHash"],"ID_msg":""}
+
+
+----ClientInfo----
+----СОЗДАНИЕ ИНФОРМАЦИИ О КЛИЕНТЕ
+{"Table":"ClientInfo","TypeParameter":"Create","ID_msg":""}{замаршалиная структура}
+----АПДЕЙТ КЛИЕНТА
+{"Table":"ClientInfo","TypeParameter":"Update","ID_msg":""}{замаршалиная структура}
+----ПОЛУЧЕНИЕ ИНФОРМАЦИИ О КЛИЕНТЕ
+{"Table":"ClientInfo","TypeParameter":"ReadClient","Values":["86669991388"],"ID_msg":""}
+-----------
+----СОЗДАНИЕ ИНФОРМАЦИИ О АДРЕСЕ КЛИЕНТА
+{"Table":"ClientInfo","TypeParameter":"CreateAddress","ID_msg":""}{замаршалиная структура}
+----ПОЛУЧЕНИЕ АДРЕСА КЛИЕНТА
+{"Table":"ClientInfo","TypeParameter":"ReadAddress","Values":["86669991388"],"ID_msg":""}
+
+
+----ПОЛУЧЕНИЕ ИНФОРМАЦИИ ИЗ ТАБЕЛЯ----
+{"Table":"Tabel","Values":["UserHash"],"ID_msg":""}
+
+//---------------------------------------------------------
+//---------------------------------------------------------
+//---------------------------------------------------------
+//---------------------------------------------------------
+----ПОЛУЧЕНИЕ ИНФОРМАЦИИ О СЕССИИ----
+{"Table":"Session","TypeParameter":"Read","ID_msg":""}
+//Получить всех пользователей по хешу организации и роли пользователей
+{"Table":"Session","TypeParameter":"ReadHashNotRights","Values":["OrgHash","RoleHash"],"ID_msg":""}
+{"Table":"Session","TypeParameter":"ReadNotRights","ID_msg":""}
+{"Table":"Session","TypeParameter":"Check","ID_msg":""}
+{"Table":"Session","TypeParameter":"Abort","ID_msg":""}
+
+//----новое
+		switch st.qm.TypeParameter {
+		case "Read":
+                {"Table":"Session","Query":"Read",
+				"TypeParameter":"Hash",
+				"Values":["HashAuth"]}
+
+		case "ReadNotRights":
+			    {"Table":"SessionInfo","Query":"Read",
+				"TypeParameter":"Hash",
+				"Values":["OrgHash","RoleHash" + st.Client.HashAuth"]}
+
+		case "ReadHashNotRights"
+		        {"Table":"SessionInfo","Query":"Read"," +
+		        "TypeParameter":"OnOrganizationHashRoleHash",
+		        "Values":["OrgHash","RoleHash"],"Limit":999}")
+
+		case "Check":
+			    {"Table":"Session",
+				"Query":"Check",
+				"TypeParameter":"SessionHash",
+				"Values":["HashAuth"]}
+
+		case "Abort":
+			    {"Table":"Session",
+				"Query":"Abort",
+				"TypeParameter":"Hash",
+				"Values":["HashAuth"]}
+
+
+//---------------------------------------------------------
+//---------------------------------------------------------
+//---------------------------------------------------------
+//---------------------------------------------------------
+
+
+----ПОЛУЧЕНИЕ ТОЧЕК ПО ГОРОДУ----
+{"Table":"GetPoint","Values":["Курган"],"ID_msg":""} - по городу
+
+----ПОЛУЧЕНИЕ ТОЧЕК ПО ЗОНЕ----
+----С ДОМОМ
+{"Table":"GetAreas","TypeParameter":"WithHouse","Values":["Курган","Улица","НомерДома"],"ID_msg":""} - по городу
+----БЕЗ ДОМА
+{"Table":"GetAreas","TypeParameter":"NotWithHouse","Values":["Курган","Улица"],"ID_msg":""} - по городу
+
+
+
+----Order----
+----Создать
+{"Table":"Order","Query":"Create","TypeParameter":"GetID","Values":null,"Limit":0,"Offset":0}{"ID":0,"SideOrder":2,"TimeDelivery":"2016-11-10T14:58:04.095037Z","DatePreOrderCook":"2016-11-10T14:58:04.095037Z","CountPerson":1,"Division":"sdlkjjfh283768","NameStorage":"NameStorage","OrgHash":"kjsadfui82378723sdhj","Note":"Курочка ряба снясла яичко под чистую","DiscountName":"За три полоски на штанах","DiscountPercent":10,"Bonus":12,"Type":12,"Price":323654,"PriceWithDiscount":6546,"PriceCurrency":"деревянные","TypePayments":1}
+
+----Обновить дату предзаказа
+{"Table":"Order","Query":"Update","TypeParameter":"DatePreOrderCook","Values":[14,"2016-11-10T14:58:04.09503701Z","2016-11-10T14:58:04.095037Z"],"Limit":0,"Offset":0}
+
+----обновить сумму к оплате
+{"Table":"Order","Query":"Update","TypeParameter":"Price","Values":[14,324764,123,"rub"],"Limit":0,"Offset":0}
+
+----обновить paid_off
+{"Table":"Order","Query":"Update","TypeParameter":"PaidOff","Values":[true],"Limit":0,"Offset":0}
+
+----Чтение paid_off по id
+{"Table":"Order","Query":"Read","TypeParameter":"ValueBooleanPaidOff","Values":[15],"Limit":0,"Offset":0}
+
+----Чтение заказа по id
+{"Table":"Order","Query":"Read","TypeParameter":"Value","Values":[15],"Limit":0,"Offset":0}
+
+----Получить количество всех заказов
+{"Table":"Order","Query":"Read","TypeParameter":"ValueNumberCountAll","Values":null,"Limit":0,"Offset":0}
+
+----Получить диапазон заказов по типу
+{"Table":"Order","Query":"Read","TypeParameter":"RangeType","Values":["Доаствка"],"Limit":10,"Offset":0}
+
+----Получить диапазон по хешу пользователя все что собрано или доставляется
+{"Table":"Order","Query":"Read","TypeParameter":"RangeByUserHashCollect","Values":["userhash"],"Limit":10,"Offset":0}
+
+----Получить диапазон по хешу организации
+{"Table":"Order","Query":"Read","TypeParameter":"RangeOrgHash","Values":[hashorg,timebegin,timeend],"Limit":10,"Offset":0}
+
+----Получить диапазон
+{"Table":"Order","Query":"Read","TypeParameter":"Range","Values":[timebegin,timeend],"Limit":10,"Offset":0}
+
+----Получить диапазон по номеру заказчика и диапазону времени
+{"Table":"Order","Query":"Read","TypeParameter":"RangeByPhoneCustomer","Values":[phone,timebegin,timeend],"Limit":10,"Offset":0}
+
+----Получить все по хешу пользователя и ддиапозону времени
+{"Table":"Order","Query":"Read","TypeParameter":"RangeUserHashAndRangeTime","Values":[userhash,timebegin,timeend],"Limit":10,"Offset":0}
+
+--------------------------------------------------------------------------------
+----OrderCustomer
+----Создать заказчика
+{"Table":"OrderCustomer","Query":"Create","TypeParameter":"","Values":null,"Limit":0,"Offset":0,"ID_msg":""}{"Order_id":24,"NameCustomer":"NameCustomer","Phone":"78234987263","Note":"Note","City":"City","Street":"Street","House":12,"Building":"Building","Floor":1,"Apartment":1,"Entrance":2,"DoorphoneCode":"DoorphoneCode"}
+
+----обновить
+{"Table":"OrderCustomer","Query":"Update","TypeParameter":"","Values":[26,"NewNameCustomer","New78234987263","NewNote","NewCity","NewSreet",14,"NewBuilding",2,3,5,"NewDoorphoneCode"],"Limit":0,"Offset":0,"ID_msg":""}
+
+----Читать по идентификатору заказа
+{"Table":"OrderCustomer","Query":"Read","TypeParameter":"Value","Values":[29],"Limit":0,"Offset":0,"ID_msg":""}
+
+----Читать диапазон по номеру телефона
+{"Table":"OrderCustomer","Query":"Read","TypeParameter":"RangeByPhone","Values":["89193234123"],"Limit":10,"Offset":0,"ID_msg":""}
+
+----Читать диапазон по городу
+{"Table":"OrderCustomer","Query":"Read","TypeParameter":"RangeByCity","Values":["89193234123"],"Limit":10,"Offset":0,"ID_msg":""}
+
+----Читать диапазон по диапазону даты
+{"Table":"OrderCustomer","Query":"Read","TypeParameter":"RangeByDate","Values":[datebegin,dateend],"Limit":10,"Offset":0,"ID_msg":""}
+
+
+
+--------------------------------------------------------------------------------
+----OrderList
+----Создать элемент заказа
+{"Table":"OrderList","Query":"Create","TypeParameter":"GetID","Values":null,"Limit":0,"Offset":0}{"Order_id":14,"ID_item":1,"ID_parent_item":0,"Price_id":69,"PriceName":"PriceName","Type_id":32,"TypeName":"TypeName","Parent_id":2,"ParentName":"ParentName","Image":"img address","Units":"asd","Value":1.2,"Set":true,"Finished":false,"DiscountName":"Адики","DiscountPercent":10,"Price":10,"CookingTracker":"CookingTracker","TimeCook":666,"TimeFry":13,"Composition":"Composition","Additionally":"Additionally","Packaging":"Packaging"}
+
+----Сделать заказ прготовленым
+{"Table":"OrderList","Query":"Update","TypeParameter":"Finished","Values":[14,1,true],"Limit":0,"Offset":0}
+
+----получить число элементво всех заказов
+{"Table":"OrderList","Query":"Read","TypeParameter":"ValueNumberCountAll","Values":null,"Limit":0,"Offset":0}
+
+----получить число элементов конкретного заказа
+{"Table":"OrderList","Query":"Read","TypeParameter":"ValueNumberCountOrderID","Values":[14],"Limit":0,"Offset":0}
+
+----Считать один элемент заказа
+{"Table":"OrderList","Query":"Read","TypeParameter":"Value","Values":[14,1],"Limit":0,"Offset":0}
+
+----Считать все элементы по хешу организации, диапазону времени
+{"Table":"OrderList","Query":"Read","TypeParameter":"RangeByOrgHashTimeBeginTimeEnd","Values":["org_hash","2016-03-13","2017-03-13"],"Limit":0,"Offset":0}
+
+----Считать всех элементов конкретного заказа
+{"Table":"OrderList","Query":"Read","TypeParameter":"RangeOrderID","Values":[order_id],"Limit":0,"Offset":0}
+
+--------------------------------------------------------------------------------
+----OrderPersonal
+----Create
+{"Table":"OrderPersonal","Query":"Create","TypeParameter":"","Values":null,"Limit":0,"Offset":0}{"Order_id":14,"Order_id_item":1,"UserHash":"aksjdghakjsdghkajs","FirstName":"FirstName","SecondName":"SecondName","SurName":"SureName","RoleHash":"Role","RoleName":"RoleName"}
+
+----Чтение конкретного пользователя заказа
+{"Table":"OrderPersonal","Query":"Read","TypeParameter":"Value","Values":[14,1,"aksjdghakjsdghkajs"],"Limit":0,"Offset":0}
+
+----Чтение всех пользователей с определнной ролью
+{"Table":"OrderPersonal","Query":"Read","TypeParameter":"RangeRole","Values":[14,"Role"],"Limit":10,"Offset":0}
+
+----Получить всех пользователей опрделенного заказа
+{"Table":"OrderPersonal","Query":"Read","TypeParameter":"RangeOrderID","Values":[14],"Limit":10,"Offset":0}
+
+--------------------------------------------------------------------------------
+----OrderPayments
+----Создаем оплату
+{"Table":"OrderPayments","Query":"Create","TypeParameter":"","Values":null,"Limit":0,"Offset":0}{"Order_id":14,"UserHash":"хеш пользователя который прнял оплату","Name":"Card","Price":123123.23,"Time":"2017-03-13T10:28:18.008969128+05:00"}
+
+----Обновляем оплату полю Name
+{"Table":"OrderPayments","Query":"Update","TypeParameter":"","Values":[14,"Card",123.24,"2017-03-13T10:28:18.027531619+05:00"],"Limit":0,"Offset":0}
+
+----Читаем оплату
+{"Table":"OrderPayments","Query":"Read","TypeParameter":"Value","Values":[14,"Card"],"Limit":0,"Offset":0}
+
+----Читаем все оплаты
+{"Table":"OrderPayments","Query":"Read","TypeParameter":"RangeAll","Values":null,"Limit":100,"Offset":0}
+
+----Читаем все оплаты одного заказа
+{"Table":"OrderPayments","Query":"Read","TypeParameter":"RangeOrderID","Values":[14],"Limit":100,"Offset":0}
+
+--------------------------------------------------------------------------------
+----OrderStatus
+----Создаем
+{"Table":"OrderStatus","Query":"Create","TypeParameter":"","Values":null,"Limit":0,"Offset":0}{"Order_id":14,"Order_id_item":1,"Cause":"","Status_id":1,"UserHash":"asdasd"}
+----Возвращаем ошибку
+{"Table":"OrderStatus","Query":"Create","TypeParameter":"GetError","Values":null,"Limit":0,"Offset":0}{"Order_id":14,"Order_id_item":1,"Cause":"","Status_id":1,"UserHash":"asdasd"}
+
+----Читаем по id заказа и id статуса заказа
+{"Table":"OrderStatus","Query":"Read","TypeParameter":"Value","Values":[14,1],"Limit":0,"Offset":0}
+
+----Читаем по id заказа статус начала заказа
+{"Table":"OrderStatus","Query":"Read","TypeParameter":"ValueStructBeginOrder","Values":[order_id],"Limit":0,"Offset":0}
+
+----Читаем последний статус всего заказа
+{"Table":"OrderStatus","Query":"Read","TypeParameter":"ValueStructEnd","Values":[order_id,order_id_item],"Limit":0,"Offset":0}
+
+----Читаем последний статус по id заказа и id элемента заказа и id статуса
+{"Table":"OrderStatus","Query":"Read","TypeParameter":"ValueStructIDOrdIDitIDStat","Values":[order_id,item_id,status_id],"Limit":0,"Offset":0}
+
+----Читаем последний статус по id заказа и id элемента заказа
+{"Table":"OrderStatus","Query":"Read","TypeParameter":"ValueStructIDOrdIDit","Values":[order_id,item_id],"Limit":0,"Offset":0}
+
+----Читаем диапазон
+{"Table":"OrderStatus","Query":"Read","TypeParameter":"RangeOrderID","Values":[14],"Limit":10,"Offset":0}
+
+--------------------------------------------------------------------------------
+----Cashbox
+----Создаем
+{"Table":"Cashbox","Query":"Create","TypeParameter":"","Values":null,"Limit":0,"Offset":0}{"Order_id":1,"Change_employee_id":Change_employee_id,"First_sure_name":"First_sure_name","UserHash":"UserHash","RoleName":"RoleName","OrgHash":"OrgHash","TypePayments":id_payments,"TypeOperation":"TypeOperation","Cause":"Cause","Deposit":13.3,"ShortChange":11.1,"TimeOperation":"1320-12-04"}
+
+----Обновляем
+{"Table":"Cashbox","Query":"Update","TypeParameter":"Cause","Values":[id],"Limit":0,"Offset":0}
+
+----Читаем элемент
+{"Table":"Cashbox","Query":"Read","TypeParameter":"Value","Values":[id],"Limit":0,"Offset":0}
+
+----Читаем все элементы операций за смену
+{"Table":"Cashbox","Query":"Read","TypeParameter":"RangeChangeEmployeeID","Values":[id_смены],"Limit":0,"Offset":0}
+
+----Читаем сумму всех заказов по хешу организации, хешу пользователя и за диапозон времени  который были доставлены
+{"Table":"Cashbox","Query":"Read","TypeParameter":"ValueNumberCountPriceWithDiscount","Values":[orgHash, userHash, typepayment, timeBegin, timeEnd],"Limit":0,"Offset":0}
+
+----Читаем сумму всех оплат по заказу
+{"Table":"Cashbox","Query":"Read","TypeParameter":"ValueNumberOrderIDSumDeposit","Values":[order_id]}
+
+----Читаем сумму всех оплат по типу оплат хешу пользователя и времени операций
+{"Table":"Cashbox","Query":"Read","TypeParameter":"ValueNumberDepositByUserTypePayRangeTime","Values":[type_payments,user_hash,time_operation_begin,time_operation_end]}
+
+----Читаем диапозон по хешу пользователя - организации и диапозону времени
+{"Table":"Cashbox","Query":"Read","TypeParameter":"RangeUserAndOrdAndTime","Values":[user_hash,org_hash,time_operation_begin,time_operation_end],"Limit":100,"Offset":0}
+
+----Читаем диапозон по идентификатору заказа
+{"Table":"Cashbox","Query":"Read","TypeParameter":"RangeOrderID","Values":[order_id]}
+
+
+--------------------------------------------------------------------------------
+----ChangeEmployee
+----Создаем смену
+{"Table":"ChangeEmployee","Query":"Create","TypeParameter":"GetID","Values":null,"Limit":0,"Offset":0}{"UserHash":"UserHash","OrgHash":"OrgHash","Sum_in_cashbox":Sum_in_cashbox,"NonCash_end_day":NonCash_end_day,"Cash_end_day":Cash_end_day}
+
+----Обновляем
+{"Table":"ChangeEmployee","Query":"Update","TypeParameter":"Close","Values":[id,sum_in_cashbox,non_cash_end_day,cash_end_day,date_end],"Limit":0,"Offset":0}
+
+----Чтение смены
+{"Table":"ChangeEmployee","Query":"Read","TypeParameter":"Value","Values":[id],"Limit":0,"Offset":0}
+
+----Чтение всех смен по user_hash, org_hash, close
+{"Table":"ChangeEmployee","Query":"Read","TypeParameter":"RangeCloseUserHashOrgHash","Values":[user_hash,org_hash,close],"Limit":10,"Offset":0}
+
+----Чтение всех смен по org_hash, close
+{"Table":"ChangeEmployee","Query":"Read","TypeParameter":"RangeCloseOrgHash","Values":[org_hash, ],"Limit":10,"Offset":0}
+
+--------------------------------------------------------------------------------
+----TimersCook
+----Создаем
+{"Table":"TimersCook","Query":"Create","TypeParameter":"","Values":null,"Limit":0,"Offset":0}{"Order_id":1,"Order_id_item":2}
+
+----Обновляем
+{"Table":"TimersCook","Query":"Update","TypeParameter":"","Values":[order_id,order_id_item,time_end],"Limit":0,"Offset":0}
+{"Table":"TimersCook","Query":"Update","TypeParameter":"","Values":[order_id,order_id_item,time_end],"Limit":0,"Offset":0}
+
+----Читаем элемент
+{"Table":"TimersCook","Query":"Read","TypeParameter":"Value","Values":[order_id,order_id_item],"Limit":0,"Offset":0}
+
+
+--------------------------------------------------------------------------------
+----Статусы
+{"Table":"Status","Query":"Read","TypeParameter":"RangeAll","Values":null}
+--------------------------------------------------------------------------------
+----Типы оплат
+{"Table":"TypePayment","Query":"Read","TypeParameter":"RangeAll","Values":null}
+--------------------------------------------------------------------------------
