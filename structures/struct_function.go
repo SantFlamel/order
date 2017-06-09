@@ -345,85 +345,85 @@ func (orl *OrderList) Insert(table,type_parameter string,tx *sql.Tx) (interface{
 	)
 
 	//----ОБРАЩАЕМСЯ К МИКРОСЕРВИСУ ПРОДУКТОВ ДЛЯ ПОЛУЧЕНИЯ ЭЛЕМЕНТОВ ПРОДУКТА
-	//if err == nil && id != nil{
-	//	//err = row.Scan(&orl.ID_item)
-	//	if err == nil {
-     //       //messageToWebSoc(table, orl.Order_id, orl.ID_item)
-     //       var err2 error
-     //       orl.ID_item, err2 = strconv.ParseInt(fmt.Sprint(id), 10, 64)
-     //       if err2 == nil {
-    //
-     //           messageToWebSoc(table, orl.Order_id, orl.ID_item)
-     //           cop := ClientOrder{
-     //               IP:  conf.Config.TLS_serv_product,
-     //               MSG: []byte("{\"Table\":\"ProductOrder\",\"Query\":\"Read\",\"TypeParameter\":\"Price_id\",\"Values\":[" + fmt.Sprintf("%v", orl.Price_id) + "]}"),
-     //           }
-     //           err2 = cop.Write()
-     //           if err2 == nil {
-     //               var n int
-     //               buf := make([]byte, 9999)
-     //               //var row2 *sql.Row
-     //               var id interface{}
-     //               var ol OrderList
-     //               for {
-     //                   //n, err2 = cop.Conn.Read(buf)
-     //                   //if err==nil {
-     //                   //	n, err2 = strconv.Atoi(string(buf))
-     //                   //	if err == nil {
-     //                   //		buf = make([]byte, n)
-     //                   //		n, err2 = io.ReadFull(cop.Conn, buf)
-     //                   //	}
-     //                   //}
-    //
-     //                   buf, n, err2 = cop.Read()
-    //
-     //                   if err2 == nil {
-     //                       if strings.ToUpper(strings.TrimSpace(string(buf[:n]))) == "01:EOF" {
-     //                           break
-     //                       }
-     //                       //buf = make([]byte, 4)
-    //
-     //                       err2 = json.Unmarshal(buf[3:n], &ol)
-     //                       if err2 == nil {
-     //                           ol.Order_id = orl.Order_id
-     //                           ol.ID_parent_item = orl.ID_item
-     //                           fmt.Sprintf("%v", ol)
-     //                           //row2, err2 = postgres.Requests.InsertGetID(
-     //                           id, err2 = postgres.Requests.InsertGetID(
-     //                               tx, table, type_parameter,
-     //                               ol.Order_id, ol.ID_parent_item,
-     //                               ol.Price_id, ol.PriceName, ol.Type_id, ol.TypeName,
-     //                               ol.Parent_id, ol.ParentName,
-     //                               ol.Image, ol.Units, ol.Value, ol.Set, ol.DiscountName, 100, //ol.DiscountPercent,
-     //                               //            CookingTracker
-     //                               ol.Price, ol.CookingTracker, ol.TimeCook, ol.TimeFry, ol.Composition, ol.Additionally, ol.Packaging,
-     //                           )
-     //                           if err2 == nil && id !=nil {
-     //                               //err2 = row2.Scan(&ol.ID_item)
-     //                               //if err2 == nil {
-     //                               //println("------messageToWebSoc",orl.Order_id, ol.ID_item,"\n")
-     //                               //messageToWebSoc(table, orl.Order_id, ol.ID_item)
-     //                               messageToWebSoc(table, orl.Order_id, id)
-    //
-     //                               //}
-     //                           }
-     //                       }
-     //                   }
-     //                   if err2 != nil {
-     //                       println("ERROR=================================")
-     //                       println(err2.Error())
-     //                   }
-    //
-     //               }
-     //           }
-     //       }
-	//		if err2 != nil {
-	//			//log.Println(err2.Error())
-	//			log.Println(err2.Error())
-	//			err2 = nil
-	//		}
-	//	}
-	//}
+	if err == nil && id != nil{
+		//err = row.Scan(&orl.ID_item)
+		if err == nil {
+            //messageToWebSoc(table, orl.Order_id, orl.ID_item)
+            var err2 error
+            orl.ID_item, err2 = strconv.ParseInt(fmt.Sprint(id), 10, 64)
+            if err2 == nil {
+
+                messageToWebSoc(table, orl.Order_id, orl.ID_item)
+                cop := ClientOrder{
+                    IP:  conf.Config.TLS_serv_product,
+                    MSG: []byte("{\"Table\":\"ProductOrder\",\"Query\":\"Read\",\"TypeParameter\":\"Price_id\",\"Values\":[" + fmt.Sprintf("%v", orl.Price_id) + "]}"),
+                }
+                err2 = cop.Write()
+                if err2 == nil {
+                    var n int
+                    buf := make([]byte, 9999)
+                    //var row2 *sql.Row
+                    var id interface{}
+                    var ol OrderList
+                    for {
+                        //n, err2 = cop.Conn.Read(buf)
+                        //if err==nil {
+                        //	n, err2 = strconv.Atoi(string(buf))
+                        //	if err == nil {
+                        //		buf = make([]byte, n)
+                        //		n, err2 = io.ReadFull(cop.Conn, buf)
+                        //	}
+                        //}
+
+                        buf, n, err2 = cop.Read()
+
+                        if err2 == nil {
+                            if strings.ToUpper(strings.TrimSpace(string(buf[:n]))) == "01:EOF" {
+                                break
+                            }
+                            //buf = make([]byte, 4)
+
+                            err2 = json.Unmarshal(buf[3:n], &ol)
+                            if err2 == nil {
+                                ol.Order_id = orl.Order_id
+                                ol.ID_parent_item = orl.ID_item
+                                fmt.Sprintf("%v", ol)
+                                //row2, err2 = postgres.Requests.InsertGetID(
+                                id, err2 = postgres.Requests.InsertGetID(
+                                    tx, table, type_parameter,
+                                    ol.Order_id, ol.ID_parent_item,
+                                    ol.Price_id, ol.PriceName, ol.Type_id, ol.TypeName,
+                                    ol.Parent_id, ol.ParentName,
+                                    ol.Image, ol.Units, ol.Value, ol.Set, ol.DiscountName, 100, //ol.DiscountPercent,
+                                    //            CookingTracker
+                                    ol.Price, ol.CookingTracker, ol.TimeCook, ol.TimeFry, ol.Composition, ol.Additionally, ol.Packaging,
+                                )
+                                if err2 == nil && id !=nil {
+                                    //err2 = row2.Scan(&ol.ID_item)
+                                    //if err2 == nil {
+                                    //println("------messageToWebSoc",orl.Order_id, ol.ID_item,"\n")
+                                    //messageToWebSoc(table, orl.Order_id, ol.ID_item)
+                                    messageToWebSoc(table, orl.Order_id, id)
+
+                                    //}
+                                }
+                            }
+                        }
+                        if err2 != nil {
+                            println("ERROR=================================")
+                            println(err2.Error())
+                        }
+
+                    }
+                }
+            }
+			if err2 != nil {
+				//log.Println(err2.Error())
+				log.Println(err2.Error())
+				err2 = nil
+			}
+		}
+	}
 	if err != nil {
 		//return int64(-1), err
 		return nil, err
