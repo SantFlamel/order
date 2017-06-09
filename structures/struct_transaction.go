@@ -181,7 +181,7 @@ func (st *StructTransact) Insert() (Message, error) {
             return m, err
         }
     }
-    go st.messageToWebSocTrans(&m,buf_id)
+    go st.messageToWebSocTrans(m,buf_id)
 	return m, err
 }
 
@@ -383,17 +383,18 @@ func (st *StructTransact) Delete() (error) {
 }
 
 //----------------------------------------------------------------------------------------------------------------------
-func (st *StructTransact) messageToWebSocTrans(message *Message, buf_id interface{}) {
+func (st *StructTransact) messageToWebSocTrans(message Message, buf_id interface{}) {
     cl := ClientList
     var err error
-    var msg []byte
+    //var msg []byte
     //----Рассылка операторам
     for _, conn := range cl {
         if conn.HashRole == conf.Config.HashOperator{
-            msg, err = json.Marshal(message)
-            if err ==nil {
-                conn.Send <- msg
-            }
+            conn.Send <- message
+            //msg, err = json.Marshal(message)
+            //if err ==nil {
+            //    conn.Send <- msg
+            //}
         }
     }
 
@@ -430,10 +431,11 @@ func (st *StructTransact) messageToWebSocTrans(message *Message, buf_id interfac
             if err==nil{
                 for _, conn := range cl {
                     if conn.HashPoint == buf_id || conn.HashRole == conf.Config.HashOperator{
-                        msg, err = json.Marshal(message)
-                        if err ==nil {
-                            conn.Send <- msg
-                        }
+                        conn.Send <- message
+                        //msg, err = json.Marshal(message)
+                        //if err ==nil {
+                        //    conn.Send <- msg
+                        //}
                     }
                 }
                 message.Error = Error{Code:2,Type:"Update",

@@ -10,9 +10,10 @@ import (
 	"log"
 	"net"
 	"project/order/conf"
-	"project/order/structures"
 	"strconv"
     "io"
+	"project/order/client/insert"
+    "project/order/structures"
 )
 
 var reply []byte
@@ -20,184 +21,63 @@ var ID int64
 var IDitem int64
 
 func main() {
-	var err error
-	//ID = 0
-	//------------------------------------------------------------------------------------------------------------------
-	//========ORDER
-	//----PING----
-	//order(0)
-	//for i:=0;i<10;i++{
-
-	/*----INSERT----*/
-	//----INSERT_GET_ID----
-	//err = order(1)
-	//if err != nil {
-	//    println(err)
-	//    return
-	//}
-	////----INSERT----
-	//order(2)
-	//
-	///*----UPDATE----*/
-	//println("-------------------------------------------------------------------")
-	////----UPDATE_TimeDeliveredBy----
-	//order(3)
-	////if err!=nil{println(err);return }
-	////----UPDATE_REDONE----
-	//order(4)
-	////if err!=nil{println(err);return }
-	////----UPDATE_PRICE----
-	//order(5)
-	////if err!=nil{println(err);return }
-	////----UPDATE_PRICE----
-	//order(5)
-	////if err!=nil{println(err);return }
-	////----UPDATE_DISCOUNT----
-	////err = order(6,conn)
-	////----UPDATE_STATUS----
-	//order(7)
-	//
-	///*----READ----*/
-	//println("-------------------------------------------------------------------")
-	////----READ
-	//order(50)
-	////if err!=nil{println(err);return }
-	//
-	////----READ_STATUS
-	//order(51)
-	////if err!=nil{println(err);return }
-	//
-	////----READ_COUNT_ALL
-	//order(52)
-	////if err!=nil{println(err);return }
-	//
-	////----READ_RANGE
-	//println("-------------")
-	//order(60)
-	//
-	//
-	//
-	//
-	//////////////////////////////////////////////////////////////////////////////////////
-	//println("//////////////////////////////////////////////////////////////////////////////////")
-	//println("//----CREATE_ORDER_CUSTOMER")
-	//order_customer(1)
-	//println("//----UPDATE_ORDER_CUSTOMER")
-	//order_customer(2)
-	//println("//----READ_ORDER_CUSTOMER")
-	//order_customer(3)
-	//
-	//////////////////////////////////////////////////////////////////////////////////////
-	//println("//////////////////////////////////////////////////////////////////////////////////")
-	//println("//----CREATE_ORDER_LIST")
-	//err = orderList(1)
-	//println(err)
-	//println("//----UPDATE_ORDER_LIST_FINISHED")
-	//orderList(2)
-	//println("//----READ_ORDER_LIST_VALUE")
-	//orderList(30)
-	//println("//----READ_ORDER_LIST_RANGE")
-	//orderList(40)
-	//
-	////////////////////////////////////////////////////////////////////////////////////
-	//println("//////////////////////////////////////////////////////////////////////////////////")
-	//println("//----CREATE_ORDER_PERSONAL")
-	//order_personal(1)
-	//println("//----READ_ORDER_PERSONAL_VALUE")
-	//order_personal(2)
-	//println("//----READ_RANGE_ROLE")
-	//order_personal(3)
-	//println("//----READ_RANGE_ORDER_ID")
-	//order_personal(4)
-	//
-	////////////////////////////////////////////////////////////////////////////////////
-	//println("//////////////////////////////////////////////////////////////////////////////////")
-	//println("//----CREATE_ORDER_PAYMENTS")
-	//order_payments(1)
-	//println("//----UPDATE_ORDER_PAYMENTS")
-	//order_payments(2)
-	//println("//----READ_ORDER_PAYMENTS_VALUE")
-	//order_payments(3)
-	//println("//----READ_ORDER_PAYMENTS_RANGE_ALL")
-	//order_payments(4)
-	//println("//----READ_ORDER_PAYMENTS_RANGE_ORDER_ID")
-	//order_payments(5)
-	//
-	////////////////////////////////////////////////////////////////////////////////////
-	//println("//////////////////////////////////////////////////////////////////////////////////")
-	//println("//----CREATE_ORDER_STATUS")
-	//order_status(1)
-	//println("//----READ_ORDER_STATUS")
-	//order_status(2)
-	//println("//----READ_ORDER_STATUS_RANGE")
-	//order_status(3)
-	//
-	///*----DELETE----*/
-	//println("-------------------------------------------------------------------")
-	//----DELETE_ITEM----
-	//err = order(100)
-	//if err!=nil{println(err);return }
-
-	//st := "{\"Table\":\"Session\",\"Query\":\"Read\",\"TypeParameter\":\"Hash\",\"Values\":[\"94cf8307be3a50abe776132ca0ab18b53c6de12a47cafdbcd3970aa5877a8cde\"]}"
-
-	o   := structures.Order{OrgHash:       "TestOrgHash", Note: "bla",TypePayments:1}
-	ol1 := structures.OrderList{PriceName: "Варенники", Price: float64(1), CookingTracker: 2}
-	ol2 := structures.OrderList{PriceName: "Колбаска", CookingTracker: 2}
-	ol3 := structures.OrderList{PriceName: "Гудрон", CookingTracker: 2}
-	ol4 := structures.OrderList{PriceName: "Мяу", CookingTracker: 2}
-
-	t := structures.Table{Name: "Order", TypeParameter: "GetID"}
-	t.Values = append(t.Values, o)
-
-	t1 := structures.Table{Name: "OrderList", TypeParameter: "GetID"}
-	t1.Values = append(t1.Values, ol1, ol2, ol3, ol4)
-
-    m := structures.Message{Query: "Insert"}
-    m.Tables = append(m.Tables, t, t1)
-
-	/*t1 := structures.Table{Name: "OrderList", TypeParameter: "ValueNumberCountAll"}
-	//t1.Values = append(t1.Values, 7)
-	m := structures.Message{Query: "Select"}
-
-	m.Tables = append(m.Tables, t1)*/
-	b, _ := json.Marshal(m)
-
-	st := string(b)
-	println(len(st))
-	s := strconv.Itoa(len(st))
-	println(len(s))
-	if len(s) < 4 {
-		for len(s) < 4 {
-			s = "0" + s
-		}
-	}
-
-	_, err = send(s + st)
-	//_ ,err = send("{\"Table\":\"Session\",\"Query\":\"Read\",\"TypeParameter\":\"Hash\",\"Values\":[\"94cf8307be3a50abe776132ca0ab18b53c6de12a47cafdbcd3970aa5877a8cde\"]}")
-	if err != nil {
-		println(err)
-		return
-	}
+    c := Client{}
+    c.Init()
 }
+
+type Client struct {
+    message structures.Message
+    table structures.Table
+    error_str structures.Error
+}
+
+func (c *Client) Init() {
+    var err error
+    for _,m:=range insert.Insert() {
+        c.message = m
+        _, err = c.send()
+
+        if err != nil {
+            println(err.Error())
+            return
+        }
+    }
+}
+
 
 //----------------------------------------------------------------------------------------------------------------------
 
-func send(message string) (string, error) {
+func (c *Client)send() (string, error) {
+    var st string
+    var message []byte
+    message, _ = json.Marshal(c.message)
+    st = string(message)
+    s := strconv.Itoa(len(st))
+    if len(s) < 4 {
+        for len(s) < 4 {
+            s = "0" + s
+        }
+    }
+    message = []byte(s + st)
+
+
 	conn := Conn()
 	reply = make([]byte, 4)
+    println()
+    println()
 	println("----------------------------------")
-	println(message)
+	println(string(message))
 	println("----------------------------------")
 	if conn == nil {
 		return "", errors.New("nil connection")
 	}
-	n, err := conn.Write([]byte(message))
+	n, err := conn.Write(message)
 	if err != nil {
 		log.Println(n, err)
 		println("Message is not gone")
 		return "", err
 	}
-	println("Message is gone, my address: " + conn.LocalAddr().String())
+	println("Message is gone, my address: " + conn.LocalAddr().String(),"to address:",conn.RemoteAddr().String())
     _, err = conn.Read(reply)
     if err != nil {
         println(err.Error())
@@ -221,15 +101,28 @@ func send(message string) (string, error) {
 	//if string(reply[:6]) == "ERROR:" {errorServer(reply[:n])}
 
 	println("LEN_MESSAGE:", len(reply[:n]))
+    err = json.Unmarshal(reply[:n],&c.message)
+    if err!=nil{
+        println()
+        println("----JASON UNMARSHAL")
+        color.Red(err.Error())
+        err = nil
+    }
+    println()
+    println("----GET MESSAGE")
 
-	if len(reply[:n]) > 2 && string(reply[:n])[:2] == "00" {
+	if c.message.Error != nil {
 		color.Red(string(reply[:n]))
-		return string(reply[:n]), errors.New(string(reply[:n]))
 	} else {
 		color.Green(string(reply[:n]))
 	}
-	return string(reply[:n]), nil
+    println()
+	//return string(reply[:n]), nil
+	return "", nil
 }
+
+
+
 func sendReadRange(message string) {
 	conn := Conn()
 	reply = make([]byte, 16384)

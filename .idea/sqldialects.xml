@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$PROJECT_DIR$/tests/queryORDER/functions.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/tests/queryORDER/orders.sql" dialect="PostgreSQL" />
-    <file url="file://$PROJECT_DIR$/tests/queryORDER/statusSQL.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/_query_order/functions.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/_query_order/orders.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/_query_order/statusSQL.sql" dialect="PostgreSQL" />
   </component>
 </project>

@@ -104,7 +104,7 @@ func messageToWebSoc(table string, values ...interface{}) {
 	stream := postgres.Stream{}
 	err = stream.ReadRow("Order", "ValueStringOrgHash", values[0])
 	if err == nil {
-		cl := ClientList
+		//cl := ClientList
 		qms := QueryMessage{}
 		qms.Table = table
 		//qms.Query = qm.Query
@@ -120,10 +120,10 @@ func messageToWebSoc(table string, values ...interface{}) {
 			//stream.Row.Scan(&hash_org)
 			if err == nil {
 				msg = append([]byte("02:{"), msg...)
-				for _, conn := range cl {
+				/*for _, conn := range cl {
 					println("messageToWebSoc: ", string(msg))
-					conn.Send <- msg
-				}
+					//conn.Send <- msg
+				}*/
 			}
 		}
 	}
@@ -143,9 +143,9 @@ func messageToWebSocWithHashOrg(table, orghash string, values ...interface{}) {
 	msg, err := json.Marshal(qms)
 	if err == nil {
 		msg = append([]byte("02:{"), msg...)
-		for _, ss := range ClientList {
+		/*for _, ss := range ClientList {
 			ss.Send <- msg
-		}
+		}*/
 	}
 }
 

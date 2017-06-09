@@ -1,0 +1,26 @@
+﻿SELECT 
+		order_id, id_item, id_parent_item, price_id, price_name, type_id,
+		type_name, parent_id, parent_name, image, units, value, set,
+		finished, discount_name, discount_percent, price, cooking_tracker,
+		time_cook, time_fry, composition, additionally, packaging
+		FROM (
+		SELECT ol.*,
+		(SELECT status_id
+		FROM order_status
+		WHERE order_id=ol.order_id AND order_id_item=id_item ORDER BY "time" DESC LIMIT 1) as status_id,
+		(SELECT user_hash
+		FROM order_status
+		WHERE order_id=ol.order_id AND order_id_item=id_item 
+		ORDER BY "time" DESC LIMIT 1) as osu
+		FROM  "order" o
+		RIGHT JOIN order_list ol ON ol.order_id=o.id
+		WHERE 
+		o.org_hash='d5f702eb3d250ffe09d8a16677015f450290242dfb86db14231806abaa315951a4d900ecc8ea42bb864f8b4bad51fdb480d192605da599ab2462eba9d414f6c0'
+		AND (o.date_preorder_cook - interval '1 hours') < localtimestamp 
+		AND ol.set=false 
+		AND ol.time_cook>0 
+		AND ol.finished=false 
+		) ol 
+		WHERE 
+		cooking_tracker=1 AND  (status_id < 5 OR status_id=14 OR status_id is null)  OR (status_id = 4 AND cooking_tracker=1 osu = '23423423') 
+		ORDER BY ol.order_id, ol.id_item  ASC  LIMIT 10  OFFSET 0

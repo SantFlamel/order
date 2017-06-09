@@ -4,8 +4,6 @@ import (
     "project/order/conf"
     "github.com/gin-gonic/gin"
     "net/http"
-    "fmt"
-    "project/order/structures"
     "sync"
     "log"
 )
@@ -20,7 +18,8 @@ func RegisterRoutes() {
         var mu sync.Mutex
         mu.Lock()
         defer mu.Unlock()
-        WSHandler(c.Writer,c.Request)
+        ws := WS{}
+        ws.WSHandler(c.Writer,c.Request)
     })
 
     r.GET("/", func(c *gin.Context){
@@ -70,30 +69,6 @@ func RegisterRoutes() {
         t := c.PostForm("phone")
         println("I AM POST METHOD")
         println(t)
-    })
-
-    r.POST("/", func(c *gin.Context){
-
-        userhash := c.PostForm("userhash")
-        qmessage := c.PostForm("qmessage")
-
-        println("I AM POST METHOD")
-        println(userhash)
-        println(qmessage)
-        cl:=structures.ClientList[userhash]
-        st:=structure{Client: &cl}
-        err := st.SelectTables([]byte(qmessage))
-        if err != nil {
-            //log.Println("00:" + st.qm.ID_msg + "{" + st.qm.Table + " ERROR " + st.qm.Query + ", TYPE PARAMETERS \"" + st.qm.TypeParameter + "\" VALUES: "+fmt.Sprintf("%v",st.qm.Values)+": " + err.Error())
-            log.Println("00:" + st.qm.ID_msg + "{" + st.qm.Table + " ERROR " + st.qm.Query + ", TYPE PARAMETERS \"" + st.qm.TypeParameter + "\" VALUES: "+fmt.Sprintf("%v",st.qm.Values)+": " + err.Error())
-            println("00:" + st.qm.ID_msg + "{" + st.qm.Table + " ERROR " + st.qm.Query + ", TYPE PARAMETERS \"" + st.qm.TypeParameter + "\" VALUES: "+fmt.Sprintf("%v",st.qm.Values)+": " + err.Error())
-        }
-        if err!=nil {println(err.Error())}
-        c.HTML(http.StatusOK, "index.html",
-            gin.H{
-                "title"    :"I am",
-                "hreforder":"orders",
-            })
     })
 
 
