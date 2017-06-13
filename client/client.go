@@ -12,8 +12,8 @@ import (
 	"project/order/conf"
 	"strconv"
     "io"
-	"project/order/client/insert"
     "project/order/structures"
+    "project/order/client/services"
 )
 
 var reply []byte
@@ -33,7 +33,27 @@ type Client struct {
 
 func (c *Client) Init() {
     var err error
-    for _,m:=range insert.Insert() {
+    //for _,m:=range insert.Insert() {
+    //    c.message = m
+    //    _, err = c.send()
+    //
+    //    if err != nil {
+    //        println(err.Error())
+    //        return
+    //    }
+    //}
+
+    // for _,m:=range services.GetAreas(){
+    //    c.message = m
+    //    _, err = c.send()
+    //
+    //    if err != nil {
+    //        println(err.Error())
+    //        return
+    //    }
+    //}
+
+    for _,m:=range services.ProductOrder(){
         c.message = m
         _, err = c.send()
 
@@ -42,6 +62,7 @@ func (c *Client) Init() {
             return
         }
     }
+
 }
 
 
@@ -53,8 +74,8 @@ func (c *Client)send() (string, error) {
     message, _ = json.Marshal(c.message)
     st = string(message)
     s := strconv.Itoa(len(st))
-    if len(s) < 4 {
-        for len(s) < 4 {
+    if len(s) < 6 {
+        for len(s) < 6 {
             s = "0" + s
         }
     }
@@ -62,7 +83,7 @@ func (c *Client)send() (string, error) {
 
 
 	conn := Conn()
-	reply = make([]byte, 4)
+	reply = make([]byte, 6)
     println()
     println()
 	println("----------------------------------")

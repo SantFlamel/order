@@ -11,6 +11,7 @@ import (
 	"log"
     "errors"
 	"sync"
+    "crypto/rsa"
 )
 var GuardClientTLS *sync.RWMutex
 
@@ -22,12 +23,12 @@ type ClientOrder struct {
 	Conn    net.Conn
 	IP      string
 	MSG     []byte
- 	read    []byte
+ 	ReadB    []byte
 	lenRead int
-	err error
+	Err error
 }
 
-func (co *ClientOrder) ClientSend(serv string) (error) {
+func (co *ClientOrder) ClientSend(serv string){
 	GuardClientTLS.Lock()
 
 	////----READ_PEM_FILE_CERTIFICATES
@@ -66,21 +67,28 @@ func (co *ClientOrder) ClientSend(serv string) (error) {
 	//config := &tls.Config{
 	//	Certificates:       []tls.Certificate{cert},
 	//	InsecureSkipVerify: true}
+    var cert2_b []byte
+	cert2_b, co.Err = ioutil.ReadFile(conf.Config.TLS_pem)
+	if co.Err != nil {
+		log.Println("MSG CLIEN TLS:", co.Err.Error())
+		co.Err = errors.New("MSG CLIEN TLS: "+ co.Err.Error())
+        return
+	}
 
-	cert2_b, err := ioutil.ReadFile(conf.Config.TLS_pem)
-	if err != nil {
-		log.Println("MSG CLIEN TLS:", err.Error())
-		return errors.New("MSG CLIEN TLS: "+err.Error())
+    var priv2_b []byte
+	priv2_b, co.Err = ioutil.ReadFile(conf.Config.TLS_key)
+	if co.Err != nil {
+		log.Println("MSG CLIEN TLS:", co.Err.Error())
+        co.Err = errors.New("MSG CLIEN TLS: "+ co.Err.Error())
+        return
 	}
-	priv2_b, err := ioutil.ReadFile(conf.Config.TLS_key)
-	if err != nil {
-		log.Println("MSG CLIEN TLS:", err.Error())
-		return errors.New("MSG CLIEN TLS: "+err.Error())
-	}
-	priv2, err := x509.ParsePKCS1PrivateKey(priv2_b)
-	if err != nil {
-		log.Println("MSG CLIEN TLS:", err.Error())
-		return errors.New("MSG CLIEN TLS: "+err.Error())
+
+    var priv2 *rsa.PrivateKey
+	priv2, co.Err = x509.ParsePKCS1PrivateKey(priv2_b)
+	if co.Err != nil {
+		log.Println("MSG CLIEN TLS:", co.Err.Error())
+        co.Err = errors.New("MSG CLIEN TLS: " + co.Err.Error())
+        return
 	}
 
 	cert := tls.Certificate{
@@ -94,11 +102,12 @@ func (co *ClientOrder) ClientSend(serv string) (error) {
 	}
 	GuardClientTLS.Unlock()
 	//----CREATE_CONNECTION
-	conn, err := tls.Dial("tcp", serv, config)
-	if err != nil {
-		println("client: ", err.Error())
-		log.Println("client: ", err.Error())
-		return err
+    var conn *tls.Conn
+	conn, co.Err = tls.Dial("tcp", serv, config)
+	if co.Err != nil {
+		println("client: ", co.Err.Error())
+		log.Println("client: ", co.Err.Error())
+		return
 	}
 
 	//----REMOTE_ADDRESS
@@ -113,52 +122,47 @@ func (co *ClientOrder) ClientSend(serv string) (error) {
 	//log.Println("client: mutual: ", state.NegotiatedProtocolIsMutual)
 
 	co.Conn = conn
-	return err
 }
 
 
-func (co *ClientOrder) Write()error{
-	err := co.ClientSend(co.IP)
-    if err==nil {
+func (co *ClientOrder) Write(){
+	co.ClientSend(co.IP)
+    if co.Err==nil {
         s := strconv.Itoa(len(co.MSG))
         println(len(s))
-        if len(s) < 4 {
-            for len(s) < 4 {
-                s = "0" + s
-            }
+
+        for len(s) < 4 {
+            s = "0" + s
         }
+
         co.MSG = append([]byte(s), co.MSG...)
 
         println("send to server )", co.Conn.RemoteAddr().String(), ":", string(co.MSG))
-        if err == nil && co.Conn != nil {
-            _, err = co.Conn.Write(co.MSG)
+        if co.Err == nil && co.Conn != nil {
+            _, co.Err = co.Conn.Write(co.MSG)
         }
-        if err != nil {
+        if co.Err != nil {
             //log.Println(err)
-            log.Println(err)
-            println("-------------", err.Error())
+            log.Println(co.Err)
+            println("-------------", co.Err.Error())
         }
     }
-	return err
 }
 
-func (co *ClientOrder) Read()([]byte,int,error){
-	co.read = make([]byte,4)
-    if co.Conn==nil{return []byte(""),0,errors.New("connection refused")}
+func (co *ClientOrder) Read(){
+	co.ReadB = make([]byte,4)
+    if co.Conn==nil{co.Err = errors.New("connection refused");return }
 	if co.Conn!=nil {
-		co.lenRead, co.err = co.Conn.Read(co.read)
-		if co.err == nil {
-			co.lenRead, co.err = strconv.Atoi(string(co.read))
-			if co.err == nil {
-				co.read = make([]byte, co.lenRead)
-				_, co.err = io.ReadFull(co.Conn, co.read)
+		co.lenRead, co.Err = co.Conn.Read(co.ReadB)
+		if co.Err == nil {
+			co.lenRead, co.Err = strconv.Atoi(string(co.ReadB))
+			if co.Err == nil {
+				co.ReadB = make([]byte, co.lenRead)
+				_, co.Err = io.ReadFull(co.Conn, co.ReadB)
 			}
 		}
 	}
-	if co.err!=nil{
-		println("co *ClientOrder READ")
-		return nil,0,co.err
+	if co.Err!=nil{
+		println("co *ClientOrder READ",co.Err.Error())
 	}
-
-	return co.read,co.lenRead,co.err
 }

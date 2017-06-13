@@ -10,15 +10,15 @@
   "TLS_port"                  : "66",
   "TLS_pem"                   : "../cert/ca.pem",
   "TLS_key"                   : "../cert/ca.key",
-  "TLS_serv_printer"          : "0.0.0.0:7730",
-  "TLS_serv_product"          : "192.168.0.132:449",
-  "TLS_serv_session"          : "192.168.0.132:441",
-  "TLS_serv_tabel"            : "192.168.0.132:442",
-  "TLS_serv_ClientInfo"       : "192.168.0.132:483",
-  "TLS_serv_GlobalParameters" : "192.168.0.132:501",
+  "TLS_serv_printer"          : "109.195.135.223:7730",
+  "TLS_serv_product"          : "37.46.134.23:449",
+  "TLS_serv_session"          : "82.146.49.30:451",
+  "TLS_serv_tabel"            : "91.240.87.193:442",
+  "TLS_serv_ClientInfo"       : "37.46.134.23:483",
+  "TLS_serv_GlobalParameters" : "82.146.49.30:452",
   "TLS_serv_areas"            : "82.146.49.30:7730",
-  "TLS_serv_org"              : "192.168.0.130:456",
-  "TLS_serv_sklad"            : "192.168.0.130:50040",
+  "TLS_serv_org"              : "91.240.87.193:50055",
+  "TLS_serv_sklad"            : "37.46.134.23:50040",
   "TLS_serv_reader"           : ["192.168.0.78:500"],
   "GIN_server"                : "",
   "GIN_port"                  : "80",
@@ -29,3 +29,4 @@
   "Expired_count"             : 1000,
   "Connect_count"             : 3090
 }
+

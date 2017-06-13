@@ -45,9 +45,10 @@ func (c *ClientTLS) handleClient() {
 		if c.conn == nil {
 			break
 		}
+
+		reply = make([]byte, 6)
         //------------------------------------------------
         //----СТАРОЕ
-        //reply = make([]byte, 4)
         //_, err = c.conn.Read(reply)
         //if err != nil {
         //    //log.Println("_, err := conn.Read(reply)")
@@ -91,7 +92,7 @@ func (c *ClientTLS) handleClient() {
         //------------------------------------------------
         //----НОВОЕ
 
-		reply = make([]byte, 4)
+
 		_, err = c.conn.Read(reply)
 		if err != nil {
 			println(err.Error())
@@ -134,19 +135,29 @@ func (c *ClientTLS) handleClient() {
 		case "Insert":
 			c.message,err = sttr.Insert()
 			fmt.Println(c.message)
+
 		case "Update":
 			err = sttr.Update()
 			//c.message.Tables = nil
+
 		case "Select":
 			c.message,err = sttr.Read()
+
 		case "Delete":
 			err = sttr.Delete()
 			//c.message.Tables = nil
+
 		case "Services":
-			c.message,err = sttr.ServiceManager()
+            c.message, err = sttr.ServiceManager()
+            if err!=nil{println("Services",err.Error())}
+
 		default:
 			err = errors.New("NOT IDENTIFICATION QUERY")
 		}
+
+        if err!=nil{
+            println("Server handleClient:",err.Error())
+        }
 
         c.send(&c.message,err)
 	}
@@ -176,17 +187,17 @@ func (st *ClientTLS) send(message *structures.Message, err error) {
 
 	s := strconv.Itoa(len(sendMessage))
 	println(len(s))
-	if len(s) < 4 {
-		for len(s) < 4 {
-			s = "0" + s
-		}
+
+	for len(s) < 6 {
+		s = "0" + s
 	}
+
 	sendMessage = append([]byte(s), sendMessage...)
 	if st.conn != nil {
 		println("Message: \"", string(sendMessage), "\"")
-		//LenMess, errs = st.conn.Write(sendMessage)
+
 		LenMess, errs = st.conn.Write(sendMessage)
-		//st.Send <- sendMessage
+
 	} else {
 		log.Println("st.conn is nill")
 	}

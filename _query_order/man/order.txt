@@ -1,0 +1,42 @@
+//----СООБЩЕНИЯ ПО НОВОМУ ----
+
+{
+"Tables":[{     //----Массив таблиц
+     "Name":0,  //----Наименование таблицы
+     "TypeParameter":"GetID", //----Тип обращения
+     "Values":[{структура таблицы}, ...], //----Массив структур данной таблицы
+     "Limit":0, //----Нужен для чтения массива, сколько нужно считать
+     "Offset":0 //----С какого эленмента читать
+     }, ...
+  ],
+"Query":"Insert", //Тип обращения имеет следующие типы: EndConn, Insert, Update, Select, Delete, Services
+"Error":null    //Ошибка если null значит все нормально в противно случае будет идти в ответ такой структурой {"Code":0,"Type":"Insert","Description":""}
+}
+
+
+
+//----Чтение всех продуктов
+{
+"Tables":[{
+     "Name":"ProductOrder",
+     "TypeParameter":"",
+     "Values":[{"Table":"ProductOrder","Query":"Read"}],
+     "Limit":0,
+     "Offset":0
+     }
+  ],
+"Query":"Services",
+"Error":null
+}
+
+//----Запросы отправляемые(примерные) в Values
+//----------------------------------------------------------------------------------------------------------------------
+//----ProductOrder
+{"Table":"ProductOrder","Query":"Read"}
+{"Table":"PromotionsTypes","Query":"Read","Limit":999}
+{"Table":"Promotions","Query":"Read","Limit":999}
+{"Table":"Subjects","Query":"Read","Limit":999}
+{"Table":"ProductOrder","Query":"Read","TypeParameter":"Какойто параметер","Values":["Values"]}
+
+//----GetAreas
+"{\"City\":\"Курган\",\"Street\":\"Пушкина\",\"House\":\"49\"}"

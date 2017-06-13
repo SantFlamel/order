@@ -358,10 +358,11 @@ func (orl *OrderList) Insert(table,type_parameter string,tx *sql.Tx) (interface{
                     IP:  conf.Config.TLS_serv_product,
                     MSG: []byte("{\"Table\":\"ProductOrder\",\"Query\":\"Read\",\"TypeParameter\":\"Price_id\",\"Values\":[" + fmt.Sprintf("%v", orl.Price_id) + "]}"),
                 }
-                err2 = cop.Write()
+                cop.Write()
+	            err2 = cop.Err
                 if err2 == nil {
-                    var n int
-                    buf := make([]byte, 9999)
+                    //var n int
+                    //buf := make([]byte, 9999)
                     //var row2 *sql.Row
                     var id interface{}
                     var ol OrderList
@@ -375,15 +376,15 @@ func (orl *OrderList) Insert(table,type_parameter string,tx *sql.Tx) (interface{
                         //	}
                         //}
 
-                        buf, n, err2 = cop.Read()
-
+                        cop.Read()
+	                    err2 = cop.Err
                         if err2 == nil {
-                            if strings.ToUpper(strings.TrimSpace(string(buf[:n]))) == "01:EOF" {
+                            if strings.ToUpper(strings.TrimSpace(string(cop.ReadB))) == "01:EOF" {
                                 break
                             }
                             //buf = make([]byte, 4)
 
-                            err2 = json.Unmarshal(buf[3:n], &ol)
+                            err2 = json.Unmarshal(cop.ReadB, &ol)
                             if err2 == nil {
                                 ol.Order_id = orl.Order_id
                                 ol.ID_parent_item = orl.ID_item
@@ -680,14 +681,15 @@ func (os *OrderStatus) PostTransaction()error {
                                 "\"Query\":\"Read\"," +
                                 "\"TypeParameter\":\"OnOrganizationHashRoleHash\"," +
                                 "\"Values\":[\"" + org_hash + "\",\"" + conf.Config.HashCourier + "\"]}")
-                        err2 = co.Write()
+                        co.Write()
+	                    err2 = co.Err
                         if err2 == nil {
-                            var listen []byte
-                            var n int
+                            //var listen []byte
+                            //var n int
                             s := Session{}
                             var as []Session
                             for {
-                                listen = make([]byte, 9999)
+                                //listen = make([]byte, 9999)
                                 //n, err2 = co.Conn.Read(listen)
                                 //if err==nil {
                                 //	n, err2 = strconv.Atoi(string(listen))
@@ -696,16 +698,17 @@ func (os *OrderStatus) PostTransaction()error {
                                 //		n, err2 = io.ReadFull(co.Conn, listen)
                                 //	}
                                 //}
-                                listen, n, err2 = co.Read()
+                                co.Read()
+	                            err2 = co.Err
                                 if err2 != nil {
                                     break
                                 }
 
-                                if strings.ToUpper(strings.TrimSpace(string(listen[:n]))) == "01:EOF" {
+                                if strings.ToUpper(strings.TrimSpace(string(co.ReadB))) == "01:EOF" {
                                     break
                                 }
-                                println("listen[:n]", string(listen[:n]))
-                                err2 = json.Unmarshal(listen[3:n], &s)
+                                println("listen[:n]", string(co.ReadB))
+                                err2 = json.Unmarshal(co.ReadB[3:], &s)
                                 if err2 == nil {
                                     as = append(as, s)
                                 }
@@ -847,9 +850,9 @@ func (os *OrderStatus) PostTransaction()error {
                                         ",\"Operator\":\"" + os.UserHash + "\"}"),
                             }
                             c.Write()
-                            bs := make([]byte, 9999)
+                            //bs := make([]byte, 9999)
                             //c.Conn.Read(bs)
-                            var n int
+                            //var n int
                             //n, err2 = c.Conn.Read(bs)
                             //if err==nil {
                             //	n, err2 = strconv.Atoi(string(bs))
@@ -858,8 +861,9 @@ func (os *OrderStatus) PostTransaction()error {
                             //		n, err2 = io.ReadFull(c.Conn, bs)
                             //	}
                             //}
-                            bs, n, err2 = c.Read()
-                            println("c.Conn.Read(bs)", string(bs[:n]))
+                            c.Read()
+	                        err2 = c.Err
+                            println("c.Conn.Read(bs)", string(c.ReadB))
 
                         }
                     }
@@ -1009,9 +1013,9 @@ func (os *OrderStatus) PostTransaction()error {
                                                             ",\"Operator\":\"" + os.UserHash + "\"}"),
                                                 }
                                                 c.Write()
-                                                bs := make([]byte, 9999)
+                                                //bs := make([]byte, 9999)
                                                 //c.Conn.Read(bs)
-                                                var n int
+                                                //var n int
                                                 //n, err2 = c.Conn.Read(bs)
                                                 //if err==nil {
                                                 //	n, err2 = strconv.Atoi(string(bs))
@@ -1020,8 +1024,9 @@ func (os *OrderStatus) PostTransaction()error {
                                                 //		n, err2 = io.ReadFull(c.Conn, bs)
                                                 //	}
                                                 //}
-                                                bs, n, err2 = c.Read()
-                                                println("c.Conn.Read(bs)", string(bs[:n]))
+                                                c.Read()
+	                                            err2 = c.Err
+                                                println("c.Conn.Read(bs)", string(c.ReadB))
 
                                             }
                                         }
@@ -1329,7 +1334,8 @@ func (p *CHPrint) PrintCountPriceWithDiscount(values ...interface{}) error {
 			println(string(b))
 			co := ClientOrder{IP: conf.Config.TLS_serv_printer}
 			co.MSG = b
-			err = co.Write()
+			co.Write()
+			err = co.Err
 		}
 	}
 
@@ -1427,7 +1433,8 @@ func (p *CHPrint) PrintAllRange(values ...interface{}) error {
 			println(string(b))
 			co := ClientOrder{IP: conf.Config.TLS_serv_printer}
 			co.MSG = b
-			err = co.Write()
+			co.Write()
+            err = co.Err
 		}
 	}
 	if err != nil {
@@ -1654,7 +1661,8 @@ func (p *CHPrint) Printer(values ...interface{}) error {
 							println(string(b))
 							co := ClientOrder{IP: conf.Config.TLS_serv_printer}
 							co.MSG = b
-							err = co.Write()
+							co.Write()
+                            err = co.Err
 						}
 					}
 				}

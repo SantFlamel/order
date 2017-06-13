@@ -455,8 +455,8 @@ func (st *StructTransact) messageToWebSocTrans(message Message, buf_id interface
 //----Получение данных с других сервисов
 
 func (st *StructTransact) ServiceManager() (Message, error) {
-    var err error
     var m Message
+    m.Query = st.Message.Query
     var t Table
     var co ClientOrder
     for _,table :=range st.Message.Tables{
@@ -467,66 +467,71 @@ func (st *StructTransact) ServiceManager() (Message, error) {
 
         case "Promotions":
             co = ClientOrder{IP: conf.Config.TLS_serv_product}
-            t, err = st.getDateWithServicesRangeRead(&co,&table)
+            t = st.getDateWithServicesRangeRead(&co,&table)
 
         case "PromotionsTypes":
             co = ClientOrder{IP: conf.Config.TLS_serv_product}
-            t, err = st.getDateWithServicesRangeRead(&co,&table)
+            t = st.getDateWithServicesRangeRead(&co,&table)
 
         case "ProductOrder":
             co = ClientOrder{IP: conf.Config.TLS_serv_product}
-            t, err = st.getDateWithServicesRangeRead(&co,&table)
+            t = st.getDateWithServicesRangeRead(&co,&table)
 
         case "LocalTime":
             //st.send([]byte(time.Now().String()[11:19]), nil)
 
         case "ClientInfo":
             co = ClientOrder{IP: conf.Config.TLS_serv_ClientInfo}
-            t, err = st.getDateWithServicesRangeRead(&co,&table)
+            t =  st.getDateWithServicesRangeRead(&co,&table)
 
         case "ClientOrdersAddress":
             co = ClientOrder{IP: conf.Config.TLS_serv_ClientInfo}
             switch table.TypeParameter{
             case "Range":
-                go st.getDateWithServicesRangeRead(&co,&table)
+                t =  st.getDateWithServicesRangeRead(&co,&table)
             case "Value":
-                go st.getDateWithServicesValueRead(&co,&table)
+                t = st.getDateWithServicesValueRead(&co,&table)
             }
 
         case "Session":
             co = ClientOrder{IP: conf.Config.TLS_serv_session}
-            t, err = st.getDateWithServicesRangeRead(&co,&table)
+            t = st.getDateWithServicesRangeRead(&co,&table)
 
         case "SessionInfo":
             co = ClientOrder{IP: conf.Config.TLS_serv_session}
             switch table.TypeParameter{
             case "Range":
-                go st.getDateWithServicesRangeRead(&co,&table)
+                t = st.getDateWithServicesRangeRead(&co,&table)
             case "Value":
-                go st.getDateWithServicesValueRead(&co,&table)
+                t = st.getDateWithServicesValueRead(&co,&table)
             }
 
         case "Tabel":
             co = ClientOrder{IP: conf.Config.TLS_serv_tabel}
-            st.getDateWithServicesValueRead(&co,&table)
+            t =st.getDateWithServicesValueRead(&co,&table)
 
         case "GetAreas":
             co = ClientOrder{IP: conf.Config.TLS_serv_areas}
-            st.getDateWithServicesRangeRead(&co,&table)
+            t = st.getDateWithServicesRangeRead(&co,&table)
 
         case "GetPoint":
             co = ClientOrder{IP: conf.Config.TLS_serv_org}
-            st.getDateWithServicesRangeRead(&co,&table)
+            t = st.getDateWithServicesRangeRead(&co,&table)
         default:
-            err = errors.New("ser: ERROR NOT IDENTIFICATION TYPE SERVICES")
+            co.Err = errors.New("ser: ERROR NOT IDENTIFICATION TYPE SERVICES")
 
         }
-        if err!=nil{
+
+        if co.Err!=nil{
+            println("ServiceManager",co.Err.Error())
             break
         }
+        t.Name = table.Name
+        t.TypeParameter = table.TypeParameter
         m.Tables = append(m.Tables, t)
     }
-    return m, err
+
+    return m, co.Err
 }
 
 func (st *StructTransact) Printer(t *Table) error {
@@ -548,65 +553,65 @@ func (st *StructTransact) Printer(t *Table) error {
     return err
 }
 
-func (st *StructTransact) getDateWithServicesValueRead(co *ClientOrder,t *Table) (Table,error) {
-    var n int
-    var err error
+func (st *StructTransact) getDateWithServicesValueRead(co *ClientOrder,t *Table) Table {
+    println("getDateWithServicesValueRead")
+
+
     var messt Table
     var inter interface{}
-    var listen []byte
+
     for _,val := range t.Values {
-        co.MSG, err = json.Marshal(val)
-        if err!=nil{
-            return messt,err
+        co.MSG, co.Err = json.Marshal(val)
+        if co.Err!=nil{
+            return messt
         }
 
-        err = co.Write()
+        co.Write()
         //Если при отправки сообщения нет ошибок идем дальше
-        if err == nil && co.Conn != nil {
-            listen = make([]byte, 9999)
+        if co.Err == nil && co.Conn != nil {
 
-            listen, n, err = co.Read()
-            if err == nil {
-                if string(listen[:2]) == "01" {
-                    err = json.Unmarshal(listen[3:n],&inter)
-                    if err != nil {
-                        return messt,err
+
+            co.Read()
+            if co.Err == nil {
+                if string(co.ReadB[:2]) == "01" {
+                    co.Err = json.Unmarshal(co.ReadB[3:],&inter)
+                    if co.Err != nil {
+                        return messt
                     }
                     messt.Values = append(messt.Values,inter)
                 } else {
-                    log.Println("tls: ERROR get message", co.Conn.RemoteAddr(), ":", listen[:n])
-                    return messt,errors.New("tls: ERROR get message "+co.Conn.RemoteAddr().String()+": "+string(listen[:n]))
+                    log.Println("tls: ERROR get message", co.Conn.RemoteAddr(), ":", co.ReadB)
+                    co.Err = errors.New("tls: ERROR get message "+co.Conn.RemoteAddr().String()+": "+string(co.ReadB))
+                    return messt
                 }
             }
         }
-        if err != nil {
-            return messt,err
+        if co.Err != nil {
+            return messt
         }
     }
-    return messt,err
+    return messt
 }
 
-func (st *StructTransact) getDateWithServicesRangeRead(co *ClientOrder,t *Table) (Table,error) {
-    var n int
-    var err error
+func (st *StructTransact) getDateWithServicesRangeRead(co *ClientOrder,t *Table) Table {
+    println("getDateWithServicesRangeRead")
+
     var messt Table
     var inter interface{}
-    var listen []byte
+
     for _,val := range t.Values {
-        co.MSG, err = json.Marshal(val)
-        if err!=nil{
-            return messt,err
+        co.MSG, co.Err = json.Marshal(val)
+        if co.Err!=nil{
+            return messt
         }
 
-        err = co.Write()
+        co.Write()
         //Если при отправки сообщения нет ошибок идем дальше
-        if err == nil && co.Conn != nil {
+        if co.Err == nil && co.Conn != nil {
             for {
-                listen = make([]byte, 9999)
-
-                listen, n, err = co.Read()
-                if err == nil {
-                    if strings.ToUpper(strings.TrimSpace(string(listen[:n]))) == "01:EOF" {
+                co.Read()
+                if co.Err == nil {
+                    if strings.ToUpper(strings.TrimSpace(string(co.ReadB))) == "01:EOF" {
                         println("+++++++++++++++")
                         println("BREAK")
                         println("---------------")
@@ -614,25 +619,27 @@ func (st *StructTransact) getDateWithServicesRangeRead(co *ClientOrder,t *Table)
                         break
                     }
 
-                    if string(listen[:2]) == "01" {
-                        err = json.Unmarshal(listen[3:n],&inter)
-                        if err != nil {
-                            return messt,err
+                    if string(co.ReadB[:2]) == "01" {
+                        co.Err = json.Unmarshal(co.ReadB[3:],&inter)
+                        if co.Err != nil {
+                            return messt
                         }
                         messt.Values = append(messt.Values,inter)
                     } else {
-                        log.Println("tls: ERROR get message", co.Conn.RemoteAddr(), ":", listen[:n])
-                        return messt,errors.New("tls: ERROR get message "+co.Conn.RemoteAddr().String()+": "+string(listen[:n]))
+                        log.Println("tls: ERROR get message", co.Conn.RemoteAddr(), ":", co.ReadB)
+                        co.Err = errors.New("tls: ERROR get message "+co.Conn.RemoteAddr().String()+": "+string(co.ReadB))
+                        return messt
                     }
                 }
-
+                if co.Err!=nil{
+                    println(co.Err.Error())
+                    println("---------------")
+                    break
+                }
                 time.Sleep(10)
             }
         }
-        if err != nil {
-            return messt,err
-        }
     }
-
-    return messt,err
+    println()
+    return messt
 }

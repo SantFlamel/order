@@ -105,22 +105,20 @@ func checkSession(session_hash string) (bool, error) {
 			"\"Query\":\"Check\"," +
 			"\"TypeParameter\":\"SessionHash\"," +
 			"\"Values\":[\"" + session_hash + "\"]}")}
-	err := co.Write()
-	if err == nil {
-		listen := make([]byte, 9999)
-		var n int
-		listen, n, err = co.Read()
+	co.Write()
+	if co.Err == nil {
+		co.Read()
 		//n,err = co.Conn.Read(listen)
 		//n,err = strconv.Atoi(string(listen))
 		//if err!=nil{}
 		//listen = make([]byte, n)
 		//_,err = io.ReadFull(co.Conn,listen)
 		co.Conn.Close()
-		if string(listen[:n]) == "01:true" && err == nil {
-			return true, err
+		if string(co.ReadB) == "01:true" && co.Err == nil {
+			return true, co.Err
 		}
 	}
-	return false, err
+	return false, co.Err
 	//return true,nil
 }
 
