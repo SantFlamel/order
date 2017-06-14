@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57250005-72e8-4a4b-9ba9-1e43c96aed4e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/_query_order/ws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/webserver/templates/html/client/WebSoket.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-02-15.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-02-16.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-02-17.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-02-20.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-02-28.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-03-01.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-03-02.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-03-03.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-03-04.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-03-05.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-03-06.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-03-09.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-03-10.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-03-13.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-03-14.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-03-15.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-03-21.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-03-22.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-04-06.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/client/log/2017-04-12.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017-06-09.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017-06-10.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017-06-12.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017-06-13.log" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/structures/struct_transaction.go" afterPath="$PROJECT_DIR$/structures/struct_transaction.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/structures/struct_websocket.go" afterPath="$PROJECT_DIR$/structures/struct_websocket.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webserver/webserver.go" afterPath="$PROJECT_DIR$/webserver/webserver.go" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webserver/websockets.go" afterPath="$PROJECT_DIR$/webserver/websockets.go" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017-06-14.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/log/2017-06-15.log" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -101,8 +72,8 @@
           <file leaf-file-name="websockets.go" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/webserver/websockets.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="124" column="24" lean-forward="true" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
+                <state relative-caret-position="-270">
+                  <caret line="118" column="36" lean-forward="true" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
                   <folding />
                 </state>
               </provider>
@@ -1027,14 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webserver/websockets.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="124" column="24" lean-forward="true" selection-start-line="124" selection-start-column="24" selection-end-line="124" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/structures/struct_transaction.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -1042,6 +1005,14 @@
           <folding>
             <element signature="e#20#188#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webserver/websockets.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="118" column="36" lean-forward="true" selection-start-line="118" selection-start-column="36" selection-end-line="118" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
