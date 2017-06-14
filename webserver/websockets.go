@@ -40,7 +40,9 @@ func (ws *WS) WSHandler(w http.ResponseWriter, r *http.Request) {
 	client := conn.RemoteAddr()
 	socketClient := structures.ClientConn{IP: client}
 	socketClient.SetConn(conn)
-	go socketClient.WritePump()
+	ws.Client = &socketClient
+	ws.Client.Send = make(chan structures.Message,500)
+	go ws.Client.WritePump()
 
 	auth := AuthWEB{}
 	err = conn.ReadJSON(&auth)
@@ -54,7 +56,7 @@ func (ws *WS) WSHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	if strings.TrimSpace(auth.HashAuth) == "" {
-		conn.WriteMessage(1, []byte("00:Auth{EMPTY HASH AUTH"))
+        ws.send(structures.Message{Query:"HashAuth"},errors.New("EMPTY HASH AUTH"))
 		conn.Close()
 		return
 	}
@@ -63,14 +65,12 @@ func (ws *WS) WSHandler(w http.ResponseWriter, r *http.Request) {
 	socketClient.HashAuth = auth.HashAuth
 	err = structures.AddClient(socketClient)
 	if err != nil {
-		conn.WriteMessage(1, []byte("00:Auth{NO CHECKED "+auth.HashAuth+" ERROR:'"+err.Error()+"' "+time.Now().String()))
-		println("00:Auth{NO CHECKED " + auth.HashAuth + " ERROR:'" + err.Error() + "' " + time.Now().String())
-		println("-------DELETE_SOC_CONN : ", socketClient.HashAuth)
+        ws.send(structures.Message{Query:"HashAuth"},errors.New("NO CHECKED " + auth.HashAuth + " ERROR:'" + err.Error() + "' " + time.Now().String()))
+		println("NO CHECKED " + auth.HashAuth + " ERROR:'" + err.Error() + "' " + time.Now().String())
 		structures.RemoveClient(socketClient)
 		conn.Close()
 	} else {
-		//socketClient.Send <- []byte("01:SESSION UP")
-		socketClient.Send <- structures.Message{Query:"SESSION UP"}
+        ws.send(structures.Message{Query:"SESSION UP"},nil)
 	}
 	defer println("-------DELETE_SOC_CONN : ", socketClient.HashAuth)
 	defer structures.RemoveClient(socketClient)
@@ -100,9 +100,9 @@ func (ws *WS) WSHandler(w http.ResponseWriter, r *http.Request) {
 		//	break
 		//}
 
-        err = conn.ReadJSON(ws.message)
+        err = conn.ReadJSON(&ws.message)
         if err!=nil{
-            ws.send(structures.Message{Error:structures.Error{Code:1,Type:"JSON",Description:"MESSAGE INCORRECT"}}, nil)
+            ws.send(structures.Message{Error:structures.Error{Code:1,Type:"JSON",Description:"MESSAGE INCORRECT: "+err.Error()}}, nil)
             continue
         }
 
@@ -144,7 +144,7 @@ func (ws *WS) WSHandler(w http.ResponseWriter, r *http.Request) {
 //----------------------------------------------------------------------------------------------------------------------
 //----Отправка сообщений
 func (ws *WS) send(message structures.Message, err error) {
-	if err == nil {
+	if err != nil {
         message.Tables = nil
 
         //switch strings.ToLower(string(err.Error()[:3])){

@@ -1,0 +1,7 @@
+ws://localhost:80/ws
+{ "HashAuth": "zero" }
+
+//----Получение продуктов
+{"Tables":[{"Name":"ProductOrder","TypeParameter":"Range","Values":[{"Table":"ProductOrder","Query":"Read"}]}],"Query":"Services"}
+
+{"Table":"ProductOrder","Query":"Read"}

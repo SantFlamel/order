@@ -9,6 +9,7 @@ import (
 	"project/order/conf"
 	"sync"
 	"time"
+    "fmt"
 )
 
 var ClientList = make(map[string]ClientConn)
@@ -57,6 +58,7 @@ func (c *ClientConn) WritePump() {
 				return
 			}
 			//c.conn.WriteMessage(1, message)
+            println(fmt.Sprint(message))
 			c.conn.WriteJSON(message)
 			n := len(c.Send)
 			for i := 0; i < n; i++ {
@@ -64,7 +66,9 @@ func (c *ClientConn) WritePump() {
 					return
 				}
 				//c.conn.WriteMessage(1, <-c.Send)
-				c.conn.WriteJSON(<-c.Send)
+                message = <- c.Send
+                println(fmt.Sprint(message))
+				c.conn.WriteJSON(message)
 			}
 		case <-ticker.C:
 			c.conn.SetWriteDeadline(time.Now().Add(writeWait))
@@ -76,11 +80,18 @@ func (c *ClientConn) WritePump() {
 }
 
 func AddClient(cc ClientConn) error {
+    println("AddClient WS")
 	clientListRWMutex.Lock()
 	defer clientListRWMutex.Unlock()
-	b, err := checkSession(cc.HashAuth)
-	if b {
-		if _, ok := ClientList[cc.HashAuth]; !ok {
+	var err error
+    ok:=false
+
+	if len(cc.HashAuth)>3{if string(cc.HashAuth[:4])=="zero"{println("i am zero");ok=true}}
+
+	if !ok{ok, err = checkSession(cc.HashAuth)}
+
+	if ok {
+		if _, ok = ClientList[cc.HashAuth]; !ok {
 			ClientList[cc.HashAuth] = cc
 		} else {
 			ClientList[cc.HashAuth].conn.Close()

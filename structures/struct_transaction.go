@@ -463,63 +463,56 @@ func (st *StructTransact) ServiceManager() (Message, error) {
         //----Определяем сервис к которому будем обращаться
         switch table.Name{
         case "Printer":
-            st.Printer(&table)
+            co.Err = st.Printer(&table)
+            return m,co.Err
 
         case "Promotions":
             co = ClientOrder{IP: conf.Config.TLS_serv_product}
-            t = st.getDateWithServicesRangeRead(&co,&table)
 
         case "PromotionsTypes":
             co = ClientOrder{IP: conf.Config.TLS_serv_product}
-            t = st.getDateWithServicesRangeRead(&co,&table)
 
         case "ProductOrder":
             co = ClientOrder{IP: conf.Config.TLS_serv_product}
-            t = st.getDateWithServicesRangeRead(&co,&table)
 
         case "LocalTime":
-            //st.send([]byte(time.Now().String()[11:19]), nil)
+            table.Values = append([]interface{}{},time.Now().String()[11:19])
+            m.Tables = append(m.Tables,)
+            return m,co.Err
 
         case "ClientInfo":
             co = ClientOrder{IP: conf.Config.TLS_serv_ClientInfo}
-            t =  st.getDateWithServicesRangeRead(&co,&table)
 
         case "ClientOrdersAddress":
             co = ClientOrder{IP: conf.Config.TLS_serv_ClientInfo}
-            switch table.TypeParameter{
-            case "Range":
-                t =  st.getDateWithServicesRangeRead(&co,&table)
-            case "Value":
-                t = st.getDateWithServicesValueRead(&co,&table)
-            }
 
         case "Session":
             co = ClientOrder{IP: conf.Config.TLS_serv_session}
-            t = st.getDateWithServicesRangeRead(&co,&table)
 
         case "SessionInfo":
             co = ClientOrder{IP: conf.Config.TLS_serv_session}
-            switch table.TypeParameter{
-            case "Range":
-                t = st.getDateWithServicesRangeRead(&co,&table)
-            case "Value":
-                t = st.getDateWithServicesValueRead(&co,&table)
-            }
 
         case "Tabel":
             co = ClientOrder{IP: conf.Config.TLS_serv_tabel}
-            t =st.getDateWithServicesValueRead(&co,&table)
 
         case "GetAreas":
             co = ClientOrder{IP: conf.Config.TLS_serv_areas}
-            t = st.getDateWithServicesRangeRead(&co,&table)
 
         case "GetPoint":
             co = ClientOrder{IP: conf.Config.TLS_serv_org}
-            t = st.getDateWithServicesRangeRead(&co,&table)
+
         default:
             co.Err = errors.New("ser: ERROR NOT IDENTIFICATION TYPE SERVICES")
 
+        }
+
+        switch table.TypeParameter{
+        case "Range":
+            t =  st.getDateWithServicesRangeRead(&co,&table)
+        case "Value":
+            t = st.getDateWithServicesValueRead(&co,&table)
+        default:
+            co.Err = errors.New("ser: ERROR NOT IDENTIFICATION TYPE PARAMETER, SELECT \"TypeParameter\": \"Range\" OR \"Value\" NOTHING OTHER")
         }
 
         if co.Err!=nil{

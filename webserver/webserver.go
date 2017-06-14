@@ -14,6 +14,8 @@ func RegisterRoutes() {
     r:=gin.Default()
     r.LoadHTMLGlob("webserver/templates/html/**/*.html")
 
+
+    //----Веб сокеты
     r.GET("/ws",func(c *gin.Context){
         var mu sync.Mutex
         mu.Lock()
@@ -22,6 +24,8 @@ func RegisterRoutes() {
         ws.WSHandler(c.Writer,c.Request)
     })
 
+
+    //----Переключатель инетрфейсов
     r.GET("/", func(c *gin.Context){
 
         c.HTML(http.StatusOK, "index.html",
@@ -31,6 +35,7 @@ func RegisterRoutes() {
             })
     })
 
+
     r.GET("cook.sheldon/", func(c *gin.Context){
 
         c.HTML(http.StatusOK, "sushimaker-list.html",
@@ -39,6 +44,8 @@ func RegisterRoutes() {
                 "hreforder":"orders",
             })
     })
+
+    //----Кассирский интерфейс
     r.GET("/cassir/", func(c *gin.Context){
 
         c.HTML(http.StatusOK, "cassir.html",
@@ -47,6 +54,8 @@ func RegisterRoutes() {
                 "hreforder":"orders",
             })
     })
+
+    //----Операторский интерфейс
     r.GET("/operator/", func(c *gin.Context){
 
         c.HTML(http.StatusOK, "operator.html",
@@ -55,6 +64,8 @@ func RegisterRoutes() {
                 "hreforder":"orders",
             })
     })
+
+    //----Поворской интерфейс
     r.GET("/cook/", func(c *gin.Context){
 
         c.HTML(http.StatusOK, "sushimaker-list.html",
@@ -62,6 +73,11 @@ func RegisterRoutes() {
                 "title"    :"I am",
                 "hreforder":"orders",
             })
+    })
+
+    //----Для ьестов вебсокетов
+    r.GET("/client/", func(c *gin.Context){
+        c.HTML(http.StatusOK, "WebSoket.html",nil)
     })
 
     //----ПОСТ ЗАПРОСЫ
