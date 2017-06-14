@@ -477,7 +477,7 @@ func (st *StructTransact) ServiceManager() (Message, error) {
 
         case "LocalTime":
             table.Values = append([]interface{}{},time.Now().String()[11:19])
-            m.Tables = append(m.Tables,)
+            m.Tables = append(m.Tables,table)
             return m,co.Err
 
         case "ClientInfo":
