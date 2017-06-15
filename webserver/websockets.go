@@ -103,7 +103,7 @@ func (ws *WS) WSHandler(w http.ResponseWriter, r *http.Request) {
 
         err = conn.ReadJSON(&ws.message)
         if err!=nil{
-            ws.send(structures.Message{Error:structures.Error{Code:1,Type:"JSON",Description:"MESSAGE INCORRECT: "+err.Error()}}, nil)
+            ws.send(ws.message, errors.New("jso: MESSAGE INCORRECT: "+err.Error()))
             continue
         }
         fmt.Println("GET MESSAGE:",fmt.Sprint(ws.message))
@@ -155,11 +155,13 @@ func (ws *WS) send(message structures.Message, err error) {
         //switch strings.ToLower(string(err.Error()[:3])){
         switch string(err.Error()[:3]){
         case "par":
-            message.Error = structures.Error{Code:1, Type:message.Query, Description:err.Error()[5:]}
+            message.Error = structures.Error{Code:1, Type:"PARAMETERS", Description:err.Error()[5:]}
         case "sql":
-            message.Error = structures.Error{Code:2, Type:message.Query, Description:err.Error()[5:]}
+            message.Error = structures.Error{Code:2, Type:"SQL", Description:err.Error()[5:]}
+        case "jso":
+            message.Error = structures.Error{Code:1, Type:"JSON", Description:err.Error()[5:]}
         default:
-            message.Error = structures.Error{Code:0, Type:message.Query, Description:err.Error()}
+            message.Error = structures.Error{Code:0, Type:"NOT IDENTIFICATION ERROR", Description:err.Error()}
         }
 	}
 
