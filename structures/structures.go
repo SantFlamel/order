@@ -22,6 +22,7 @@ type Message struct {
 	Tables []Table
 	Query  string
 	Error  interface{}
+    ID_msg string
 }
 type Table struct {
 	Name          string

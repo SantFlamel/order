@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="57250005-72e8-4a4b-9ba9-1e43c96aed4e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/structures/struct_websocket.go" afterPath="$PROJECT_DIR$/structures/struct_websocket.go" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/structures/structures.go" afterPath="$PROJECT_DIR$/structures/structures.go" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webserver/websockets.go" afterPath="$PROJECT_DIR$/webserver/websockets.go" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +21,7 @@
           <file leaf-file-name="order.txt" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/_query_order/man/order.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="560">
+                <state relative-caret-position="697">
                   <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="63" />
                   <folding />
                 </state>
@@ -83,8 +83,8 @@
           <file leaf-file-name="websockets.go" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/webserver/websockets.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="473">
-                  <caret line="107" column="13" lean-forward="false" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
+                <state relative-caret-position="541">
+                  <caret line="135" column="10" lean-forward="false" selection-start-line="135" selection-start-column="10" selection-end-line="135" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -93,8 +93,8 @@
           <file leaf-file-name="structures.go" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/structures/structures.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="26" column="23" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+                <state relative-caret-position="289">
+                  <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="10" />
                   <folding />
                 </state>
               </provider>
@@ -116,11 +116,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="client.go" pinned="false" current-in-tab="true">
+          <file leaf-file-name="client.go" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/client.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="560">
-                  <caret line="109" column="43" lean-forward="false" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
+                <state relative-caret-position="441">
+                  <caret line="102" column="19" lean-forward="true" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
                   <folding>
                     <element signature="e#14#242#0" expanded="true" />
                   </folding>
@@ -162,10 +162,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="struct_websocket.go" pinned="false" current-in-tab="false">
+          <file leaf-file-name="struct_websocket.go" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/structures/struct_websocket.go">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="493">
+                <state relative-caret-position="442">
                   <caret line="69" column="21" lean-forward="false" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
                   <folding />
                 </state>
@@ -176,7 +176,7 @@
             <entry file="file://$PROJECT_DIR$/_query_order/ws">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="136">
-                  <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+                  <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
                   <folding />
                 </state>
               </provider>
@@ -238,7 +238,6 @@
         <option value="$PROJECT_DIR$/webserver/templates/cook.txt" />
         <option value="$PROJECT_DIR$/conf/conf.go" />
         <option value="$PROJECT_DIR$/structures/struct_interfaces.go" />
-        <option value="$PROJECT_DIR$/structures/structures.go" />
         <option value="$PROJECT_DIR$/postgres/postgres.go" />
         <option value="$PROJECT_DIR$/main.go" />
         <option value="$PROJECT_DIR$/webserver/webservfunctable.go" />
@@ -274,6 +273,7 @@
         <option value="$PROJECT_DIR$/webserver/templates/html/client/client.html" />
         <option value="$PROJECT_DIR$/webserver/webserver.go" />
         <option value="$PROJECT_DIR$/structures/struct_websocket.go" />
+        <option value="$PROJECT_DIR$/structures/structures.go" />
         <option value="$PROJECT_DIR$/webserver/websockets.go" />
       </list>
     </option>
@@ -881,14 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/structures/structures.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="26" column="23" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -966,22 +958,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_query_order/ws">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_query_order/man/order.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webserver/templates/html/client/client.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -1008,21 +984,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/client.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="102" column="19" lean-forward="true" selection-start-line="102" selection-start-column="19" selection-end-line="102" selection-end-column="19" />
+          <folding>
+            <element signature="e#14#242#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_query_order/man/order.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_query_order/ws">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/structures/struct_websocket.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
+        <state relative-caret-position="442">
           <caret line="69" column="21" lean-forward="false" selection-start-line="69" selection-start-column="21" selection-end-line="69" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/client.go">
+    <entry file="file://$PROJECT_DIR$/structures/structures.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="109" column="43" lean-forward="false" selection-start-line="109" selection-start-column="43" selection-end-line="109" selection-end-column="43" />
-          <folding>
-            <element signature="e#14#242#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="289">
+          <caret line="24" column="10" lean-forward="false" selection-start-line="24" selection-start-column="4" selection-end-line="24" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1038,8 +1038,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/webserver/websockets.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="473">
-          <caret line="107" column="13" lean-forward="false" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
+        <state relative-caret-position="541">
+          <caret line="135" column="10" lean-forward="false" selection-start-line="135" selection-start-column="10" selection-end-line="135" selection-end-column="10" />
           <folding />
         </state>
       </provider>

@@ -75,6 +75,7 @@ func (ws *WS) WSHandler(w http.ResponseWriter, r *http.Request) {
 	defer println("-------DELETE_SOC_CONN : ", socketClient.HashAuth)
 	defer structures.RemoveClient(socketClient)
 	defer conn.Close()
+
 	for {
 		//_, msg, err := conn.ReadMessage()
 		//if err != nil {
@@ -108,28 +109,31 @@ func (ws *WS) WSHandler(w http.ResponseWriter, r *http.Request) {
         fmt.Println("GET MESSAGE:",fmt.Sprint(ws.message))
 
 		sttr := structures.StructTransact{Message: &ws.message}
-		switch sttr.Message.Query {
-		case "EndConn":
-            conn.Close()
-            break
-		case "Insert":
-			ws.message, err = sttr.Insert()
-			fmt.Println(ws.message)
-		case "Update":
-			err = sttr.Update()
-			//c.message.Tables = nil
-		case "Select":
-			ws.message, err = sttr.Read()
-		case "Delete":
-			err = sttr.Delete()
-			//c.message.Tables = nil
-		case "Services":
-			ws.message, err = sttr.ServiceManager()
-		default:
-			err = errors.New("NOT IDENTIFICATION QUERY")
-		}
-
-		ws.send(ws.message, err)
+        go func() {
+            ID_msg := ws.message.ID_msg
+            switch sttr.Message.Query {
+            case "EndConn":
+                conn.Close()
+                break
+            case "Insert":
+                ws.message, err = sttr.Insert()
+                fmt.Println(ws.message)
+            case "Update":
+                err = sttr.Update()
+                //c.message.Tables = nil
+            case "Select":
+                ws.message, err = sttr.Read()
+            case "Delete":
+                err = sttr.Delete()
+                //c.message.Tables = nil
+            case "Services":
+                ws.message, err = sttr.ServiceManager()
+            default:
+                err = errors.New("NOT IDENTIFICATION QUERY")
+            }
+            ws.message.ID_msg = ID_msg
+            ws.send(ws.message, err)
+        }()
 
 		//st := structure{Client: &socketClient}
 		//err = st.SelectTables(msg)
