@@ -75,9 +75,10 @@ func RegisterRoutes() {
             })
     })
 
-    //----Для ьестов вебсокетов
+    //----Для тестов вебсокетов
     r.GET("/client/", func(c *gin.Context){
-        c.HTML(http.StatusOK, "WebSoket.html",nil)
+        //c.HTML(http.StatusOK, "WebSoket.html",nil)
+        c.HTML(http.StatusOK, "client.html",nil)
     })
 
     //----ПОСТ ЗАПРОСЫ

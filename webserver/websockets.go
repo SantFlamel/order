@@ -105,6 +105,7 @@ func (ws *WS) WSHandler(w http.ResponseWriter, r *http.Request) {
             ws.send(structures.Message{Error:structures.Error{Code:1,Type:"JSON",Description:"MESSAGE INCORRECT: "+err.Error()}}, nil)
             continue
         }
+        println("GET MESSAGE:",fmt.Sprint(ws.message))
 
 		sttr := structures.StructTransact{Message: &ws.message}
 		switch sttr.Message.Query {

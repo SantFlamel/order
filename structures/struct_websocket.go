@@ -58,7 +58,7 @@ func (c *ClientConn) WritePump() {
 				return
 			}
 			//c.conn.WriteMessage(1, message)
-            println(fmt.Sprint(message))
+            println("SEND MESSAGE:", fmt.Sprint(message))
 			c.conn.WriteJSON(message)
 			n := len(c.Send)
 			for i := 0; i < n; i++ {
@@ -67,7 +67,7 @@ func (c *ClientConn) WritePump() {
 				}
 				//c.conn.WriteMessage(1, <-c.Send)
                 message = <- c.Send
-                println(fmt.Sprint(message))
+                println("SEND MESSAGE:", fmt.Sprint(message))
 				c.conn.WriteJSON(message)
 			}
 		case <-ticker.C:

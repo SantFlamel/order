@@ -1,0 +1,76 @@
+#textarea_field {
+
+}
+
+textarea {
+    border: solid 1px black;
+    width: calc(100% - 10px);
+    height: 150px;
+}
+
+.field {
+    border: solid 1px black;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 5px;
+}
+
+span {
+    padding-right: 5px;
+    padding-left: 2px;
+    border-right: solid 1px black;
+}
+
+#connect {
+    color: white;
+    background-color: #1d6e1d;
+}
+
+#disconnect {
+    color: white;
+    background-color: darkred;
+}
+
+#send {
+    width: 80px;
+}
+
+.send {
+    background-color: #e2e0e2;
+    margin-bottom: 5px;
+}
+
+.in {
+    background-color: #c3d3f7;
+    margin-bottom: 5px;
+}
+
+.msg:nth-child(2n) {
+    border-top: solid 1px black;
+}
+
+#message_field {
+    margin-top: 5px;
+    border: solid 1px black;
+    padding: 5px 5px 5px 5px;
+    overflow-wrap: break-word;
+}
+#message {
+    max-height: 500px;
+    border: solid 1px black;
+    padding: 5px 5px 5px 5px;
+}
+
+#_message_field {
+    overflow-y: scroll;
+}
+#max_height {
+    width: 80px;
+}
+
+.field button{
+    margin-right: 15px;
+}
+
+#auto_msg{
+    width: 50%;
+}

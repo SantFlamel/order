@@ -5,3 +5,5 @@ ws://localhost:80/ws
 {"Tables":[{"Name":"ProductOrder","TypeParameter":"Range","Values":[{"Table":"ProductOrder","Query":"Read"}]}],"Query":"Services"}
 
 {"Table":"ProductOrder","Query":"Read"}
+
+https://github.com/SantFlamel/orders.git
