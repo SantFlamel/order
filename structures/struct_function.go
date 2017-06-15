@@ -538,14 +538,21 @@ func (os *OrderStatus)  GetOrderID()int64{return os.Order_id}
 func (os *OrderStatus) Insert(table,type_parameter string,tx *sql.Tx) (interface{}, error){
 	var err error
 
-	if type_parameter == "" {
+	switch type_parameter {
+	case "":
 		err = postgres.Requests.Insert(
 			tx, table, type_parameter,
 			os.Order_id, os.Order_id_item, os.Cause,
 			os.Status_id, os.UserHash, time.Now(),
 		)
-	} else {
-		//var row *sql.Row
+	case "Offline":
+		err = postgres.Requests.Insert(
+			tx, table, type_parameter,
+			os.Order_id, os.Order_id_item, os.Cause,
+			os.Status_id, os.UserHash, os.Time,
+		)
+
+	default:
 		var id interface{}
 		//row, err = postgres.Requests.InsertGetID(
 		id, err = postgres.Requests.InsertGetID(
@@ -554,14 +561,11 @@ func (os *OrderStatus) Insert(table,type_parameter string,tx *sql.Tx) (interface
 			os.Status_id, os.UserHash, time.Now(),
 		)
 
-		//var i int64
-		//err = row.Scan(&i)
-		//if i == 0 {
 		if err == nil && id !=nil{
 			messageToWebSoc(table, os.Order_id, id, os.Status_id)
-			//return nil, errors.New("This status is already set by the user")
 		}
 	}
+
 
 
 	return nil, err

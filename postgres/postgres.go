@@ -754,14 +754,22 @@ func (dbr *DBRequests) InitDatabaseRequests() error {
 		"ELSE(select status_id from order_status,max_id where id = m AND order_id = $1 limit 1) " +
 		"END as max_stat) " +
 
-		//", statreload as(UPDATE order_list SET finished=false where order_id=$1 AND id_item=$2 AND $4=14 )" +
+		"INSERT INTO order_status(id, order_id, order_id_item, cause, status_id, user_hash, \"time\") " +
+		"SELECT " +
+		"m+1, $1, $2, $3, $4, $5, $6  from max_id, max_s where max_stat<>15 AND max_stat<>16;")
+	if err != nil {
+		return err
+	}
 
-		//",iso as ( " +
-		//"INSERT INTO order_status(id,order_id, order_id_item, cause, status_id, user_hash, \"time\") " +
-		//"SELECT m+2,$1,0,'',8,'system',$6 " +
-		//"FROM max_id WHERE $4=8 and (select count(*) as c from order_list where order_id=$1 AND finished=false)=0 )" +
-
-		//"(select count(order_list.order_id) from order_list where (select count(*) as c from order_list where order_id=$1 AND finished=false)=0 AND order_list.order_id=$1)=0) " +
+	dbr.RequestsList["execInsertOrderStatusOffline"], err = DB.Prepare("" +
+		"with max_id as (select CASE " +
+		"WHEN(select max(id) from order_status where order_id = $1 limit 1) is null THEN 0 " +
+		"ELSE(select max(id) from order_status where order_id = $1 limit 1) " +
+		"END as m) " +
+		", max_s as (select CASE " +
+		"WHEN(select status_id from order_status,max_id where id = m AND order_id = $1 limit 1) is null THEN 0 " +
+		"ELSE(select status_id from order_status,max_id where id = m AND order_id = $1 limit 1) " +
+		"END as max_stat) " +
 
 		"INSERT INTO order_status(id, order_id, order_id_item, cause, status_id, user_hash, \"time\") " +
 		"SELECT " +

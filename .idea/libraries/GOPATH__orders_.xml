@@ -1,26 +1,24 @@
 <component name="libraryTable">
   <library name="GOPATH &lt;orders&gt;">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/.." />
-      <root url="file://$PROJECT_DIR$/../../mrkpvp" />
+      <root url="file://$PROJECT_DIR$/../../admin" />
+      <root url="file://$PROJECT_DIR$/../../Avtorization" />
+      <root url="file://$PROJECT_DIR$/../../log" />
       <root url="file://$PROJECT_DIR$/../../gopkg.in" />
-      <root url="file://$PROJECT_DIR$/../../test" />
-      <root url="file://$PROJECT_DIR$/../../go-blog-example" />
       <root url="file://$PROJECT_DIR$/../../github.com" />
-      <root url="file://$PROJECT_DIR$/../../golang.org" />
       <root url="file://$PROJECT_DIR$/../../google.golang.org" />
-      <root url="file://$PROJECT_DIR$/../../orgrole" />
+      <root url="file://$PROJECT_DIR$/../../golang.org" />
+      <root url="file://$PROJECT_DIR$/.." />
     </CLASSES>
     <SOURCES>
-      <root url="file://$PROJECT_DIR$/.." />
-      <root url="file://$PROJECT_DIR$/../../mrkpvp" />
+      <root url="file://$PROJECT_DIR$/../../admin" />
+      <root url="file://$PROJECT_DIR$/../../Avtorization" />
+      <root url="file://$PROJECT_DIR$/../../log" />
       <root url="file://$PROJECT_DIR$/../../gopkg.in" />
-      <root url="file://$PROJECT_DIR$/../../test" />
-      <root url="file://$PROJECT_DIR$/../../go-blog-example" />
       <root url="file://$PROJECT_DIR$/../../github.com" />
-      <root url="file://$PROJECT_DIR$/../../golang.org" />
       <root url="file://$PROJECT_DIR$/../../google.golang.org" />
-      <root url="file://$PROJECT_DIR$/../../orgrole" />
+      <root url="file://$PROJECT_DIR$/../../golang.org" />
+      <root url="file://$PROJECT_DIR$/.." />
     </SOURCES>
     <excluded>
       <root url="file://$PROJECT_DIR$" />

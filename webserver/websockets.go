@@ -104,7 +104,7 @@ func (ws *WS) WSHandler(w http.ResponseWriter, r *http.Request) {
         err = conn.ReadJSON(&ws.message)
         if err!=nil{
             ws.send(ws.message, errors.New("jso: MESSAGE INCORRECT: "+err.Error()))
-            continue
+            break
         }
         fmt.Println("GET MESSAGE:",fmt.Sprint(ws.message))
 
