@@ -24,6 +24,7 @@ type Message struct {
 	Error  interface{}
     ID_msg string
 }
+
 type Table struct {
 	Name          string
 	TypeParameter string

@@ -115,19 +115,23 @@ func (ws *WS) WSHandler(w http.ResponseWriter, r *http.Request) {
             case "EndConn":
                 conn.Close()
                 break
+
             case "Insert":
                 ws.message, err = sttr.Insert()
                 fmt.Println(ws.message)
+
             case "Update":
                 err = sttr.Update()
-                //c.message.Tables = nil
+
             case "Select":
                 ws.message, err = sttr.Read()
+
             case "Delete":
                 err = sttr.Delete()
-                //c.message.Tables = nil
+
             case "Services":
                 ws.message, err = sttr.ServiceManager()
+
             default:
                 err = errors.New("NOT IDENTIFICATION QUERY")
             }

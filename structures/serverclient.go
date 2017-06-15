@@ -159,6 +159,13 @@ func (co *ClientOrder) Read(){
 			if co.Err == nil {
 				co.ReadB = make([]byte, co.lenRead)
 				_, co.Err = io.ReadFull(co.Conn, co.ReadB)
+				if co.Err!=nil{
+                    println()
+					println("READ TLS:",string(co.ReadB))
+                    println()
+                    println("---------------------------")
+				}
+
 			}
 		}
 	}

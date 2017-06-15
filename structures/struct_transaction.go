@@ -286,6 +286,11 @@ func (st *StructTransact) Read() (Message,error) {
             }
         case "Range":
             //----выполняем запрос
+            if table.Limit>0{
+                table.Values = append(table.Values,table.Limit)
+                table.Values = append(table.Values,table.Offset)
+            }
+
             st.rows, err = postgres.Requests.RequestsList["queryRead"+table.Name+table.TypeParameter].Query(table.Values...)
             if err == nil {
                 if st.rows==nil{println("I am nil")}
@@ -299,7 +304,7 @@ func (st *StructTransact) Read() (Message,error) {
                     t.TypeParameter = table.TypeParameter
                     t.Values = append(t.Values, st.orders)
                 }
-                m.Tables = append(m.Tables, t)
+
             }
         default:
             return m, errors.New("par NOT IDENTIFICATION TYPE PARAMETER FOR READ")
